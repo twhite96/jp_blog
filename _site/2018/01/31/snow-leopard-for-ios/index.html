@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Snow Leopard for iOS | Jeff Perry &mdash; Blogger/Podcaster </title>
+    <meta property="og:title" content="Snow Leopard for iOS | Jeff Perry &mdash; Blogger/Podcaster " />
+    <meta name="twitter:title" content="Snow Leopard for iOS | Jeff Perry &mdash; Blogger/Podcaster " />
+
+    <meta name="description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.">
+    <meta name="description" property="og:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+    <meta name="twitter:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:site" content="@iamjeffperry" />
+    
+    <meta property="og:url" content="http://localhost:4000/2018/01/31/snow-leopard-for-ios/" />
+
+    <meta property="og:image" content="" />
+    <meta name="twitter:image" content="" />
+
+    <meta name="author" content="Jeff Perry" />
+
+    <meta name="copyright" content="Copyright by Jeff Perry. All Rights Reserved." />
+
+    <style>
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/mnpfi9pxYH-Go5UiibESIltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 300;
+            src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v15/vPcynSL0qHq_6dX7lKVByfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(https://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 900;
+            src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url(https://fonts.gstatic.com/s/roboto/v15/bmC0pGMXrhphrZJmniIZpY4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+    </style>
+    
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+    <link rel="canonical" href="http://localhost:4000/2018/01/31/snow-leopard-for-ios/">
+
+    <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+</head>
+
+    <body>
+        <div class="wrapper">
+            <aside class="user-profile fixed" role="complementary">
+    <div class="burger">
+        <input class="trigger hidden" id="toggleBurger" type="checkbox" />
+        <label for="toggleBurger">
+            <span>Navigation</span>
+        </label>
+    </div>
+
+    <div class="compact-header">
+        <a class="avatar" href="http://localhost:4000"><img alt="Avatar" src="/avatar.png" /></a>
+        <div class="my-info">
+            <strong class="my-name">Jeff Perry</strong>
+            <span class="my-job-title">Blogger/Podcaster</span>
+        </div>
+    </div>
+
+    
+        
+        <div class="mainmenu">
+            <a href="http://localhost:4000" >Home</a>
+            
+                
+            
+                
+            
+                
+            
+                
+                    <a href="http://localhost:4000/about/" >About</a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        </div>
+        
+    
+
+    <p class="about-me">I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.</p>
+
+    <ul class="socials">
+        <li><a href="http://twitter.com/iamjeffperry"><svg title="twitter" width="16" height="16" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+
+        
+
+        
+         <li><a href="http://localhost:4000/feed.xml"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#rss-icon"></use></svg></a></li>
+        
+    </ul>
+</aside>
+
+            <main class="the-content" role="main">
+                <div class="search" role="search">
+    <div>
+        <div class="show-results-count">0 Results</div>
+        <div class="search-holder">
+            <input type="text" id="search-input" placeholder="search for..." />
+        </div>
+    </div>
+    <ul id="results-container" class="results-container"></ul>
+</div>
+
+
+                <article class="post single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2018-01-31T10:28:24-05:00" itemprop="datePublished">31 Jan, 2018</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline">Snow Leopard for iOS</h2>
+    </header>
+
+    <div class="post-content">
+        <p><a title="Scoop: Apple delays iOS features to focus on reliability, performance" href="https://www.axios.com/scoop-apple-delays-ios-features-to-focus-on-reliability-performance-1517278421-d7722a3b-402e-4804-8f24-719154bf2a8e.html">Ina Fried from Axios</a> posted an article stirring the pot for the iOS community. In part Fried explains that iOS 12 may be more of a refinement update and less feature-rich than past updates.</p>
+<blockquote>
+<p>Apple has shaken up its iOS software plans for 2018, delaying some features to next year in an effort to put more focus on addressing performance and quality issues, Axios has learned.</p>
+</blockquote>
+<p>Fried goes on to say that this is coming from Craig Federighi in a meeting with employees.</p>
+<p>After this report was published Dan Moren posted his thoughts on <a title="Report: Apple Pushing Back Features, Focusing on Software Quality in Next Major iOS Release" href="http://sixcolors.com">Six Colors</a></p>
+<blockquote>
+<p>... any major software release is all about prioritization, and I&rsquo;m sure Apple has done the math of balancing new features vs. optimization pretty much every year. It may just be a matter of seeing behind the curtain this time around, combined with the context of the recent situations that Apple&rsquo;s found itself in that makes this seem more significant. But it&rsquo;s hard to say because, again, Apple tends to keep its hand pretty close to its vest.</p>
+</blockquote>
+<p>In short: this is probably no cause for either panic or jubilation.</p>
+<p>Personally, I couldn&rsquo;t agree more with Dan Moren, this &ldquo;scoop&rdquo; seems to be legitimate and very well may be true. However, I don&rsquo;t think this is necessarily something that warrants panic or worry for iOS users.</p>
+<p>Nick Heer of <a href="https://mjtsai.com/blog/2018/01/30/apple-delays-features-to-focus-on-reliability-performance/">Pixel Envy</a> also I had a great point in regards to this &ldquo;Snow Leopard for iOS&rdquo; rumors:</p>
+<blockquote>
+<p>While High Sierra experienced a couple of fairly</p>
+<p><a href="https://hackernoon.com/new-macos-high-sierra-vulnerability-exposes-the-password-of-an-encrypted-apfs-container-b4f2f5326e79">serious security</a></p>
+<p>vulnerabilities and has its share of</p>
+<p><a href="https://pxlnv.com/linklog/broken-media-keys-high-sierra/">irritating bugs</a></p>
+<p>, Snow Leopard &mdash; the go-to example of a refinement-oriented release &mdash; wasn&rsquo;t exactly immune. It shipped with a bug that sometimes</p>
+<p><a href="https://www.cnet.com/news/snow-leopard-wiping-home-directory-after-guest-log-in/">wiped user</a></p>
+<p>data after logging into a guest account, a bug which took</p>
+<p><a href="http://appleinsider.com/articles/09/11/09/apple_releases_mac_os_x_10_6_2_with_guest_account_bug_fix.html">months to fix</a></p>
+<p>; and,</p>
+<p><a href="https://apple.stackexchange.com/questions/299820/font-smoothing-in-high-sierra">like High Sierra</a></p>
+<p>, Snow Leopard experienced a</p>
+<p><a href="https://www.macworld.com/article/1143116/fontproblems_snowleopard.html">text rendering bug</a></p>
+<p>as well. We should hope software gets better over time, of course, but you can look back at every single new version of MacOS and find bugs that categorically should not have shipped. I don&rsquo;t expect the next version of iOS &mdash; or MacOS, for that matter &mdash; to be an exception, but I hope it is.</p>
+</blockquote>
+<p>We are still several months away from WWDC and this is only the beginning or rumors season, but this isn&rsquo;t one rumor to grab your pitchforks over.</p>
+<p>Especially for iPad users, iOS 11 was leaps and bounds ahead of where iOS 10 was with features. Things were upgraded to be more user friendly, we got the Dock that allowed multitasking to be more fluid, and hardware to go with the new version of iOS to boot.</p>
+<p>2017 was a great year to be an iOS user and if 2018 is more of a &ldquo;toc&rdquo; instead of a &ldquo;tick&rdquo; to allow for Apple to make things better and less buggy, so be it.</p>
+
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Snow Leopard for iOS&p[summary]=Ina Fried from Axios posted an article stirring the pot for the iOS community. In part Fried explains that iOS 12 may be more of a refine...&p[url]=http://localhost:4000/2018/01/31/snow-leopard-for-ios/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2018/01/31/snow-leopard-for-ios/&text=Ina Fried from Axios posted an article stirring the pot for the iOS community. In part Fried explains that iOS 12 may be more of a refine...&hashtags=ios 12,ipad," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/ios 12">ios 12</a></li>
+                
+                <li><a href="http://localhost:4000/tag/ipad">ipad</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+
+            </main>
+        </div>
+
+        <script src="http://localhost:4000/assets/js/jquery-1.12.2.min.js"></script>
+<script src="http://localhost:4000/assets/js/backtotop.js"></script>
+<script src="http://localhost:4000/assets/js/lunr.min.js"></script>
+<script src="http://localhost:4000/assets/js/lunr-feed.js"></script>
+<script src="http://localhost:4000/assets/js/jquery.fitvids.js"></script>
+<script src="http://localhost:4000/assets/js/svg4everybody.min.js"></script>
+<script src="http://localhost:4000/assets/js/scripts.js"></script>
+
+
+    </body>
+</html>

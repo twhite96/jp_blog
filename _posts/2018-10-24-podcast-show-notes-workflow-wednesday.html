@@ -1,0 +1,39 @@
+---
+layout: post
+title: Podcast Show Notes - Workflow Wednesday
+date: 2018-10-24 13:53:24.000000000 -04:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Workflow Wednesday
+tags:
+- podcasting
+meta:
+  _publicize_pending: '1'
+  _import_session_id: 5d5edc2180e30
+  _import_original_post_id: '360'
+author: Jeff Perry
+  
+  
+  
+  
+  
+permalink: "/2018/10/24/podcast-show-notes-workflow-wednesday/"
+excerpt: "\n\t\t\t\t\t\t"
+---
+
+<p>One of the biggest things I do when I make podcasts is write show notes. I do this on both my podcasts <a href="http://aslabofglass.com"><em>A Slab of Glass</em></a> and <a href="http://gettingcaughtup.net"><em>Getting Caught Up</em></a>. Writing show notes can be a tedious affair and difficult to search through the backlog of episodes, but with this shortcut it allows me to be able to search and find every single episode&rsquo;s show notes in seconds.</p>
+<p>What this Shortcut does is take a specific formatting I use when writing my show notes and makes those top 3 lines the name of a file, with some text formatting.Format Used for Show Notes in Drafts 5[/caption]</p>
+<p>After I have my show notes written in Markdown format, my format of choice when writing, it is time to make the magic happen. It first gets the line count of the text I have shared to Siri Shortcuts. From there it saves it as a variable for the count.</p>
+<p>&nbsp;</p>
+<p>Once done, the shortcut grabs the first line of text from the input, in this case it is the podcast name. From there, it saves the first line as a variable called &ldquo;Podcast&rdquo;. Now it is on to the next line, the episode number.</p>
+<p>For me I like to write it as "Episode ##" so that it is clear for me to read, but I don't want the word &ldquo;Episode&rdquo; in the name of the file when saving it. So to remove it I use a Find and Replace Text action to find "Episode " and replace it with nothing, effectively deleting everything but the literal episode number.</p>
+<p>Finally, it takes the 3rd line, which is the episode date. I format my dates the way I am most comfortable with (MM-dd-yyyy). However, I am using hyphens as a means to break up the three different areas of information, so to avoid using hyphens in the naming process of the date I find and replace hyphens to make them underscores. Now the formatting of the date is MM_dd_yyyy.</p>
+<p>Now, with all these lines saved as variables, the shortcut takes the original input of the text (all show notes, including the top lines), and sets the name for it to be the three variables I have saved, all with hyphens between them. Which makes it look something like "A Slab of Glass-19-10_19_2018." When equates to A Slab of Glass, Episode 19, released October 19th, 2018. From here I save the text as a .txt document in Dropbox for safe keeping and search-ability if I ever need it.</p>
+<p>Once saved, if you open the .txt file you will see it has everything as it was when I wrote it, just with a name that is now searchable and easy to distinguish among other files when needed.</p>
+<p>You can find the workflow <a href="https://www.icloud.com/shortcuts/bdfae13f087b48e2bffe815060507078">here</a> and try it yourself. If you make some improvements or changes feel free to <a href="http://twitter.com/iamjeffperry">let me know on Twitter</a>.</p>
+<p>This shortcut is just something that shows the power of Siri Shortcuts when it comes to editing text and making it your friend in the world of automation.</p>
+<p>I plan to add more to this later on. Things like saving the file in the podcast&rsquo;s respective show notes folder in Dropbox, and adding the podcast episode title in it as well. For now though, this is something that allows me to be organized and never have to think about where I left those show notes again.</p>

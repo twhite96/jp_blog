@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Why I Switched to the Apple Smart Keyboard | Jeff Perry &mdash; Blogger/Podcaster </title>
+    <meta property="og:title" content="Why I Switched to the Apple Smart Keyboard | Jeff Perry &mdash; Blogger/Podcaster " />
+    <meta name="twitter:title" content="Why I Switched to the Apple Smart Keyboard | Jeff Perry &mdash; Blogger/Podcaster " />
+
+    <meta name="description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.">
+    <meta name="description" property="og:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+    <meta name="twitter:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:site" content="@iamjeffperry" />
+    
+    <meta property="og:url" content="http://localhost:4000/2017/11/21/why-i-switched-to-the-apple-smart-keyboard/" />
+
+    <meta property="og:image" content="" />
+    <meta name="twitter:image" content="" />
+
+    <meta name="author" content="Jeff Perry" />
+
+    <meta name="copyright" content="Copyright by Jeff Perry. All Rights Reserved." />
+
+    <style>
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/mnpfi9pxYH-Go5UiibESIltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 300;
+            src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v15/vPcynSL0qHq_6dX7lKVByfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(https://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 900;
+            src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url(https://fonts.gstatic.com/s/roboto/v15/bmC0pGMXrhphrZJmniIZpY4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+    </style>
+    
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+    <link rel="canonical" href="http://localhost:4000/2017/11/21/why-i-switched-to-the-apple-smart-keyboard/">
+
+    <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+</head>
+
+    <body>
+        <div class="wrapper">
+            <aside class="user-profile fixed" role="complementary">
+    <div class="burger">
+        <input class="trigger hidden" id="toggleBurger" type="checkbox" />
+        <label for="toggleBurger">
+            <span>Navigation</span>
+        </label>
+    </div>
+
+    <div class="compact-header">
+        <a class="avatar" href="http://localhost:4000"><img alt="Avatar" src="/avatar.png" /></a>
+        <div class="my-info">
+            <strong class="my-name">Jeff Perry</strong>
+            <span class="my-job-title">Blogger/Podcaster</span>
+        </div>
+    </div>
+
+    
+        
+        <div class="mainmenu">
+            <a href="http://localhost:4000" >Home</a>
+            
+                
+            
+                
+            
+                
+            
+                
+                    <a href="http://localhost:4000/about/" >About</a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        </div>
+        
+    
+
+    <p class="about-me">I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.</p>
+
+    <ul class="socials">
+        <li><a href="http://twitter.com/iamjeffperry"><svg title="twitter" width="16" height="16" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+
+        
+
+        
+         <li><a href="http://localhost:4000/feed.xml"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#rss-icon"></use></svg></a></li>
+        
+    </ul>
+</aside>
+
+            <main class="the-content" role="main">
+                <div class="search" role="search">
+    <div>
+        <div class="show-results-count">0 Results</div>
+        <div class="search-holder">
+            <input type="text" id="search-input" placeholder="search for..." />
+        </div>
+    </div>
+    <ul id="results-container" class="results-container"></ul>
+</div>
+
+
+                <article class="post single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2017-11-21T05:00:00-05:00" itemprop="datePublished">21 Nov, 2017</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline">Why I Switched to the Apple Smart Keyboard</h2>
+    </header>
+
+    <div class="post-content">
+        <p>Writing on a keyboard is something many people take advantage of when they use their computer or laptop, but iPad users have the burden of shopping around for a keyboard as an accessory.<br />
+The reason this is more of a burden than many think is because no keyboard is perfect. With three different iPads out on sale from Apple today, to call the market divided would be an understatement.</p>
+<p>When I first wrote for this blog I posted a story about how I used the Logitech Slim Combo for my 10.5&rdquo; iPad Pro. I said that the key travel and features like backlighting and media buttons were the reason why I chose it over the Apple Smart Keyboard. I also took some shots at the keys on the Smart Keyboard and the material on it. <strong>I was wrong</strong>. The Logitech Keyboard has since lost its varnish and the Apple Smart Keyboard is growing on me.</p>
+<p>I purchased the Apple Smart Keyboard again earlier this week because I found myself hating having to use the bulky Slim Combo. I also was using my keyboard more on my couch and less on a desk. Using Logitech&rsquo;s keyboard on my lap was like balancing china plates to get that keyboard to work for me outside of a desk setting.</p>
+<p>Finally, the keys never felt right for my hands. This is the most problematic issue for me because if I can&rsquo;t write properly then my brain will just tell me not to write at all. After leaving my iPad after writing a few hundred words to make food or use the bathroom, I noticed my hands needed to have an adjustment period from using the Slim Combo. This was very concerning because I felt like I was in the midst of an RSI issue. If my hands hurt when using a tool specifically made for writing then I need a new tool.</p>
+<p>The Apple Smart Keyboard was my only option because of what I deemed necessary on a keyboard. I wanted something that was attachable to the iPad, portable, and used the smart connectors to power the device. Once I realized the Apple Smart Keyboard was the next plausible option, I took the plunge and tried this keyboard out one last time. I&rsquo;m glad I did.</p>
+<p>Writing on this after spending months with the Slim Combo feels like my hands can breathe and I have never had more relaxed hands when typing for a long time. I was worried about the key travel and if I would be able to write with them, but that has been the easiest part about using this keyboard. The main keys on this device are where you would think they are and the chiclet style keys are a welcome change to the cramped keys Logitech put together.</p>
+<p>The thing that I found to be the most difficult to get used to is that fact this stand only had 3 positions: the traditional keyboard setup, the keyboard folded over for watching videos, and the usual setup where the keyboard is resting on the tri-fold to be used for playing games. Going from pretty much any conceivable angle with he adjustable stand Logitech had to only three options, all with different uses felt constraining.</p>
+<p>I really miss the adjustable hinge on the back of the Slim Combo, it was great for when I wanted to watch a YouTube video or an episode of television on Netflix. I could set it anywhere I wanted and find an angle that worked for me to view it.</p>
+<p>I haven&rsquo;t watched much on my iPad since buying this but the times I did for the purposed of this review it wasn&rsquo;t the perfect viewing angle but I adjusted just fine with it. I often found myself just using it in the keyboard position because of how small the footprint this case provides when compared to the Logitech Slim Combo.</p>
+<p>All in all this keyboard isn&rsquo;t perfect, but no keyboard is. It seems to be the best option for my plethora of prerequisites. The Logitech Slim Combo is still a great option for many, just not for me.</p>
+<p>If you are in the market for a keyboard and find yourself trying to figure out which of these two is best for you I would buy it from a store that offers at lease a 14 day return policy and try each out before you make your final purchase. I did this, but I didn&rsquo;t give the Apple Smart Keyboard enough time as I probably should have. If I had, then I probably wouldn&rsquo;t be in the position I am in now.</p>
+
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Why I Switched to the Apple Smart Keyboard&p[summary]=Writing on a keyboard is something many people take advantage of when they use their computer or laptop, but iPad users have the burden o...&p[url]=http://localhost:4000/2017/11/21/why-i-switched-to-the-apple-smart-keyboard/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2017/11/21/why-i-switched-to-the-apple-smart-keyboard/&text=Writing on a keyboard is something many people take advantage of when they use their computer or laptop, but iPad users have the burden o...&hashtags=ipad,keyboard," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/ipad">ipad</a></li>
+                
+                <li><a href="http://localhost:4000/tag/keyboard">keyboard</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+
+            </main>
+        </div>
+
+        <script src="http://localhost:4000/assets/js/jquery-1.12.2.min.js"></script>
+<script src="http://localhost:4000/assets/js/backtotop.js"></script>
+<script src="http://localhost:4000/assets/js/lunr.min.js"></script>
+<script src="http://localhost:4000/assets/js/lunr-feed.js"></script>
+<script src="http://localhost:4000/assets/js/jquery.fitvids.js"></script>
+<script src="http://localhost:4000/assets/js/svg4everybody.min.js"></script>
+<script src="http://localhost:4000/assets/js/scripts.js"></script>
+
+
+    </body>
+</html>

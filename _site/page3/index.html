@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Jeff Perry &mdash; Blogger/Podcaster </title>
+    <meta property="og:title" content=" Jeff Perry &mdash; Blogger/Podcaster " />
+    <meta name="twitter:title" content=" Jeff Perry &mdash; Blogger/Podcaster " />
+
+    <meta name="description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.">
+    <meta name="description" property="og:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+    <meta name="twitter:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:site" content="@iamjeffperry" />
+    
+    <meta property="og:url" content="http://localhost:4000/page3/" />
+
+    <meta property="og:image" content="" />
+    <meta name="twitter:image" content="" />
+
+    <meta name="author" content="Jeff Perry" />
+
+    <meta name="copyright" content="Copyright by Jeff Perry. All Rights Reserved." />
+
+    <style>
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/mnpfi9pxYH-Go5UiibESIltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 300;
+            src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v15/vPcynSL0qHq_6dX7lKVByfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(https://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 900;
+            src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url(https://fonts.gstatic.com/s/roboto/v15/bmC0pGMXrhphrZJmniIZpY4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+    </style>
+    
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+    <link rel="canonical" href="http://localhost:4000/page3/">
+
+    <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+</head>
+
+    <body>
+        <div class="wrapper">
+            <aside class="user-profile fixed" role="complementary">
+    <div class="burger">
+        <input class="trigger hidden" id="toggleBurger" type="checkbox" />
+        <label for="toggleBurger">
+            <span>Navigation</span>
+        </label>
+    </div>
+
+    <div class="compact-header">
+        <a class="avatar" href="http://localhost:4000"><img alt="Avatar" src="/avatar.png" /></a>
+        <div class="my-info">
+            <strong class="my-name">Jeff Perry</strong>
+            <span class="my-job-title">Blogger/Podcaster</span>
+        </div>
+    </div>
+
+    
+        
+        <div class="mainmenu">
+            <a href="http://localhost:4000" >Home</a>
+            
+                
+            
+                
+            
+                
+            
+                
+                    <a href="http://localhost:4000/about/" >About</a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        </div>
+        
+    
+
+    <p class="about-me">I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.</p>
+
+    <ul class="socials">
+        <li><a href="http://twitter.com/iamjeffperry"><svg title="twitter" width="16" height="16" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+
+        
+
+        
+         <li><a href="http://localhost:4000/feed.xml"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#rss-icon"></use></svg></a></li>
+        
+    </ul>
+</aside>
+
+            <main class="the-content" role="main">
+                <div class="search" role="search">
+    <div>
+        <div class="show-results-count">0 Results</div>
+        <div class="search-holder">
+            <input type="text" id="search-input" placeholder="search for..." />
+        </div>
+    </div>
+    <ul id="results-container" class="results-container"></ul>
+</div>
+
+
+                
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-04-19T09:12:35-04:00" itemprop="datePublished">19 Apr, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/04/19/podcast-a-slab-of-glass-28-what-ios-13-needs/">Podcast - A Slab of Glass 28: What iOS 13 Needs</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p>Chris and I talk about our new purchases before diving into our main topic: what iOS 13 needs. We each had 6, okay 10-12, picks and we go into detail of our picks.</p>
+<p>This episode was recorded literally the day before the 9to5mac leaks were released, so some of our things on our lists have been mentioned on this list but it in no way was a factor in picking the things we think iOS needs.</p>
+<p>I may create a page where you can see both of our picks if people want to documented in writing.</p>
+
+
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Podcast - A Slab of Glass 28: What iOS 13 Needs&p[summary]=Chris and I talk about our new purchases before diving into our main topic: what iOS 13 needs. We each had 6, okay 10-12, picks and we go...&p[url]=http://localhost:4000/2019/04/19/podcast-a-slab-of-glass-28-what-ios-13-needs/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/04/19/podcast-a-slab-of-glass-28-what-ios-13-needs/&text=Chris and I talk about our new purchases before diving into our main topic: what iOS 13 needs. We each had 6, okay 10-12, picks and we go...&hashtags=a slab of glass,podcast," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/a slab of glass">a slab of glass</a></li>
+                
+                <li><a href="http://localhost:4000/tag/podcast">podcast</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-04-18T09:29:27-04:00" itemprop="datePublished">18 Apr, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/04/18/the-escape-key-on-ipad/">The Escape Key on iPad</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p>This is just a quick little tip for iPad users out there. If you are like me and using the Smart Keyboard or any keyboard that doesn't have an Escape key you can press <code>command</code> + <code>.</code> and that will <em>most likely</em> work as a way to escape from any text input you are in. I have found it to work in Google Sheets, Things 3, Safari, and several other apps. Your mileage may vary but for me it seems to work more times than not.</p>
+<p>Give it a shot and let me know where else you find it to work. You can <a href="mailto:jeff@rocketpanda.net">email me</a> or get <a href="https://twitter.com/iamjeffperry">a hold of me on Twitter</a>.</p>
+
+
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=The Escape Key on iPad&p[summary]=This is just a quick little tip for iPad users out there. If you are like me and using the Smart Keyboard or any keyboard that doesn't ha...&p[url]=http://localhost:4000/2019/04/18/the-escape-key-on-ipad/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/04/18/the-escape-key-on-ipad/&text=This is just a quick little tip for iPad users out there. If you are like me and using the Smart Keyboard or any keyboard that doesn't ha...&hashtags=keyboard,tips," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/keyboard">keyboard</a></li>
+                
+                <li><a href="http://localhost:4000/tag/tips">tips</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-04-17T09:30:24-04:00" itemprop="datePublished">17 Apr, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/04/17/my-home-screen/">My iPad Pro Home Screen</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p>Since I got a new 2018 12.9" iPad Pro I thought now would be a good time to share my home screen for the iPad. Without burying the lede here is my home screen.</p>
+<p><img src="/assets/45540-home-screen-ipad-pro-12-2019-.png" alt="" /></p>
+<p>For those wondering, I made the <a href="https://jeffperry449292924.files.wordpress.com/2019/08/ba6b6-show-up-everyday-desktop.png">home screen image</a> myself using <a href="https://itunes.apple.com/us/app/pixelmator/id924695435?mt=8">Pixelmator</a>.</p>
+<p>As you can see there is nothing on the home screen itself, everything lives in the Dock. My reasoning for this is that because the iPad is something that I fluidly move in between apps I rarely actually move to the home screen. There are a handful of apps on the Dock and everything that isn't readily accessible goes into a folder that I have organized where each page of the folder goes from most important apps to least important apps. So for my first page I have things like Google Sheets and Google Docs where a lot of the things I do for both my personal life and podcasts live. I also have apps like 1Password, Tweetbot, WordPress, and Ferrite which are apps I regularly use but aren't something I need immediately accessible.</p>
+<p>The apps that did make it on my Dock are ones that I use every day and oftentimes within Split View. I have them in order of left to right from most used to least used. The reasoning for this is that because of the fluidity of the Recent Apps section of the Dock if I were to have the apps I use most frequently in the middle of the dock it can shift several icons left or right from when I last used it. Which is problematic for when I have a blog post idea or a task I need to throw in Drafts 5 before I forget it.</p>
+<p>Here's a quick synopsis of each of those apps.</p>
+<h2>Drafts</h2>
+<p>Drafts has quickly become my main text editor for pretty much everything in my life. From tasks, lists, blog post ideas, full fledged posts I am working on, and even just something I need to keepsake for a few minutes before I can toss it in the trash. Drafts has always had the tag line of "where text starts" and that is what Drafts has become for me.</p>
+<h2>Fiery Feeds</h2>
+<p>This has been my RSS reader of choice for some time now and continues to be the app I use most when reading stuff. With FeedWrangler as my RSS service of choice I look at the dozens of blogs, sites, news organizations new items all in one place. the sharing features it offers also satisfies my needs with Instapaper integration as well as Pinboard.</p>
+<h2>GoodTask</h2>
+<p>I have been battling finding a task manager that checks every box I want. So instead I decided to pick something that I haven't given a fair shake, which is GoodTask. I will probably be talking a lot more about this later, but for now it is getting the job done. It is also very Shortcuts friendly and has some decent Drafts 5 support thanks to Reminders being the foundation of this app.</p>
+<h2>Instapaper</h2>
+<p>I have been using Instapaper for a while now and it continues to be my favorite read-later service. It has great keyboard shortcuts and allows for folders to organize the various kinds of things I save to read later. Also, the Share Sheet is a treat to use anywhere I want to save an article or even just a link to the article.</p>
+<h2>Fantastical</h2>
+<p>Hands down the best calendar app for iOS, and arguable macOS. The natural language support makes adding tasks and reminders a breeze. I also have always been a fan of its look.</p>
+<h2>AirMail</h2>
+<p>This is the most recent addition to my Dock, thanks to its sharing actions I can send my actionable emails to Reminders which syncs with GoodTask for future me to deal with.</p>
+<h2>Messages</h2>
+<p>This is simply the way I communicate with nearly everyone in my life. There is a reason Messages is the most use app in iOS globally.</p>
+<h2>Safari</h2>
+<p>Safari is the browser I use 90% of the time. The other 10% is for iCab Mobile, which allows me to download files, view websites in desktops mode, and do things that Safari for iOS limits me on. For me iCab is a safety net for web browsing while Safari is my go-to app for anything involving a hyperlink.</p>
+<h2>Shortcuts</h2>
+<p>I almost left this one in the folder, but I have been making more and more Shortcuts lately and having it available in the Dock makes things a lot smoother for when I have an idea for something I need to automate.</p>
+<h2>Files</h2>
+<p>Simply put, I need access to my files and I don't want to spend time looking for the Files app in a folder or bringing it up in Spotlight every time I need it. It isn't perfect but it works for me when I need to save something or grab an item in my Dropbox and/or iCloud Drive.</p>
+<h2>Final Thoughts</h2>
+<p>My home screen may not be anything to write home about, but it is something that sets precedent of what is important for me when I am using the iPad. Hopefully my home screen inspires you to think about how you organize your apps and make any changes you deem necessary to make you happier.</p>
+<p>If you want to share your home screen with me feel free to <a href="mailto:jeff@rocketpanda.net">email me</a> or send me a photo of your home screen <a href="https://twitter.com/iamjeffperry">on Twitter</a>.</p>
+
+
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=My iPad Pro Home Screen&p[summary]=Since I got a new 2018 12.9" iPad Pro I thought now would be a good time to share my home screen for the iPad. Without burying the lede h...&p[url]=http://localhost:4000/2019/04/17/my-home-screen/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/04/17/my-home-screen/&text=Since I got a new 2018 12.9" iPad Pro I thought now would be a good time to share my home screen for the iPad. Without burying the lede h...&hashtags=home screen," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/home screen">home screen</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-04-15T13:26:35-04:00" itemprop="datePublished">15 Apr, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/04/15/screw-being-perfect/">Screw Being Perfect</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p>I recently took <a href="https://thesweetsetup.com/ulysses/?utm_source=hello_bar">a course</a> by <a href="https://shawnblanc.net">Shawn Blanc</a> about <a href="http://ulysses.app">Ulysses</a> and learned <em>a ton</em> about the premium writing application, but one thing that I loved just as much were the extra emails Shawn sent out after I purchased the course.</p>
+<p>My main takeaways from the emails he sent were these:</p>
+<ul>
+<li>Don’t overthink things</li>
+<li>Make the time to write</li>
+<li>Give yourself permission to be crappy</li>
+</ul>
+<p>All of these things are useful for someone like me who writes for fun and as a hobby on Rocket Panda. Honestly its just plain good advice for anyone doing something creative whether it is for a job or a hobby. I frequently look at these pieces of advice Shawn expressed and it makes me think about the one thing that I want to do more of as a blogger: <strong>consistency</strong>.</p>
+<p>These four pieces of advice are perfectly in sync with my main issues in posting more frequently and making writing a daily habit for myself.</p>
+<h2>Don’t Overthink Things</h2>
+<p>One of the biggest reasons I’m not writing and posting consistently is because when I begin writing a post I make sure it is <em>absolutely perfect</em> and I overthink the point of why I am writing on Rocket Panda in the first place.</p>
+<p>I created Rocket Panda because I wanted to share ideas, thoughts, and interesting things with like-minded people. People who love technology, automation, Apple, and other geeky things. I never got into this “blogging scene” to become rich and famous, I did it because I wanted a way to eexpress my love and interests with others.</p>
+<p>There is <a href="https://youtu.be/krK4YJgYPGc">a great video by Sean McCabe</a> that is all about overthinking things and how creative people should stop doing it.</p>
+<p>At first I thought this is something that’s easier said than done. After all, Sean has a successful business and podcast and I feel like I have hit a wall when it comes to growth in readers for Rocket Panda. After some time feeling sorry for myself, I realized that this goes in tandem with posting frequently and showing up every day to make those consistent posts happen. I know that the idea of “if you build it they will come” isn’t something that is always true, but it doesn't hurt to hit deadlines and make posting something you have in a calendar. If I say I will have a post live on a specific day I am more likely to post it rather than hitting publish after weeks of spending meticulous time making sure everything is <em>absolutely perfect</em>.</p>
+<p>So instead of making things “perfect” I plan to make frequency and deadlines be my determining factor of when to publish. If the clock is racing and I don’t feel good about something I’m writing I am more likely to improve it <em>and still</em> hit my deadline in the process.</p>
+<h2>Make the Time to Write</h2>
+<p>When it comes to any craft you want to get better at, you have to make it something you do regularly. If you don’t then you’ll never improve in any significant way. This isn’t anything new for me but it is something I am reminding myself when it comes to writing. Which is why my goal every day is to write 500 crappy words at a minimum.</p>
+<p>If I want to hit that goal of 500 words a day, I need to show up every day to write, and right now it just isn’t happening.</p>
+<p>The thing that helped me with this valley of nothing was <a href="https://youtu.be/GExHiI_bQqc">Merlin Mann’s talk at MacWorld in 2009 about the patterns for creativity</a>. I have this video starting at 18:15 because this is where the nut of what got me started. The only thing you really need to know is that there is a book called <em>Creative Habit</em> by Twyla Tharp and when she is asked to do a project she uses these boxes where she does this thing called “scratching” which is her putting literally anything and everything that brings her inspiration. I recommend watching the whole thing to fully understand things but that is the very brief version of what led to this 5 minute section of the talk.</p>
+<p>http://www.youtube.com/watch?v=GExHiI_bQqc&amp;t=18m15s</p>
+<p>There’s a lot to unpack in this talk, and maybe I will write more about it someday, but this got me thinking about why I haven’t been making the time to write. It was because I didn't want it enough.</p>
+<p>This isn’t me saying you have to go all-in and work 18 hour days to make your dreams come true, but it is me saying that I spent more time trying to find inspiration from writers and bloggers who were at the level I wanted to be at. I was gawking at their work online wishing I was where they were instead of making the stuff I wanted to make. That isn't their fault though, it’s mine. I cared more about the idea of blogging and writing than actually putting in the work and making a commitment to myself to keep working on the things I want to be better at.</p>
+<h2>Give Yourself Permission to be Crappy</h2>
+<p>I am not as strong a writer as I would like to be, but if I allow that distance between where I am and where I want to be affect me then I would never write again. The only way that you can get better at a craft is to keep doing it over and over again and learn from your mistakes.</p>
+<p>I think it’s been made painfully clear that I am a perfectionist and I never allowed myself to just be okay with mediocrity, let alone being crappy. Still, I think if I allow myself to write 500 crappy words a day I will get better faster than if I wrote 1000 good words every few weeks.</p>
+<p>Being perfect is overrated in my opinion. I say that knowing full well that has been what I’ve been striving for the last year writing on my blog. Honestly it’s just exhausting reading over your work a dozen times and making small and unnecessary edits. That said, there is a difference between being perfect and having something presentable.</p>
+<p>This isn’t me saying that I will be drafting something up without proofreading and multiple edits. I still plan to do the work of combing through for errors and mispellings. The part I <em>won’t</em> be doing is going through what I have written actively looking for something to change just to change it. I want to <a href="https://jeffperry.blog/2019/04/keeping-it-simple/">keep things simple</a>.</p>
+<h2>Changes for Rocket Panda</h2>
+<p>All of this has come to a head for me and there are some changes effective today that will be taking place at Rocket Panda.</p>
+<h3>1. I Will Write at Least 30 Minutes Every Day</h3>
+<p>Now, 30 minutes doesn’t sound like a lot, but with that low bar of entry I have no excuse for myself to make the time to write every single day for 30 minutes. I have found if I spend that amount of time writing I am able to shake the cobwebs off and really start diving into more focused writing.</p>
+<h3>2. I Will Post <em>at Least</em> Every Monday, Wednesday, and Friday</h3>
+<p>I will make a total of 3 posts a week on Rocket Panda. I may post more, but I am committing to 3. They might just be links to things I find interesting or longer articles that I spend lots of time writing. Either way I have set the precedent that I am posting on specific days and that this is my new posting schedule.</p>
+<p>If I’m being honest, this is a safe space after all, I wanted to commit to more than 3 posts a week. I wanted to go daily but I know that the one day I miss posting I will kick myself for it and lose all sense of control. I have been there before and I stopped writing for weeks because I was too busy beating myself up for not meeting the exceedingly high bar I set myself. I want to avoid that this time so I have lowered the bar for myself and will start out with 3 posts a week and see where things take me afterwards.</p>
+<p>The first post of the week starts today with this one. The next scheduled post will be Wednesday.</p>
+<h2>One More Thing</h2>
+<p>One of the biggest things that I want to stress and put out there for both you and me is that it is okay to not think that what you are putting out there is perfect. Perfection is what stifles my creativity and my writing process every single time I let it take precedent. I can’t move on to the next post until I make it published, and I won’t publish unless it is perfect. <strong>Screw being perfect</strong>, if I look back on my work and think I could have said it better that only means that I am improving on my craft.</p>
+<p>So with these new promises I hope to achieve the goal I have wanted for a while and post consistently and create without overthinking things. If I can do that this year I would consider it a success.</p>
+
+
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Screw Being Perfect&p[summary]=I recently took a course by Shawn Blanc about Ulysses and learned a ton about the premium writing application, but one thing that I loved...&p[url]=http://localhost:4000/2019/04/15/screw-being-perfect/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/04/15/screw-being-perfect/&text=I recently took a course by Shawn Blanc about Ulysses and learned a ton about the premium writing application, but one thing that I loved...&hashtags=blogging," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/blogging">blogging</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-04-10T05:08:05-04:00" itemprop="datePublished">10 Apr, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/04/10/getting-caught-up-24-dealing-with-burnout/">Getting Caught Up 24: Dealing With Burnout</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p>I am really excited about this episode. It is full of feelings on my recent hiatus, how I dealt with it, and what changes I have made for Rocket Panda. Mike and I also get into the weeds about independent blogs/podcasts which is something I love to talk about, but as Mike explains can be sort of dangerous. Finally, I show Mike some of my favorite resources to learn and get acquainted with Siri Shortcuts.</p>
+
+
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Getting Caught Up 24: Dealing With Burnout&p[summary]=I am really excited about this episode. It is full of feelings on my recent hiatus, how I dealt with it, and what changes I have made for...&p[url]=http://localhost:4000/2019/04/10/getting-caught-up-24-dealing-with-burnout/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/04/10/getting-caught-up-24-dealing-with-burnout/&text=I am really excited about this episode. It is full of feelings on my recent hiatus, how I dealt with it, and what changes I have made for...&hashtags=getting caught up,podcast," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/getting caught up">getting caught up</a></li>
+                
+                <li><a href="http://localhost:4000/tag/podcast">podcast</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-04-06T13:25:56-04:00" itemprop="datePublished">6 Apr, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/04/06/now-you-know-how-it-feels/">Now You Know How It Feels</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p><a href="https://blog.iconfactory.com/2019/04/now-you-know-how-it-feels/">Craig Hockenberry writing for Iconfactory</a>:</p>
+<blockquote><p>Are you one of the many people affected by a MacBook keyboard failure?</p>
+<p>If so, you now have the slightest hint of what it’s like to live with a disability. You can’t use a product like everyone else and it’s preventing you from achieving your goals.</p>
+<p>Maybe you say “screw it” and <a href="https://twitter.com/JoannaStern/status/1110916811237871616">write an article for the Wall Street Journal</a> without those keys. Or maybe you hang on desperately to an old laptop (these words are coming from a MacBook purchased in 2013.) An external keyboard might be a temporary workaround.</p>
+<p>But there is a clear distinction here: you have a course of remedy. You can take the laptop in for service or choose a different model. And while a failing keyboard is definitely a problem, it pales in comparison to someone’s permanent disability.</p></blockquote>
+<p>Craig makes a great point here on this matter and I think that it is something many of us don't think about regularly, including myself. Apple has done great work for accessibility for those with disabilities and I hope they continue to do so. That said, the burden also falls on the developers, and I hope they are paying attention.</p>
+
+
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Now You Know How It Feels&p[summary]=Craig Hockenberry writing for Iconfactory:
+Are you one of the many people affected by a MacBook keyboard failure?
+If so, you now have the...&p[url]=http://localhost:4000/2019/04/06/now-you-know-how-it-feels/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/04/06/now-you-know-how-it-feels/&text=Craig Hockenberry writing for Iconfactory:
+Are you one of the many people affected by a MacBook keyboard failure?
+If so, you now have the...&hashtags=Accessibility,keyboard,mac," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/Accessibility">Accessibility</a></li>
+                
+                <li><a href="http://localhost:4000/tag/keyboard">keyboard</a></li>
+                
+                <li><a href="http://localhost:4000/tag/mac">mac</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-04-05T18:57:43-04:00" itemprop="datePublished">5 Apr, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/04/05/asog-27-drafts-5-bootcamp-with-tim-nahumck/">ASoG 27: Drafts 5 Bootcamp with Tim Nahumck</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p><a href="http://twitter.com/nahumck">Tim Nahumck</a> was kind enough to be a guest on this show to talk all about <a href="https://getdrafts.com">Drafts</a> 5. It had several occasions where my mind and Christopher's mind was blown on what we can do with the text editor.</p>
+<p>Hopefully it can help you also learn some things with Drafts. If you have any questions or ideas feel free to <a href="https://jeffperry.blog/contact">contact me</a> or <a href="http://twitter.com/iamjeffperry">mention me on Twitter</a>.</p>
+<p><a href="https://aslabofglass.simplecast.com/episodes/27-pVQlcCsy">Listen to the episode here</a>.</p>
+
+
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=ASoG 27: Drafts 5 Bootcamp with Tim Nahumck&p[summary]=Tim Nahumck was kind enough to be a guest on this show to talk all about Drafts 5. It had several occasions where my mind and Christopher...&p[url]=http://localhost:4000/2019/04/05/asog-27-drafts-5-bootcamp-with-tim-nahumck/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/04/05/asog-27-drafts-5-bootcamp-with-tim-nahumck/&text=Tim Nahumck was kind enough to be a guest on this show to talk all about Drafts 5. It had several occasions where my mind and Christopher...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-04-04T19:33:54-04:00" itemprop="datePublished">4 Apr, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/04/04/keeping-it-simple/">Keeping it Simple</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p>This week for me has been all too familiar, meaning I moved my site from micro.blog to Wordpress <em>again</em>.</p>
+<p>The reasoning for this doesn’t really even matter anymore because I have done nothing for the past several months but screw around with where my site is hosted instead of doing what matters <strong>writing</strong>. After hours of editing my new WordPress website, talking with support, and waiting for DNS changes to propagate I have finally managed to have Rocket Panda back up and running.</p>
+<p>I have mentioned it in the past, but I think one of the reasons I do this is because I treat my blog like a Lego collection instead of a platform. I try to make sure every block is perfectly put together instead of making sure that what I’m building is even worthwhile.</p>
+<p>I also feel like it is a form of procrastination. I would ask myself questions like, “How can I make time for writing on my site? I have so much I need to do to make Rocket Panda look better.”</p>
+<p><strong>Today that changes.</strong></p>
+<p>As of today I have made a promise to myself to stick it out on WordPress and use a seriously simple theme called <a href="http://mtomas.com/1/">Tiny Framework</a>. It is a simple yet effective theme that meets my simple blogging needs. It also allows for fast loading and processing. You add that to <a href="https://www.easywp.com/">EasyWP</a>, my hosting platform, and you have yourself a cheap and fast website that doesn’t need anything else.</p>
+<p>I have made the commitment to myself, and now with you all publicly, to not make any more changes to the hosting platform, theme, or aesthetics for the rest of 2019. The only exemption from this is if something is catastrophic to the website and requires me to make changes to it in order for it to be fully functional. Outside of that what you see is what you get. What you see may not be deserving of any design awards, but you can at least read what I have to say easily and not have any issues loading the site.</p>
+<p>My reasoning for this commitment, and really a lot of things I get hung up about, is to stop worrying about the granular details and just keep things simple. I also needed to take stock in what was important for me on Rocket Panda, and for me it is the content. I would rather have a website that looks like it was built with a default template on Blogger in 2004 with tons of posts than have the most beautiful website with no content to show for it. So I am choosing to keep this less-then-beautiful website as-is and focus on what I want to say on it instead.</p>
+<p>With this off my chest and the burden of making my website “look perfect” gone I can finally get back to what I made Rocket Panda for in the first place: to share my thoughts, opinions, and anecdotes about the things I care about.</p>
+
+
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Keeping it Simple&p[summary]=This week for me has been all too familiar, meaning I moved my site from micro.blog to Wordpress again.
+The reasoning for this doesn’t re...&p[url]=http://localhost:4000/2019/04/04/keeping-it-simple/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/04/04/keeping-it-simple/&text=This week for me has been all too familiar, meaning I moved my site from micro.blog to Wordpress again.
+The reasoning for this doesn’t re...&hashtags=update," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/update">update</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-03-30T15:00:39-04:00" itemprop="datePublished">30 Mar, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/03/30/text-case-guides-chris-hannah/">Text Case Guides – Chris Hannah</a></h2>
+    </header>
+
+    <div class="post-content">
+        						
+
+        
+            <p><a href="http://localhost:4000/2019/03/30/text-case-guides-chris-hannah/" role="button">Read More</a></p>
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Text Case Guides – Chris Hannah&p[summary]=						&p[url]=http://localhost:4000/2019/03/30/text-case-guides-chris-hannah/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/03/30/text-case-guides-chris-hannah/&text=						&hashtags=ios,Text Case," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/ios">ios</a></li>
+                
+                <li><a href="http://localhost:4000/tag/Text Case">Text Case</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-03-29T20:51:59-04:00" itemprop="datePublished">29 Mar, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/03/29/apple-cancels-airpower-product-citing-inability-to-meet-its-high-standards-for-hardware-techcrunch/">Goodbye AirPower</a></h2>
+    </header>
+
+    <div class="post-content">
+        
+						
+
+        
+            <p><a href="http://localhost:4000/2019/03/29/apple-cancels-airpower-product-citing-inability-to-meet-its-high-standards-for-hardware-techcrunch/" role="button">Read More</a></p>
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Goodbye AirPower&p[summary]=
+						&p[url]=http://localhost:4000/2019/03/29/apple-cancels-airpower-product-citing-inability-to-meet-its-high-standards-for-hardware-techcrunch/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/03/29/apple-cancels-airpower-product-citing-inability-to-meet-its-high-standards-for-hardware-techcrunch/&text=
+						&hashtags=airpower,Apple," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/airpower">airpower</a></li>
+                
+                <li><a href="http://localhost:4000/tag/Apple">Apple</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+
+
+
+<div class="pagination" role="navigation" aria-label="pagination">
+    
+        <a href="/page2/" class="previous">&larr; Previous</a>
+    
+
+    <span class="page_number">Page 3 of 12</span>
+
+    
+        <a href="/page4/" class="next">Next &rarr;</a>
+    
+</div>
+
+            </main>
+        </div>
+
+        <script src="http://localhost:4000/assets/js/jquery-1.12.2.min.js"></script>
+<script src="http://localhost:4000/assets/js/backtotop.js"></script>
+<script src="http://localhost:4000/assets/js/lunr.min.js"></script>
+<script src="http://localhost:4000/assets/js/lunr-feed.js"></script>
+<script src="http://localhost:4000/assets/js/jquery.fitvids.js"></script>
+<script src="http://localhost:4000/assets/js/svg4everybody.min.js"></script>
+<script src="http://localhost:4000/assets/js/scripts.js"></script>
+
+
+    </body>
+</html>

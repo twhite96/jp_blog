@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Minimal iPad: 2 Weeks Later | Jeff Perry &mdash; Blogger/Podcaster </title>
+    <meta property="og:title" content="Minimal iPad: 2 Weeks Later | Jeff Perry &mdash; Blogger/Podcaster " />
+    <meta name="twitter:title" content="Minimal iPad: 2 Weeks Later | Jeff Perry &mdash; Blogger/Podcaster " />
+
+    <meta name="description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.">
+    <meta name="description" property="og:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+    <meta name="twitter:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:site" content="@iamjeffperry" />
+    
+    <meta property="og:url" content="http://localhost:4000/2018/01/22/minimal-ipad-2-weeks-later/" />
+
+    <meta property="og:image" content="" />
+    <meta name="twitter:image" content="" />
+
+    <meta name="author" content="Jeff Perry" />
+
+    <meta name="copyright" content="Copyright by Jeff Perry. All Rights Reserved." />
+
+    <style>
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/mnpfi9pxYH-Go5UiibESIltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 300;
+            src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v15/vPcynSL0qHq_6dX7lKVByfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(https://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 900;
+            src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url(https://fonts.gstatic.com/s/roboto/v15/bmC0pGMXrhphrZJmniIZpY4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+    </style>
+    
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+    <link rel="canonical" href="http://localhost:4000/2018/01/22/minimal-ipad-2-weeks-later/">
+
+    <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+</head>
+
+    <body>
+        <div class="wrapper">
+            <aside class="user-profile fixed" role="complementary">
+    <div class="burger">
+        <input class="trigger hidden" id="toggleBurger" type="checkbox" />
+        <label for="toggleBurger">
+            <span>Navigation</span>
+        </label>
+    </div>
+
+    <div class="compact-header">
+        <a class="avatar" href="http://localhost:4000"><img alt="Avatar" src="/avatar.png" /></a>
+        <div class="my-info">
+            <strong class="my-name">Jeff Perry</strong>
+            <span class="my-job-title">Blogger/Podcaster</span>
+        </div>
+    </div>
+
+    
+        
+        <div class="mainmenu">
+            <a href="http://localhost:4000" >Home</a>
+            
+                
+            
+                
+            
+                
+            
+                
+                    <a href="http://localhost:4000/about/" >About</a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        </div>
+        
+    
+
+    <p class="about-me">I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.</p>
+
+    <ul class="socials">
+        <li><a href="http://twitter.com/iamjeffperry"><svg title="twitter" width="16" height="16" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+
+        
+
+        
+         <li><a href="http://localhost:4000/feed.xml"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#rss-icon"></use></svg></a></li>
+        
+    </ul>
+</aside>
+
+            <main class="the-content" role="main">
+                <div class="search" role="search">
+    <div>
+        <div class="show-results-count">0 Results</div>
+        <div class="search-holder">
+            <input type="text" id="search-input" placeholder="search for..." />
+        </div>
+    </div>
+    <ul id="results-container" class="results-container"></ul>
+</div>
+
+
+                <article class="post single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2018-01-22T10:00:46-05:00" itemprop="datePublished">22 Jan, 2018</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline">Minimal iPad: 2 Weeks Later</h2>
+    </header>
+
+    <div class="post-content">
+        <p>When I started this minimalism challenge I said that I was overwhelmed, and that was one of the main reasons I decided to make a change. After 2 weeks I can say that my overwhelm has subsided some, but not all.</p>
+<p id="yui_3_17_2_1_1525151795126_407858">I was expecting this to be like lifting all the weight I had on my shoulders off in one fell swoop but that was not the case. I think i was a little naive with that idea, of course there isn&rsquo;t an easy way to reduce stress in your life. If there was, everyone would be doing it!</p>
+<p id="yui_3_17_2_1_1525151795126_407861">After some time in this challenge I noticed a few patterns that I want to share with you.</p>
+<h2 id="yui_3_17_2_1_1525151795126_407864">My iPhone seems to collect more apps than my iPad</h2>
+<p id="yui_3_17_2_1_1525151795126_407867">Everyone reading this probably isn&rsquo;t surprised by this statement, I wasn&rsquo;t surprised either. It is obvious that the device I use the most would have a larger net to cast when fishing for apps. Plus, my iPhone is more of a technological Swiss Army Knife while my iPad is primarily for writing, editing, and other administration work for Tablet Habit and <a href="http://gettingcaughtup.net/"><em>Getting Caught Up</em></a>. I use the two devices differently and my phone is more convenient to track when my packages are going to arrive with <a href="https://jeff-perry-8ehr.squarespace.com/config/pages/5a83d71ec533ad7938ad15cd#">Deliveries</a> and handling my music and podcasts. To be honest, there really isn&rsquo;t much overlap between my iPhone and iPad. They seem to be on their own islands.</p>
+<p id="yui_3_17_2_1_1525151795126_407877">In total, I would guess that I have downloaded twice as many apps in the past two weeks than my iPad. I wish I was more cognizant of keeping track of what apps I downloaded to which device, that way I could give you the nitty-gritty statistics. Sadly, that isn&rsquo;t the case.</p>
+<h2 id="yui_3_17_2_1_1525151795126_407880">Safari Still Distracts Me</h2>
+<p id="yui_3_17_2_1_1525151795126_407883">Another big reason I decided to removed <em>everything</em> from my devices was to have less distractions and allow myself to focus more. One of my biggest distractions is YouTube. I consume YouTube more than Netflix, Hulu, and Cable combined. YouTube is my sanctuary of video content and has been for years. However, I noticed several months ago that it began to be a place I went to when I was procrastinating from writing or hammering out a big project for one of my areas (Tablet Habit, Getting Caught Up, or freelance podcast editing). Something needed to change, so I deleted that app off my devices entirely.</p>
+<p id="yui_3_17_2_1_1525151795126_407889">My plan was that if I only watched YouTube within Safari I would be adding those extra steps to get to it that I would have time to rethink my choice and instead go back to working on something more productive, I was wrong. I almost immediately saved YouTube as a Favorite in Safari so it was just a tap away every time I opened the app. It was just there, staring me in the face begging for me to press it. Much like the sailors in the poem <a href="https://itunes.apple.com/us/book/the-odyssey/id395540967?mt=11&amp;at=1000lHAf"><em>The Odyssey</em></a> by Homer I was being lured by the Sirens towards shipwreck, or in this case opened a browser.</p>
+<h2 id="yui_3_17_2_1_1525151795126_407896">I haven&rsquo;t been noticing a huge difference in my output</h2>
+<p id="yui_3_17_2_1_1525151795126_407899">Finally, I thought that this experiment would relieve friction to allow me to produce more content and have less decisions to make. The complete opposite happened in this department. I did find myself with less friction from my devices thank to no apps to immediately shut my brain off, but I was still not producing more content. I was finding myself contemplating and battling with myself on decisions on where to go next. It got a bit existential for a bit, but the main bread and butter of what was bothering me was that even when I didn&rsquo;t have any excuses to write more, I still found myself making excuses.</p>
+<p id="yui_3_17_2_1_1525151795126_407902">While this was all going on I took to Twitter to try and get my mind off things and that was when I saw this.</p>
+<p id="yui_3_17_2_1_1525151795126_407905">[twitter.com/BRIANMBEN...](https://twitter.com/BRIANMBENDIS/status/950123894022619136)</p>
+<p id="yui_3_17_2_1_1525151795126_407908">This is a tweet by the famous comic book writer Brian Michael Bendis. If you don&rsquo;t know who he is, that&rsquo;s fine (I will say if you want to get more into comics listen to the podcast <a href="http://ircbpodcast.com/">I Read Comic Books</a>). Just know he is an accomplished writer with decades of work and several awards to prove it. The message he says here saying that writing never gets any easier helped me realize that no matter how focused I am or how many apps I <em>don&rsquo;t</em> have on my devices it is entirely up to <strong>me</strong> to make the words come on to a page. Not the app, not the writing gods, 100% unequivocally me. That is refreshing, incredibly daunting, but also refreshing. The mountains I plan to climb are tall and the terrain is less than ideal but I need to make the first step towards it, otherwise what&rsquo;s the point?</p>
+<h2 id="yui_3_17_2_1_1525151795126_407920">The Light at the End of the Tunnel</h2>
+<p id="yui_3_17_2_1_1525151795126_407923">I know I have unpacked a lot of things that didn&rsquo;t work or even just some personal things that might not necessarily be your experience, but even with these discoveries I think this is working in many ways. I will go into those more once I finish out the month but until then I will say that this looks like it was absolutely worth doing and it allows me to learn more about myself than before, which wasn&rsquo;t necessarily my goal but it is something that can help me long-term.</p>
+<h2 id="yui_3_17_2_1_1525151795126_407926">What&rsquo;s next?</h2>
+<p id="yui_3_17_2_1_1525151795126_407929">At the end of the month I will have more to say about what worked and my overall thoughts on this challenge as well. I have noticed a lot in the last couple of weeks but I still there think there is more to uncover about myself and what I use my devices for. I plan to see this through the month of January at the very least and then completely assess where I stand on this. Until then though I do want to change one thing: being more intentional with my writing and making time to do it <em>every single day</em>.</p>
+
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Minimal iPad: 2 Weeks Later&p[summary]=When I started this minimalism challenge I said that I was overwhelmed, and that was one of the main reasons I decided to make a change. ...&p[url]=http://localhost:4000/2018/01/22/minimal-ipad-2-weeks-later/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2018/01/22/minimal-ipad-2-weeks-later/&text=When I started this minimalism challenge I said that I was overwhelmed, and that was one of the main reasons I decided to make a change. ...&hashtags=ipad,minimalism," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/ipad">ipad</a></li>
+                
+                <li><a href="http://localhost:4000/tag/minimalism">minimalism</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+
+            </main>
+        </div>
+
+        <script src="http://localhost:4000/assets/js/jquery-1.12.2.min.js"></script>
+<script src="http://localhost:4000/assets/js/backtotop.js"></script>
+<script src="http://localhost:4000/assets/js/lunr.min.js"></script>
+<script src="http://localhost:4000/assets/js/lunr-feed.js"></script>
+<script src="http://localhost:4000/assets/js/jquery.fitvids.js"></script>
+<script src="http://localhost:4000/assets/js/svg4everybody.min.js"></script>
+<script src="http://localhost:4000/assets/js/scripts.js"></script>
+
+
+    </body>
+</html>

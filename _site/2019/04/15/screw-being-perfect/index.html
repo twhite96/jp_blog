@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Screw Being Perfect | Jeff Perry &mdash; Blogger/Podcaster </title>
+    <meta property="og:title" content="Screw Being Perfect | Jeff Perry &mdash; Blogger/Podcaster " />
+    <meta name="twitter:title" content="Screw Being Perfect | Jeff Perry &mdash; Blogger/Podcaster " />
+
+    <meta name="description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.">
+    <meta name="description" property="og:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+    <meta name="twitter:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:site" content="@iamjeffperry" />
+    
+    <meta property="og:url" content="http://localhost:4000/2019/04/15/screw-being-perfect/" />
+
+    <meta property="og:image" content="" />
+    <meta name="twitter:image" content="" />
+
+    <meta name="author" content="Jeff Perry" />
+
+    <meta name="copyright" content="Copyright by Jeff Perry. All Rights Reserved." />
+
+    <style>
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/mnpfi9pxYH-Go5UiibESIltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 300;
+            src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v15/vPcynSL0qHq_6dX7lKVByfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(https://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 900;
+            src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url(https://fonts.gstatic.com/s/roboto/v15/bmC0pGMXrhphrZJmniIZpY4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+    </style>
+    
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+    <link rel="canonical" href="http://localhost:4000/2019/04/15/screw-being-perfect/">
+
+    <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+</head>
+
+    <body>
+        <div class="wrapper">
+            <aside class="user-profile fixed" role="complementary">
+    <div class="burger">
+        <input class="trigger hidden" id="toggleBurger" type="checkbox" />
+        <label for="toggleBurger">
+            <span>Navigation</span>
+        </label>
+    </div>
+
+    <div class="compact-header">
+        <a class="avatar" href="http://localhost:4000"><img alt="Avatar" src="/avatar.png" /></a>
+        <div class="my-info">
+            <strong class="my-name">Jeff Perry</strong>
+            <span class="my-job-title">Blogger/Podcaster</span>
+        </div>
+    </div>
+
+    
+        
+        <div class="mainmenu">
+            <a href="http://localhost:4000" >Home</a>
+            
+                
+            
+                
+            
+                
+            
+                
+                    <a href="http://localhost:4000/about/" >About</a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        </div>
+        
+    
+
+    <p class="about-me">I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.</p>
+
+    <ul class="socials">
+        <li><a href="http://twitter.com/iamjeffperry"><svg title="twitter" width="16" height="16" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+
+        
+
+        
+         <li><a href="http://localhost:4000/feed.xml"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#rss-icon"></use></svg></a></li>
+        
+    </ul>
+</aside>
+
+            <main class="the-content" role="main">
+                <div class="search" role="search">
+    <div>
+        <div class="show-results-count">0 Results</div>
+        <div class="search-holder">
+            <input type="text" id="search-input" placeholder="search for..." />
+        </div>
+    </div>
+    <ul id="results-container" class="results-container"></ul>
+</div>
+
+
+                <article class="post single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-04-15T13:26:35-04:00" itemprop="datePublished">15 Apr, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline">Screw Being Perfect</h2>
+    </header>
+
+    <div class="post-content">
+        <p>I recently took <a href="https://thesweetsetup.com/ulysses/?utm_source=hello_bar">a course</a> by <a href="https://shawnblanc.net">Shawn Blanc</a> about <a href="http://ulysses.app">Ulysses</a> and learned <em>a ton</em> about the premium writing application, but one thing that I loved just as much were the extra emails Shawn sent out after I purchased the course.</p>
+<p>My main takeaways from the emails he sent were these:</p>
+<ul>
+<li>Don’t overthink things</li>
+<li>Make the time to write</li>
+<li>Give yourself permission to be crappy</li>
+</ul>
+<p>All of these things are useful for someone like me who writes for fun and as a hobby on Rocket Panda. Honestly its just plain good advice for anyone doing something creative whether it is for a job or a hobby. I frequently look at these pieces of advice Shawn expressed and it makes me think about the one thing that I want to do more of as a blogger: <strong>consistency</strong>.</p>
+<p>These four pieces of advice are perfectly in sync with my main issues in posting more frequently and making writing a daily habit for myself.</p>
+<h2>Don’t Overthink Things</h2>
+<p>One of the biggest reasons I’m not writing and posting consistently is because when I begin writing a post I make sure it is <em>absolutely perfect</em> and I overthink the point of why I am writing on Rocket Panda in the first place.</p>
+<p>I created Rocket Panda because I wanted to share ideas, thoughts, and interesting things with like-minded people. People who love technology, automation, Apple, and other geeky things. I never got into this “blogging scene” to become rich and famous, I did it because I wanted a way to eexpress my love and interests with others.</p>
+<p>There is <a href="https://youtu.be/krK4YJgYPGc">a great video by Sean McCabe</a> that is all about overthinking things and how creative people should stop doing it.</p>
+<p>At first I thought this is something that’s easier said than done. After all, Sean has a successful business and podcast and I feel like I have hit a wall when it comes to growth in readers for Rocket Panda. After some time feeling sorry for myself, I realized that this goes in tandem with posting frequently and showing up every day to make those consistent posts happen. I know that the idea of “if you build it they will come” isn’t something that is always true, but it doesn't hurt to hit deadlines and make posting something you have in a calendar. If I say I will have a post live on a specific day I am more likely to post it rather than hitting publish after weeks of spending meticulous time making sure everything is <em>absolutely perfect</em>.</p>
+<p>So instead of making things “perfect” I plan to make frequency and deadlines be my determining factor of when to publish. If the clock is racing and I don’t feel good about something I’m writing I am more likely to improve it <em>and still</em> hit my deadline in the process.</p>
+<h2>Make the Time to Write</h2>
+<p>When it comes to any craft you want to get better at, you have to make it something you do regularly. If you don’t then you’ll never improve in any significant way. This isn’t anything new for me but it is something I am reminding myself when it comes to writing. Which is why my goal every day is to write 500 crappy words at a minimum.</p>
+<p>If I want to hit that goal of 500 words a day, I need to show up every day to write, and right now it just isn’t happening.</p>
+<p>The thing that helped me with this valley of nothing was <a href="https://youtu.be/GExHiI_bQqc">Merlin Mann’s talk at MacWorld in 2009 about the patterns for creativity</a>. I have this video starting at 18:15 because this is where the nut of what got me started. The only thing you really need to know is that there is a book called <em>Creative Habit</em> by Twyla Tharp and when she is asked to do a project she uses these boxes where she does this thing called “scratching” which is her putting literally anything and everything that brings her inspiration. I recommend watching the whole thing to fully understand things but that is the very brief version of what led to this 5 minute section of the talk.</p>
+<p>http://www.youtube.com/watch?v=GExHiI_bQqc&amp;t=18m15s</p>
+<p>There’s a lot to unpack in this talk, and maybe I will write more about it someday, but this got me thinking about why I haven’t been making the time to write. It was because I didn't want it enough.</p>
+<p>This isn’t me saying you have to go all-in and work 18 hour days to make your dreams come true, but it is me saying that I spent more time trying to find inspiration from writers and bloggers who were at the level I wanted to be at. I was gawking at their work online wishing I was where they were instead of making the stuff I wanted to make. That isn't their fault though, it’s mine. I cared more about the idea of blogging and writing than actually putting in the work and making a commitment to myself to keep working on the things I want to be better at.</p>
+<h2>Give Yourself Permission to be Crappy</h2>
+<p>I am not as strong a writer as I would like to be, but if I allow that distance between where I am and where I want to be affect me then I would never write again. The only way that you can get better at a craft is to keep doing it over and over again and learn from your mistakes.</p>
+<p>I think it’s been made painfully clear that I am a perfectionist and I never allowed myself to just be okay with mediocrity, let alone being crappy. Still, I think if I allow myself to write 500 crappy words a day I will get better faster than if I wrote 1000 good words every few weeks.</p>
+<p>Being perfect is overrated in my opinion. I say that knowing full well that has been what I’ve been striving for the last year writing on my blog. Honestly it’s just exhausting reading over your work a dozen times and making small and unnecessary edits. That said, there is a difference between being perfect and having something presentable.</p>
+<p>This isn’t me saying that I will be drafting something up without proofreading and multiple edits. I still plan to do the work of combing through for errors and mispellings. The part I <em>won’t</em> be doing is going through what I have written actively looking for something to change just to change it. I want to <a href="https://jeffperry.blog/2019/04/keeping-it-simple/">keep things simple</a>.</p>
+<h2>Changes for Rocket Panda</h2>
+<p>All of this has come to a head for me and there are some changes effective today that will be taking place at Rocket Panda.</p>
+<h3>1. I Will Write at Least 30 Minutes Every Day</h3>
+<p>Now, 30 minutes doesn’t sound like a lot, but with that low bar of entry I have no excuse for myself to make the time to write every single day for 30 minutes. I have found if I spend that amount of time writing I am able to shake the cobwebs off and really start diving into more focused writing.</p>
+<h3>2. I Will Post <em>at Least</em> Every Monday, Wednesday, and Friday</h3>
+<p>I will make a total of 3 posts a week on Rocket Panda. I may post more, but I am committing to 3. They might just be links to things I find interesting or longer articles that I spend lots of time writing. Either way I have set the precedent that I am posting on specific days and that this is my new posting schedule.</p>
+<p>If I’m being honest, this is a safe space after all, I wanted to commit to more than 3 posts a week. I wanted to go daily but I know that the one day I miss posting I will kick myself for it and lose all sense of control. I have been there before and I stopped writing for weeks because I was too busy beating myself up for not meeting the exceedingly high bar I set myself. I want to avoid that this time so I have lowered the bar for myself and will start out with 3 posts a week and see where things take me afterwards.</p>
+<p>The first post of the week starts today with this one. The next scheduled post will be Wednesday.</p>
+<h2>One More Thing</h2>
+<p>One of the biggest things that I want to stress and put out there for both you and me is that it is okay to not think that what you are putting out there is perfect. Perfection is what stifles my creativity and my writing process every single time I let it take precedent. I can’t move on to the next post until I make it published, and I won’t publish unless it is perfect. <strong>Screw being perfect</strong>, if I look back on my work and think I could have said it better that only means that I am improving on my craft.</p>
+<p>So with these new promises I hope to achieve the goal I have wanted for a while and post consistently and create without overthinking things. If I can do that this year I would consider it a success.</p>
+
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Screw Being Perfect&p[summary]=I recently took a course by Shawn Blanc about Ulysses and learned a ton about the premium writing application, but one thing that I loved...&p[url]=http://localhost:4000/2019/04/15/screw-being-perfect/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/04/15/screw-being-perfect/&text=I recently took a course by Shawn Blanc about Ulysses and learned a ton about the premium writing application, but one thing that I loved...&hashtags=blogging," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/blogging">blogging</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+
+            </main>
+        </div>
+
+        <script src="http://localhost:4000/assets/js/jquery-1.12.2.min.js"></script>
+<script src="http://localhost:4000/assets/js/backtotop.js"></script>
+<script src="http://localhost:4000/assets/js/lunr.min.js"></script>
+<script src="http://localhost:4000/assets/js/lunr-feed.js"></script>
+<script src="http://localhost:4000/assets/js/jquery.fitvids.js"></script>
+<script src="http://localhost:4000/assets/js/svg4everybody.min.js"></script>
+<script src="http://localhost:4000/assets/js/scripts.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Using Bear as an Apple Notes Replacement | Jeff Perry &mdash; Blogger/Podcaster </title>
+    <meta property="og:title" content="Using Bear as an Apple Notes Replacement | Jeff Perry &mdash; Blogger/Podcaster " />
+    <meta name="twitter:title" content="Using Bear as an Apple Notes Replacement | Jeff Perry &mdash; Blogger/Podcaster " />
+
+    <meta name="description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.">
+    <meta name="description" property="og:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+    <meta name="twitter:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:site" content="@iamjeffperry" />
+    
+    <meta property="og:url" content="http://localhost:4000/2018/02/07/using-bear-as-an-apple-notes-replacement/" />
+
+    <meta property="og:image" content="" />
+    <meta name="twitter:image" content="" />
+
+    <meta name="author" content="Jeff Perry" />
+
+    <meta name="copyright" content="Copyright by Jeff Perry. All Rights Reserved." />
+
+    <style>
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/mnpfi9pxYH-Go5UiibESIltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 300;
+            src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v15/vPcynSL0qHq_6dX7lKVByfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(https://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 900;
+            src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url(https://fonts.gstatic.com/s/roboto/v15/bmC0pGMXrhphrZJmniIZpY4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+    </style>
+    
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+    <link rel="canonical" href="http://localhost:4000/2018/02/07/using-bear-as-an-apple-notes-replacement/">
+
+    <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+</head>
+
+    <body>
+        <div class="wrapper">
+            <aside class="user-profile fixed" role="complementary">
+    <div class="burger">
+        <input class="trigger hidden" id="toggleBurger" type="checkbox" />
+        <label for="toggleBurger">
+            <span>Navigation</span>
+        </label>
+    </div>
+
+    <div class="compact-header">
+        <a class="avatar" href="http://localhost:4000"><img alt="Avatar" src="/avatar.png" /></a>
+        <div class="my-info">
+            <strong class="my-name">Jeff Perry</strong>
+            <span class="my-job-title">Blogger/Podcaster</span>
+        </div>
+    </div>
+
+    
+        
+        <div class="mainmenu">
+            <a href="http://localhost:4000" >Home</a>
+            
+                
+            
+                
+            
+                
+            
+                
+                    <a href="http://localhost:4000/about/" >About</a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        </div>
+        
+    
+
+    <p class="about-me">I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.</p>
+
+    <ul class="socials">
+        <li><a href="http://twitter.com/iamjeffperry"><svg title="twitter" width="16" height="16" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+
+        
+
+        
+         <li><a href="http://localhost:4000/feed.xml"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#rss-icon"></use></svg></a></li>
+        
+    </ul>
+</aside>
+
+            <main class="the-content" role="main">
+                <div class="search" role="search">
+    <div>
+        <div class="show-results-count">0 Results</div>
+        <div class="search-holder">
+            <input type="text" id="search-input" placeholder="search for..." />
+        </div>
+    </div>
+    <ul id="results-container" class="results-container"></ul>
+</div>
+
+
+                <article class="post single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2018-02-07T16:45:57-05:00" itemprop="datePublished">7 Feb, 2018</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline">Using Bear as an Apple Notes Replacement</h2>
+    </header>
+
+    <div class="post-content">
+        <p id="yui_3_17_2_1_1525151795126_322682">Note-taking has become a staple in any modern computer in your pocket, backpack, or tablet sleeve. That much is clear, but the apps in which people write their notes in has been a point of contention ever since there were blogs.Apple Notes was my app of choice ever since I switched to iOS and has been my go-to note-taking app since, until I started using <a href="https://itunes.apple.com/us/app/bear/id1016366447?mt=8&amp;at=1000lHAf">Bear</a> shortly after its release.</p>
+<p id="yui_3_17_2_1_1525151795126_322688">There are a number of reasons that I can now say that Apple Notes is no longer my favorite note-taking app, here are a few of them.</p>
+<h2 id="yui_3_17_2_1_1525151795126_322691">Markdown</h2>
+<p id="yui_3_17_2_1_1525151795126_322694"><a href="https://daringfireball.net/projects/markdown/">Markdown</a> has been my preferred syntax in writing since Is started to learn it in 2014. It is simple, effective, and doesn’t require anything special.</p>
+<p id="yui_3_17_2_1_1525151795126_322699"><a href="https://twitter.com/gruber">John Gruber</a> created an amazing way to write the majority of what is needed in blogging without ever needing anything except a word processor and a few specific characters memorized.</p>
+<p id="yui_3_17_2_1_1525151795126_322704">Markdown not only is a very nice tool to use on other platforms, it also is universal and allows you to write what you have to say and focus less on <em>how</em> you’re going to say it. Apple Notes doesn’t have Markdown support, instead it has its own formatting stuff that pretty much boxes itself out from other apps if you want to move it elsewhere. Essentially, Apple Notes makes your words and ideas squatters in a home, only coming out with certain conditions and rules.</p>
+<p id="yui_3_17_2_1_1525151795126_322710">I will say that Bear has its own “flavor” of Markdown, but with a quick change in the General Settings of Bear you can put it into “Markdown Compatibility Mode” and all will be the same as other Markdown apps.</p>
+<p id="yui_3_17_2_1_1525151795126_322713">This entire review was written in Markdown inside the Bear app. Including all the images, links, and text formatting you see.</p>
+<h2 id="yui_3_17_2_1_1525151795126_322716">Customization</h2>
+<p id="yui_3_17_2_1_1525151795126_322719">There are a number of things you can customize within Bear that you simply can’t in Apple Notes, making Bear offer a unique and personalized experience to whomever is using it. Notes has improved their overall look from a journal with lined paper to now a clean look where your words pop.</p>
+<p id="yui_3_17_2_1_1525151795126_322722">However, changing the background color, the font, and the font size leaves a lot to be desired. Some of these things <em>can</em> be done on Apple Notes, but not easily nor to the capacity Bear offers.</p>
+<h3 id="yui_3_17_2_1_1525151795126_322728">Themes</h3>
+<p id="yui_3_17_2_1_1525151795126_322731">Where Bear shines brighter than other writing applications is their themes. From light themes, dark themes, and everything in between Bear offers the look a vast majority of people would want when they are writing notes, or even long form.</p>
+<p id="yui_3_17_2_1_1525151795126_322734">The dark themes are especially eye-catching because of how useful they can be for people that find a white text on a black screen easier to work with than the illuminating white background and black text.</p>
+<p id="yui_3_17_2_1_1525151795126_322737">To date there are 13 theme options, some being from a recent update earlier this year. I personally like the High Contrast theme for a light theme and Panic Mode as a dark theme.</p>
+<p><img src="/assets/bear-themes.jpeg" alt="" /></p>
+<p id="yui_3_17_2_1_1525151795126_322743">A really nice addition is that each theme has its own app icon as well. You can choose whether to use the theme icon or not when selecting one in the app.</p>
+<h3 id="yui_3_17_2_1_1525151795126_322746">Typography</h3>
+<p id="yui_3_17_2_1_1525151795126_322749">One feature I didn’t know about until very recently is that you can change the font in the app, which blew me away because it offered a whole other level of customization I didn’t even think I needed. Needless to say I played around with it and found that I actually prefer the system font over the standard Avenir Next font it ships with. Something about have the same uniform font across all applications is more appealing to me. There are a few other options to match most peoples needs. To change the font simply go to Settings within Bear and tap on “Editor” and from there you will see the option for “Typography.”</p>
+<h2 id="yui_3_17_2_1_1525151795126_322752">Organization and Functionality</h2>
+<p id="yui_3_17_2_1_1525151795126_322755">So far I have only spoken about the cosmetic features Bear offers, which are great, but when you are talking about a notes application the proof is in the pudding. To stick with the analogy, Bear’s “pudding” is so rich you won’t be able to enjoy any other pudding the same way again.</p>
+<h3 id="yui_3_17_2_1_1525151795126_322758">Checklists</h3>
+<p id="yui_3_17_2_1_1525151795126_322761">When I work with my notes, I sometimes find myself needed to make a list of items or things to do into a checklist, which used to mean I would take the list I created in Apple Notes and have to create a Workflow to make this list into a format another Markdown app supports. With Bear, it is a simple selection of the text and tapping on a checkbox in their custom shortcut menu.</p>
+<p id="yui_3_17_2_1_1525151795126_322764">Not only that, but Bear has sweat the details so much you can go into settings and have it automatically fold any sub-lists once the main item is checked off. Meaning you don’t have to deal with the 16 tasks under one big project checklist you created after completion. Next time you enter the app all the completed tasks will fold into a gray icon with three dots. Which allows more screen real estate available to the remaking unchecked items.</p>
+<p><img src="/assets/bear-checklist-before.jpeg" alt="Bear checklist before fold" /></p>
+<p>Bear checklist before fold</p>
+<p><img src="/assets/bear-checklist-after.jpeg" alt="Bear checklist with fold" /></p>
+<p>Bear checklist with fold</p>
+<h2 id="yui_3_17_2_1_1525151795126_322773">Tagging system</h2>
+<p id="yui_3_17_2_1_1525151795126_322776">Organizing your notes and lists in Apple Notes is probably the most frustrating thing about the app. Not only can you not sync your notes with third party services like <a href="http://dropbox.com/">Dropbox</a>, you aren’t allowed any subfolders. So if you have plans to keep notes for that big project for work, the project has to have its own folder rather than being a subfolder within the Work folder you already had.</p>
+<p id="yui_3_17_2_1_1525151795126_322782">With Bear that all goes away, because Bear uses something similar, but different. They use a tagging system, and they allow sub-tags. For all intents and purposes this is the same as folders and subfolders. Regardless of the terminology, Bear allows you to have those project notes inside its own folder wherever you want. It doesn’t have to be a top-level folder.</p>
+<p id="yui_3_17_2_1_1525151795126_322785">Bear has actually made some serious updates to their tagging system as of late. They have now implemented autocomplete features so when you begin typing a tag within the not a pop-up dialog box appears where you can then select any existing tags that fit what is already written. It makes thing a lot easier from an organizational standpoint, and prevent users from using several tags that all have the same meaning.</p>
+<h2 id="yui_3_17_2_1_1525151795126_322788">The Little Things</h2>
+<p id="yui_3_17_2_1_1525151795126_322791">Now that I have converted both the cosmetic and the functional portion of Bear, there are still some things that these developers have put in that deserve to be mentioned.</p>
+<h3 id="yui_3_17_2_1_1525151795126_322794">Icons for tags</h3>
+<p id="yui_3_17_2_1_1525151795126_322797">Bear’s tagging system is not only very functional, they managed to put in a few secret nuggets of fun to boot. If you use tags like “Podcast” or “Blog” or “Personal” Bear automatically assigns icons (what <a href="https://blog.bear-writer.com/bear-1-4-the-tags-edition-298d6fdc55dd">they are calling “TagCons” for now</a>) for those tags that are seemingly prebuilt in the application.</p>
+<p><img src="/assets/bear-tagcons.jpeg" alt="Bear TagCons" /> Bear TagCons</p>
+<p id="yui_3_17_2_1_1525151795126_322806">If you use a tag that doesn’t meat this hidden criteria, they will use a generic “#” instead, which looks all well and good, but those TagCons that appear magically really make all the difference.</p>
+<h3 id="yui_3_17_2_1_1525151795126_322809">Handling of Drag and Drop</h3>
+<p id="yui_3_17_2_1_1525151795126_322812">When I am working on notes for my podcast <a href="http://gettingcaughtup.net/">Getting Caught Up</a> I tend to use a lot of links to things mentioned in the show. As I said before I prefer Markdown, as it is my favorite way to write, but it also is supported by my podcast host, <a href="http://simplecast.com/">Simplecast</a>.</p>
+<p id="yui_3_17_2_1_1525151795126_322821">Before Bear I had to copy and paste each link in a new document, then find the summary and/or title of the articles I grabbed and then put in a serious amount of time to do the tidying up.</p>
+<p id="yui_3_17_2_1_1525151795126_322824">With Bear, I simply have to drag from the page in Safari and drop in into my Bear note where it gets the heading of the page and uses that as the text to encase the URL in. It makes for bringing webpages and articles a breeze and easily saves me an hours work.</p>
+<h2 id="yui_3_17_2_1_1525151795126_322827">What Bear isn’t doing that Notes can</h2>
+<p id="yui_3_17_2_1_1525151795126_322830">While it is easy to tell I am a fan of Bear, there are <em>some</em> things that Apple Notes has that the note-taking app should consider building in.</p>
+<h3 id="yui_3_17_2_1_1525151795126_322836">Secure notes</h3>
+<p id="yui_3_17_2_1_1525151795126_322839">Apple Notes added the functionality of having secure notes in a recent update, meaning that in order to access notes you deem private it requires either a passcode you set or Touch ID (Face ID for iPhone X).</p>
+<p id="yui_3_17_2_1_1525151795126_322842">While this was never something I used because I put my secure notes in 1Password, I do see the importance of having this option. Whether it is you banking information or just a Christmas Gift list you don’t want anyone to stumble upon on accident, the ability to thwart any snooping eyes with this added security is important.</p>
+<p id="yui_3_17_2_1_1525151795126_322845">I am not sure whether Bear hasn’t implemented this because of limitation in what Apple allows users to use (which I doubt because this kind of security is used for password managing apps all the time) or it simply isn’t something that the developer have pushed out yet.</p>
+<p id="yui_3_17_2_1_1525151795126_322848">If it is the latter, BEar needs to make the effort to make this a reality, security is a growing concern among Apple users every single day, and one way to retain your current users, and probably gain new users, is with this option.</p>
+<h3 id="yui_3_17_2_1_1525151795126_322851">Document scans</h3>
+<p id="yui_3_17_2_1_1525151795126_322854">Sometimes when you are working with others or even for yourself, there are times when you get physical items like contracts and information you want to keep for “future you.” If you are like me, you try and go paperless as much as possible.</p>
+<p id="yui_3_17_2_1_1525151795126_322857">Sadly, Bear doesn’t have any kind of document scanning app like that of Apple Notes as of iOS 11. Granted, you can use 3rd party apps to make this happen, but going from one app to another just to keep a contract on hold for later can be a dealbreaker to some. If Bear were to implement this feature, it would dramatically improve some people’s workflows and allow them to make the complete switch over.</p>
+<h2 id="yui_3_17_2_1_1525151795126_322860">Final Thoughts</h2>
+<p id="yui_3_17_2_1_1525151795126_322863">Bear is a colossal giant among note-taking apps and after getting deep int the application making the switch over was one of the best things I have ever done for personal productivity and keeping my thoughts organized.</p>
+<p id="yui_3_17_2_1_1525151795126_322866">you can download <a href="https://itunes.apple.com/us/app/bear/id1016366447?mt=8&amp;at=1000lHAf">Bear</a> for free, but I recommend going Pro early on for either $1.49 a month or $15.00 a year. The features you get when upgrading can be explained on <a href="http://www.bear-writer.com/#pricing">Bear’s pricing page</a>.</p>
+<p id="yui_3_17_2_1_1525151795126_322875">Did I miss something in this article or have any corrections? Feel free to leave a comment below or shoot me an email <a href="mailto:contact@tablethabit.com">contact@tablethabit.com</a>.</p>
+
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Using Bear as an Apple Notes Replacement&p[summary]=Note-taking has become a staple in any modern computer in your pocket, backpack, or tablet sleeve. That much is clear, but the apps in wh...&p[url]=http://localhost:4000/2018/02/07/using-bear-as-an-apple-notes-replacement/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2018/02/07/using-bear-as-an-apple-notes-replacement/&text=Note-taking has become a staple in any modern computer in your pocket, backpack, or tablet sleeve. That much is clear, but the apps in wh...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+
+            </main>
+        </div>
+
+        <script src="http://localhost:4000/assets/js/jquery-1.12.2.min.js"></script>
+<script src="http://localhost:4000/assets/js/backtotop.js"></script>
+<script src="http://localhost:4000/assets/js/lunr.min.js"></script>
+<script src="http://localhost:4000/assets/js/lunr-feed.js"></script>
+<script src="http://localhost:4000/assets/js/jquery.fitvids.js"></script>
+<script src="http://localhost:4000/assets/js/svg4everybody.min.js"></script>
+<script src="http://localhost:4000/assets/js/scripts.js"></script>
+
+
+    </body>
+</html>

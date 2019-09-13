@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Jeff Perry &mdash; Blogger/Podcaster </title>
+    <meta property="og:title" content=" Jeff Perry &mdash; Blogger/Podcaster " />
+    <meta name="twitter:title" content=" Jeff Perry &mdash; Blogger/Podcaster " />
+
+    <meta name="description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.">
+    <meta name="description" property="og:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+    <meta name="twitter:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:site" content="@iamjeffperry" />
+    
+    <meta property="og:url" content="http://localhost:4000/page2/" />
+
+    <meta property="og:image" content="" />
+    <meta name="twitter:image" content="" />
+
+    <meta name="author" content="Jeff Perry" />
+
+    <meta name="copyright" content="Copyright by Jeff Perry. All Rights Reserved." />
+
+    <style>
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/mnpfi9pxYH-Go5UiibESIltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 300;
+            src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v15/vPcynSL0qHq_6dX7lKVByfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(https://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 900;
+            src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url(https://fonts.gstatic.com/s/roboto/v15/bmC0pGMXrhphrZJmniIZpY4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+    </style>
+    
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+    <link rel="canonical" href="http://localhost:4000/page2/">
+
+    <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+</head>
+
+    <body>
+        <div class="wrapper">
+            <aside class="user-profile fixed" role="complementary">
+    <div class="burger">
+        <input class="trigger hidden" id="toggleBurger" type="checkbox" />
+        <label for="toggleBurger">
+            <span>Navigation</span>
+        </label>
+    </div>
+
+    <div class="compact-header">
+        <a class="avatar" href="http://localhost:4000"><img alt="Avatar" src="/avatar.png" /></a>
+        <div class="my-info">
+            <strong class="my-name">Jeff Perry</strong>
+            <span class="my-job-title">Blogger/Podcaster</span>
+        </div>
+    </div>
+
+    
+        
+        <div class="mainmenu">
+            <a href="http://localhost:4000" >Home</a>
+            
+                
+            
+                
+            
+                
+            
+                
+                    <a href="http://localhost:4000/about/" >About</a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        </div>
+        
+    
+
+    <p class="about-me">I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.</p>
+
+    <ul class="socials">
+        <li><a href="http://twitter.com/iamjeffperry"><svg title="twitter" width="16" height="16" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+
+        
+
+        
+         <li><a href="http://localhost:4000/feed.xml"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#rss-icon"></use></svg></a></li>
+        
+    </ul>
+</aside>
+
+            <main class="the-content" role="main">
+                <div class="search" role="search">
+    <div>
+        <div class="show-results-count">0 Results</div>
+        <div class="search-holder">
+            <input type="text" id="search-input" placeholder="search for..." />
+        </div>
+    </div>
+    <ul id="results-container" class="results-container"></ul>
+</div>
+
+
+                
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-05-16T12:40:36-04:00" itemprop="datePublished">16 May, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/05/16/i-m-a-podcast-addict-and-went-cold-turkey-for-two-weeks/">I'm a Podcast Addict and Went Cold Turkey for Two Weeks</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p><a href="https://www.fastcompany.com/90348591/im-a-podcast-addict-heres-what-happened-when-i-went-cold-turkey-for-two-weeks">Joe Berkowitz writing for Fast Company</a>:</p>
+<blockquote><p>
+  As far as I know, scientists have not conducted tests about the long-term effects of sustained exposure to podcasts. I don’t need statistics, though, to fuel my suspicions that walking around listening to other people’s voices all the time, and allowing that to become my default cognitive setting, has probably warped my way of thinking and sapped some creativity. How could the constant stream of content <em>not</em> train me to be a more passive thinker, a spectator of life? Listening to other people’s ideas all the time creates a buffer that might be keeping my own ideas submerged in my subconscious. Almost everything I think while mainlining <em>Doughboys</em> or <em>The Dollop</em> or <em>The Daily</em> is a surface-level reaction to whatever I’ve just heard. There had to be a cumulative effect of my brain functioning like a YouTube comments section.</p>
+<p>Luckily, there was an easy way to find out whether being at Peak Podcast has taken a negative toll. All I had to do was hang up my headphones for a while. It was time for me to listen to something else: nothing.</p>
+<p>The plan was to go on a two-week podcast fast. Two weeks may sound like laughably little time for such an experiment, but I was absolutely dreading it at the outset. It would be the longest I’d gone without a fix in nearly 10 years.</p></blockquote>
+<p>The other day I was watching a video on my iPad in my office, I paused it to go to the bathroom. I caught myself needing to grab my AirPods as soon as I pressed pause on the video so I can listen to a podcast for the 10 minutes I would be without some sort of media to consume.</p>
+<p>I also can't fall asleep without listening to a podcast. My mind swirls with ideas, questions, fears, and just randomness that is a carnival in my mind. The only thing that helps me with it is listening to something that will drown those thoughts out.</p>
+<p>Needless to say this article came to me at the right time. I've decided to take part in the challenge for two weeks myself starting Monday. I am sure I will write about it on here, but until then the only podcasts I will be listening to are the ones I will be recording and/or editing.</p>
+
+
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=I'm a Podcast Addict and Went Cold Turkey for Two Weeks&p[summary]=Joe Berkowitz writing for Fast Company:
+
+  As far as I know, scientists have not conducted tests about the long-term effects of sustained...&p[url]=http://localhost:4000/2019/05/16/i-m-a-podcast-addict-and-went-cold-turkey-for-two-weeks/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/05/16/i-m-a-podcast-addict-and-went-cold-turkey-for-two-weeks/&text=Joe Berkowitz writing for Fast Company:
+
+  As far as I know, scientists have not conducted tests about the long-term effects of sustained...&hashtags=podcasting," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/podcasting">podcasting</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-05-15T09:00:00-04:00" itemprop="datePublished">15 May, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/05/15/oittm-charging-dock-station-review/">Oittm Charging Dock Station Review</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p>With the era of <a href="https://techcrunch.com/2019/03/29/apple-cancels-airpower-product-citing-inability-to-meet-its-high-standards-for-hardware/">AirPower now behind us</a>, the search for the right charging dock can be an arduous process. As someone who decided not to buy anything for their desk in hopes that void could be filled with AirPower, when the cancellation of it was announced I went on the hunt to find something to replace it.</p>
+<p>After some time looking at chi chargers, I wasn't impressed with any of them. Those that were appealing to the eye were not so appealing to my wallet. Eventually I decided to start looking at other options out there that are wired charging docks. Docks that have been on the market long before AirPower was even announced.</p>
+<p>Whilst looking at the options, Oittm reached out to me and offered to send me their <a href="https://www.amazon.com/dp/B01NBK0STD/ref=cm_sw_r_cp_tai_EvU2Cb2TYJYGR">Aluminum Charging Dock</a> to try out. I normally don't take free merchendise to review but given my situation it seemed almost unfair to me if I said no. Two days later a package was at my home ready for me to get started putting it all together.</p>
+<p><img src="/assets/45c52-oittm-charging-dock-with-phone-and-watch.png" alt="" /></p>
+<p>The build quality of this is a mix between aluminum base and stand with a plastic inside and top cover. On the outside sit 3 USB ports to plug in things to charge it with, and two USB ports on the inside for the Apple Watch charger and the iPhone charger to plug into. The base has a top cover hiding the small compartment where the 2 inner USB ports are, making the dock a lot less of a cable management device and more like a singular charger you can have on a desk.</p>
+<p>This product has a clever way of using the wired charging cables in a way your desk still looks clean.</p>
+<p><img src="/assets/3b7ff-oittm-dock-inside.png" alt="" /></p>
+<p>As you can see, the dock has a hidden compartment to place the charging cables so that you can have a dock with a single power cable running around instead of several Apple cables with separate plugs for each device.</p>
+<p>Once you plug in the cables and have them set up in the dock you are set to go with charging both your Apple Watch and iPhone. I will say the it wasn’t a walk in the park to plug these cables in after having already fed them through their respective charging holes. Because of the small footprint, the compartment to plug in and hide the charging cables is a bit cramped. Oittm offers cable ties for the wires you are hiding but even when wrapped and tied getting the top lid to close wasn't an easy experience. I had to carefully maneuver these wrapped cables into the USB plug and then adjust the placement of these cables to allow for them to fit in that compartment. After about 15 minutes of setting this up I finally got the lid to close and everything was working fine. Thankfully, I never have to worry about setting this thing up again, because once it’s set you’re good to go.</p>
+<p>Along with the ability to charge your iPhone and Apple Watch, the Oittm Charging dock offer 3 USB ports on the back of the dock to plug in other cables to charge your other devices.</p>
+<p><img src="/assets/3b9fe-image-5-8-19-3-42-am.jpeg" class="alignnone size-full wp-image-939" width="3024" height="4032" /></p>
+<p>For me this was a perfect addition so that I can use a micro-USB cable to charge my Kindle and an additional lightning cable to charge my AirPods. These extra cables don't stay plugged in all the time, but when I need them it is easy to plug them in and start charging the extra devices.</p>
+<p>The added ports are great when you need them, and offer zero added space when you don't, making the footprint of this dock as minimal as possible, which is preferred for my small office desk I write on. All 5 ports are powered with a single AC plug, meaning that I no longer have to have several Apple bricks plugged in to my surge protector. I instead can have a single plug to power all of my charging needs.</p>
+<p>The Oittm Charging Dock isn't a wireless charger, but if you can get over that small fact, this $35 dock offers a very sleek design that can handle a lot of charging power with a small footprint. It is a perfect addition to my office desk, and I highly recommend it to anyone in the same boat as me looking for an answer to Apple's charging problem. You can <a href="https://www.amazon.com/dp/B01NBK0STD/ref=cm_sw_r_cp_tai_EvU2Cb2TYJYGR">get yourself one on Amazon today</a>.</p>
+
+
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Oittm Charging Dock Station Review&p[summary]=With the era of AirPower now behind us, the search for the right charging dock can be an arduous process. As someone who decided not to b...&p[url]=http://localhost:4000/2019/05/15/oittm-charging-dock-station-review/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/05/15/oittm-charging-dock-station-review/&text=With the era of AirPower now behind us, the search for the right charging dock can be an arduous process. As someone who decided not to b...&hashtags=charging dock,dock,product review," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/charging dock">charging dock</a></li>
+                
+                <li><a href="http://localhost:4000/tag/dock">dock</a></li>
+                
+                <li><a href="http://localhost:4000/tag/product review">product review</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-05-08T14:23:49-04:00" itemprop="datePublished">8 May, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/05/08/touchtype-pro-review/">Touchtype Pro Review</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p>The Touchtype Pro is a new Keyboard case allowing iPad users to connect their 3rd generation iPads with the Magic Keyboard, and it is <a href="https://www.kickstarter.com/projects/sajidcreative/worlds-most-versatile-ipad-keyboard-case-touchtype">available on Kickstarter until May 17th</a>. I received a prototype review unit from the creator of the Touchtype Pro, Salman Sajid, and this seems very close to the final product for me, and it is something I think many iPad users will love.</p>
+<h2>The Magic Keyboard</h2>
+<p>The Magic Keyboard was my keyboard of choice when it came to my 10.5” iPad Pro. I was never happy with the Smart Keyboard, nor was I thrilled with the Logitech Slim Combo. The only thing that came close was the <a href="https://jeffperry.blog/2018/11/brydge-10-5-series-ii-review/">Brydge 10.5 Series II</a>, but even that was not a full sized keyboard, making my hands feel cramped after an hour of typing on it.</p>
+<p>The Magic Keyboard wasn’t just my pick because of the size, it is also because something about the feel of the keys always felt like the perfect amount of travel and tactile feel for my taste. So for the last year of me using the iPad Pro 10.5” I had it accompanied with the Magic Keyboard. Now with this Touchtype Pro, I am able to use the Magic Keyboard in tandom with the iPad Pro 12.9”. This case has a lot going for it, but there are a few things I would like to see in the final product.</p>
+<p><img src="/assets/cdba9-touchtype-pro-with-keyboard-side-angle.png" alt="" /></p>
+<h2>Look and Feel</h2>
+<p>The quality of the look and feel of this keyboard is out of this world. I love the microfiber cloth inside the case. It is soft and feels like it is actually helping preserve the screen and keyboard from dust and grime. The outer shell is a cross between the look of plastic leather and the feel of polycarbonate, which is very pleasing in the hands as well as to the eyes. The craft put into this shows every single time I look at it or have it in my hands. It isn’t easy to make a keyboard case look good both open and closed, but I think that the Touchtype Pro is the exception to that. This case looks very business casual and can be something any workplace will be happy to see in use.</p>
+<h3>Using the Touchtype Pro</h3>
+<p>This Touchtype Pro brings the reliability of the Magic Keyboard together with the iPad Pro. Put simply it unites the best iPad with the best standalone keyboard. It allows people to write with the freedom of a full sized keyboard that is reliable and perfect for all typists out there.</p>
+<p>One problem with the Magic Keyboard is you can only buy it as a white version from Apple, for me I think if there were a black version it would make this look even better. Secondly, the Magic Keyboard doesn’t have backlighting, making it a bit more difficult to write with when you are in a dark area, or if you are a night owl like myself and don’t want to wake up your spouse. However, if you're not in need of backlighting all the time this keyboard does have a function row as well as the knowledge that a spec of dust won't ruin it forever.</p>
+<p>The process of folding and unfolding the Touchtype Pro takes some getting used to, and has a bit of a learning curve, but after a few tries I managed to get it down to a science. I am also a big fan of the train track of magnets allowing users to adjust the viewing angle of the iPad Pro to what ever angle you prefer when typing. For me, it seems to fit perfectly when I have the front flap folded over and the keyboard resting right on the edge. The case looks sleek and the angle is perfect for my eyes.</p>
+<p><img src="/assets/c53ce-touchtype-pro-view-only-mode.png" alt="Touchtype Pro in Viewing Mode" /></p>
+<p>The design of this case is admirable with their choice to make it possible to fold away the Magic Keyboard and have a viewing only mode for when I just want to watch a movie or read a book on my iPad. This is something that other cases, including the Smart Keyboard Apple has made for the iPad Pro, don’t have. I miss the old 1st generation Smart Keyboard cases because it was created with a viewing mode in mind. I am not sure why other 3rd party keyboard haven’t done anything like that with their cases for the latest iPads, but it is refreshing to see someone make that decision, and the Touchtype Pro makes it easy to use.</p>
+<p>This case does come with its flaws though.</p>
+<p>The magnets connecting the keyboard aren’t strong enough to stay connected when I am moving it from a typing mode into a viewing mode. It also collapses on me when I am trying to quickly fold it up to take with me on the go. This isn't the case's fault entirely, I know that there were times I was too cavalier with me packing this iPad up and that caused me to be less than delicate on the case itself. If I gingerly move the keyboard away it works every time.</p>
+<p>I have spoken with Salman, the creator of this product, about this and he has expressed to me that the magnets in this prototype are not the ones going out to Kickstarter backers. Those who pay for the keyboard on Kickstarter or retail will be getting ones with stronger magnets to avoid this problem. After speaking with Salman on the phone about this I know he cares deeply about this product, and I have full faith that he will fix this before he ships them out to users.</p>
+<h2>Conclusion</h2>
+<p>All in all this keyboard case has a lot of great things going for it, and if you are someone like me wanting a full sized keyboard, the Touchtype Pro is a fantastic option worth looking into.</p>
+<p>That said, this keyboard is $100 retail, and along with the case costing $100 retail, it makes this keyboard case setup the most expensive of any compared to Apple’s Smart Keyboard, Logtiech’s Slim Folio Pro, and the Brydge Keyboard. That said, you can get a used Magic Keyboard, like I did, <a href="https://www.ebay.com/itm/Apple-Magic-Keyboard-2-MLA22LL-A-Rechargeable-Wireless-Ready/371792169542?epid=26027052757&amp;hash=item56908a4a46:g:JKYAAOSwt3hb~Bfu">on eBay for around $55</a>. Making this less expensive than the Smart Keyboard as well as the Brydge Keyboard. So if you did have to buy both this case and a Magic Keyboard it wouldn't be outside of the competition.</p>
+<p>Now, if you are like many who already own the Magic Keyboard, a $100 case like this one isn't asking for a lot. In fact, I would argue that this case is worth $150 on its own. There isn't a case out there that offers this much versatility and usability for the latest iPad Pros. If I am being totally honest I am sad to have to send this case back as I see it being a keyboard case I can use day-to-day.</p>
+<p>if you want to get yours, act fast. You can get yours at a discount until May 17th by backing it on <a href="https://www.kickstarter.com/projects/sajidcreative/worlds-most-versatile-ipad-keyboard-case-touchtype">Kickstarter</a> and find out more about it on <a href="https://touchtypecase.com/">their website</a>.</p>
+
+
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Touchtype Pro Review&p[summary]=The Touchtype Pro is a new Keyboard case allowing iPad users to connect their 3rd generation iPads with the Magic Keyboard, and it is ava...&p[url]=http://localhost:4000/2019/05/08/touchtype-pro-review/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/05/08/touchtype-pro-review/&text=The Touchtype Pro is a new Keyboard case allowing iPad users to connect their 3rd generation iPads with the Magic Keyboard, and it is ava...&hashtags=keyboard,touchtype pro," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/keyboard">keyboard</a></li>
+                
+                <li><a href="http://localhost:4000/tag/touchtype pro">touchtype pro</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-05-03T14:57:25-04:00" itemprop="datePublished">3 May, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/05/03/adam-schiff-and-steve-chabot-for-world-press-freedom-day-here-s-our-bipartisan-call-to-protect-journalists/">For World Press Freedom Day, Here’s Our Bipartisan Call to Protect Journalists</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p><a href="https://www.washingtonpost.com/opinions/2019/05/02/world-press-freedom-day-heres-our-bipartisan-call-protect-journalists/">Steve Chabot and Adam Schiff writing for The Washington Post</a>:</p>
+<blockquote><p>As members of Congress, we swear an oath to defend the Constitution, a pledge that includes protecting the First Amendment and its guarantee that the freedom of the press not be infringed. The prominence of this guarantee reflects the framers’ understanding that a press that could hold power to account was key to the success of the young American democracy.</p>
+<p>History has proved them prescient, and the United States’ model of protecting the press has served as a beacon for other free countries. It also reinforces our responsibility to stand up for press freedom in nations where the simple act of reporting the truth can lead to imprisonment, assault and even murder.</p>
+<p>On May 3, we mark <a href="https://www.un.org/en/events/pressfreedomday/">World Press Freedom Day</a>, an occasion to consider the indispensable role journalists play in a democratic society and to call attention to the hundreds of journalists around the world who are in <a href="https://cpj.org/data/imprisoned/2017/?status=Imprisoned&amp;start_year=2018&amp;end_year=2017&amp;group_by=location">prison cells</a>, or have been attacked, injured or murdered, for the “crime” of reporting. The Congressional Freedom of the Press Caucus was <a href="https://votesmart.org/public-statement/170852/schiff-pence-launch-congressional-caucus-for-freedom-of-the-press#.XMsVj5hKiUk">founded in 2006</a> to serve as a voice for the safety and rights of journalists around the world, to make clear that Congress stands with them and to hold the powerful to account.</p>
+<p>Regrettably, recent years have been some of the most <a href="https://www.washingtonpost.com/world/2018/10/09/has-been-brutal-year-journalists-it-keeps-getting-worse/?utm_term=.5b79d9694637">dangerous</a> and <a href="https://www.usatoday.com/story/news/world/2018/12/18/more-journalists-killed-2018-than-any-other-year-record-driven-unscrupulous-politicians/2346797002/">deadly</a> in memory for journalists. Far too many have been taken prisoner or lost their lives in attempts to report news from such places as <a href="https://cpj.org/data/killed/?status=Killed&amp;motiveConfirmed%5B%5D=Confirmed&amp;type%5B%5D=Journalist&amp;cc_fips%5B%5D=AF&amp;cc_fips%5B%5D=SY&amp;start_year=1992&amp;end_year=2019&amp;group_by=year">Syria and Afghanistan</a>. And in a world where authoritarianism is on the rise, journalists are often caught in the crosshairs of regimes intent on restricting access to information to better control their populace.</p>
+<p>We see it in the brutal assassination of Post contributing columnist <a href="https://www.washingtonpost.com/news/global-opinions/wp/2018/10/06/read-jamal-khashoggis-columns-for-the-washington-post/">Jamal Khashoggi</a>, who was murdered by agents of the Saudi government for his criticism of the crown prince and the kingdom.</p>
+<p>We see it in Myanmar, where two <a href="https://www.reuters.com/article/us-myanmar-journalists-explainer/facts-on-the-arrest-of-reuters-reporters-wa-lone-and-kyaw-soe-oo-idUSKBN1EY2S4">Reuters reporters</a>, Wa Lone and Kyaw Soe Oo, were sentenced to seven years imprisonment for their reporting on the genocide perpetrated against the Rohingya people.</p>
+<p>We see it in Venezuela, where the regime of Nicolás Maduro has employed violence, arrests and intimidation against independent media organizations.</p>
+<p>We see it in Russia, where the Kremlin has mastered the art of spreading disinformation as a geopolitical weapon, while simultaneously implementing draconian laws to stifle dissent and free expression within its borders.</p>
+<p>Violence and intimidation of journalists has also struck close to home. Last June, five staff members of the Capital Gazette were<a href="https://www.baltimoresun.com/news/maryland/crime/bs-md-gazette-shooting-20180628-story.html"> gunned down</a> in their Annapolis newsroom. In its <a href="https://rsf.org/en/ranking/2019">latest report on press freedom</a> around the world, the group Reporters Without Borders downgraded the United States to a “problematic” country. Just as we decry violence against journalists in other countries, we must speak out against attempts to stifle and intimidate the free press within our borders.</p>
+<p>Threats to independent journalism are the canary in the coal mine — they signal a toxic environment for democracy writ large. As the leader of the free world, the United States has a duty to speak out on behalf of journalists who risk their lives to report the news. The truth must not, and cannot, be silenced by a censor, a prison cell or a bullet.</p>
+</blockquote>
+<p>The video in this article is also something everyone should watch today.</p>
+<p>It's easy to take news for granted and even poke fun at it like how <em>The Daily Show</em> and <em>Last Week Tonight with John Oliver</em> do, and I think those are great examples of satire and parody. That said, what people don't always remember is that the truth comes at a cost, and sometimes that cost is the lives of journalists.</p>
+<p><a href="https://chabot.house.gov">Steve Chabot</a> is a Republican Representing the 1st district of Ohio, and <a href="https://schiff.house.gov">Adam Schiff</a> is a Democrat Representing the 28th district of California.</p>
+
+
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=For World Press Freedom Day, Here’s Our Bipartisan Call to Protect Journalists&p[summary]=Steve Chabot and Adam Schiff writing for The Washington Post:
+As members of Congress, we swear an oath to defend the Constitution, a pled...&p[url]=http://localhost:4000/2019/05/03/adam-schiff-and-steve-chabot-for-world-press-freedom-day-here-s-our-bipartisan-call-to-protect-journalists/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/05/03/adam-schiff-and-steve-chabot-for-world-press-freedom-day-here-s-our-bipartisan-call-to-protect-journalists/&text=Steve Chabot and Adam Schiff writing for The Washington Post:
+As members of Congress, we swear an oath to defend the Constitution, a pled...&hashtags=journalism," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/journalism">journalism</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-05-03T14:33:48-04:00" itemprop="datePublished">3 May, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/05/03/world-press-freedom-day-1password-for-journalism-1password/">1Password for Journalism</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p><a href="https://blog.1password.com/world-press-freedom-day-1password-journalism/">Swapna Krishna writing for 1Password</a>:</p>
+<blockquote><p>
+  It’s not an easy time to be a journalist, which is why we want to recognize World Press Freedom Day. On this crucial day, we celebrate the freedom of the press, defend and support the independence of journalists, and honor those who have lost their lives while reporting a story.</p>
+<p>Journalists are increasingly under attack, thanks to the proliferation of fake news and direct attacks from celebrities and those in power. What’s more, dwindling salaries and budgets for newspapers, websites, and magazines translate to fewer resources to tell important and necessary stories. Journalists are being laid off in huge numbers at a time that a free and independent media is more crucial than ever.</p>
+<p>We know just how vital journalists are to the fabric of our society and how stretched their resources can be. Journalists often put their reputations and their lives on the line to report stories. This means that they are often targets for doxxing, harassment, hacking, and other security nightmares.</p></blockquote>
+<p>[...]</p>
+<blockquote><p>
+  This is why we offer 1Password for Journalism, which is a 1Password membership for reporters that is <em>completely free</em>. Journalists can sign up by entering their name and work email on our <a href="https://1password.com/for-journalism/">1Password for Journalism page</a>; we’ll be in touch to confirm any necessary details to get your press status added. And if you’re a freelance journalist without an organizational email? Don’t worry, we’ve got you covered. Just enter the email address you use for work and we’ll follow up to qualify.</p></blockquote>
+<p>I love the fact 1Password is doing this. Journalism has always been interesting for me and something I consider to be an honorable profession. I'm glad a company like this is making it easy for journalists to make their work safe from any nefarious parties.</p>
+
+
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=1Password for Journalism&p[summary]=Swapna Krishna writing for 1Password:
+
+  It’s not an easy time to be a journalist, which is why we want to recognize World Press Freedom ...&p[url]=http://localhost:4000/2019/05/03/world-press-freedom-day-1password-for-journalism-1password/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/05/03/world-press-freedom-day-1password-for-journalism-1password/&text=Swapna Krishna writing for 1Password:
+
+  It’s not an easy time to be a journalist, which is why we want to recognize World Press Freedom ...&hashtags=1Password,journalism," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/1Password">1Password</a></li>
+                
+                <li><a href="http://localhost:4000/tag/journalism">journalism</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-05-01T13:28:28-04:00" itemprop="datePublished">1 May, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/05/01/reeder-is-back-and-better-than-ever/">Reeder Is Back and Better Than Ever</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p>Matthew Cassinelli's review of <a href="https://buy.geni.us/Proxy.ashx?TSID=6218&amp;GR_URL=https%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Freeder-4%2Fid1449412357%3Fmt%3D8">Reeder 4</a> dives deep into the chasm of what this new RSS reader app offers.</p>
+<p>Spoilers: there's <em>a lot</em> to this app, Reeder has really outdone themselves with his app and I hope they continue to innovate and improve reading RSS on iOS and macOS.</p>
+
+
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Reeder Is Back and Better Than Ever&p[summary]=Matthew Cassinelli's review of Reeder 4 dives deep into the chasm of what this new RSS reader app offers.
+Spoilers: there's a lot to this...&p[url]=http://localhost:4000/2019/05/01/reeder-is-back-and-better-than-ever/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/05/01/reeder-is-back-and-better-than-ever/&text=Matthew Cassinelli's review of Reeder 4 dives deep into the chasm of what this new RSS reader app offers.
+Spoilers: there's a lot to this...&hashtags=reeder 4," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/reeder 4">reeder 4</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-04-29T09:10:22-04:00" itemprop="datePublished">29 Apr, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/04/29/just-be-you/">Just Be You</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p><a href="https://ljpuk.blog/2019/04/24/just-be-you/">Lee Paterson on LJPUK</a>:</p>
+<blockquote><p>
+  Something changed for me in the last year with my writing and based on feedback I’m getting it’s for the better. When I started blogging back in 2008 I stuck to a niche (at the time it was guitars) then I moved into technology a little while later based off the back of my freelance stuff.</p>
+<p>  What I’ve found though in the last year is that I’m writing more personal (posts like this one) and not worrying about sticking to any sort of niche, just writing about what I’m passionate about or is on my mind.
+</p></blockquote>
+<p></p>
+<p>[...]</p>
+<p></p>
+<blockquote><p>
+  I guess what I’m trying to say as I’m starting to ramble is if you have a personal blog just BE YOU. Write about your passions be it the latest gadget you love or the most recent movie you’ve enjoyed.
+</p></blockquote>
+<p></p>
+<p>Like so many things Lee writes, this post spoke to me at my core. Recently, <a href="https://twitter.com/iamjeffperry/status/1119755487417913345?s=21">I spent time on Twitter</a> contemplating the name of my site. While doing so, I forgot that the name of my site doesn't matter if I don't know what I want to say on it.</p>
+<p>My answer to that is this, Rocket Panda was created because I wanted to have a name outside the box Tablet Habit was putting me in, and I have slowly done so. I plan to continue to do so, and write about the things I want to write and not worry about my "niche" as much.</p>
+
+
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Just Be You&p[summary]=Lee Paterson on LJPUK:
+
+  Something changed for me in the last year with my writing and based on feedback I’m getting it’s for the better...&p[url]=http://localhost:4000/2019/04/29/just-be-you/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/04/29/just-be-you/&text=Lee Paterson on LJPUK:
+
+  Something changed for me in the last year with my writing and based on feedback I’m getting it’s for the better...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-04-24T09:03:04-04:00" itemprop="datePublished">24 Apr, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/04/24/how-to-make-marbling-artwork-on-the-ipad-free-ipad-wallpapers/">How to Make Marbling Artwork on the iPad (Free iPad Wallpapers)</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p>After buying my iPad Pro I have been looking at the box and the wallpapers that shipped with iOS 12. The swirls and ripples of color always caught my eye. After some time admiring it I rememebered watching <a href="https://vimeo.com/289734813">a video from Field Notes</a> on how they created their own similar effects with acrylic paint and thickened water. That process was called Marbling and after some quick searching I learned you can do something very similar on the iPad. Here are some examples I have made in the 20 wallpaper pack I have created.</p>
+<p><img src="/assets/a705d-pal-keys-marble.png" alt="" /></p>
+<p><img src="/assets/0be04-tangerine-sky-900.png" alt="" /></p>
+<p>It has been very rewarding to create art that I love, and it’s been therapeutic for me as well. If you want to give it a shot it is actually fairly cheap and easy to get started. Here's how I do it.</p>
+<p>The app I use for this is <a href="https://itunes.apple.com/us/app/procreate/id425073498?mt=8">Procreate</a>, but from what I understand you can use other apps for this as well. So long as they have a Liquify effect you should be fine.</p>
+<p>Once there I make a blank canvas for the size of my screen and change the background to my color of choosing — in most cases I choose black as that looks great on the new iPads and iPhones with OLED displays.</p>
+<p><img src="/assets/e3998-new-image-screen-size-procreate.png" alt="Making a new image from the screen size of the device in Procreate" /></p>
+<p><img src="/assets/943e8-change-background-color-procreate.png" alt="Changing the Background color in Procreate" /></p>
+<p>From there you can start adding the colors you want to use for the Marbling. It is also a great time to play around with different brushes as well with Procreate. Alternatively you can import an image into Procreate and use that as your starting point for the Marbling. I did so with the artwork of the <a href="http://supercomputer.fm/">Supercomputer podcast</a> at <a href="https://twitter.com/mattcassinelli/status/1120727422440071169?s=21">the request of Matthew Cassinelli</a> and <a href="https://twitter.com/iamjeffperry/status/1120730312001060865?s=21">it turned out great</a> (I also have it in the 20 pack of wallpapers below if you want it).</p>
+<p><img src="/assets/76c33-colors-added-the-the-canvas-before-marbling.png" alt="Colors added to a canvas prior to Marbling in Procreate" /></p>
+<p>Once satisfied with the colors you have added, this is where the Marbling starts. Just tap on the magic wand in the upper left of your screen and select "Liquify."</p>
+<p><img src="/assets/5a2fd-select-liquify-procreate.png" alt="How to Liquify an image in Procreate" /></p>
+<p>Once in the Liquify stage you will see a number of options on the bottom and sliders for those options. All of these are better learned through experimentation. It took me under 20 minutes of playing around to understand each one. I recommend you start using the "Push" option first and get acclimated with that. Don't worry about making things perfect when starting out. Your goal should be to make a mess and learn what each of these tools do before you really start making something.</p>
+<p><img src="/assets/41b61-liquify-options-procreate.png" alt="Liquify options in Procreate" /></p>
+<p>From there it is just a matter of getting the Marbling to your preference. Play around with the different options and sliders, you can always undo and action by tapping with two fingers or redo something by tapping with three fingers. Once done you should get something like this, or whatever you prefer to make. Remember, there is no right or wrong way to make your wallpaper art.</p>
+<p><img src="/assets/5a00a-rocket_panda-made-in-procreate.png" alt="Final product of Rocket_Panda Marbling" /></p>
+<p>From there just tap the wrench next to the effect tool you pressed earlier and share it out to the world (or your Photos app).</p>
+<p>This image I made is part of the <a href="https://drive.google.com/file/d/1ecUEn3xggDn0UTDox8aaaJfi1Ce9d_0j/view?usp=drivesdk">20 images you can download here for free here</a>.</p>
+<p>The files are in a .zip file in Google Drive so if you want to get them on your iPad I recommend you use <a href="https://www.icloud.com/shortcuts/511ea3980acf474a8edf80439ca4eda4">this Unarchive Shortcut</a> and save the files to your Photos.</p>
+<p>If you prefer you can <a href="https://www.dropbox.com/s/qo67g8c2cb8a30b/Marbling-Pack_1-RocketPanda.zip?dl=0">download it via Dropbox as well</a>.</p>
+<p>I am open to other color schemes and/or images you want to have Marbled as well. Just let me know <a href="https://twitter.com/iamjeffperry">on Twitter </a>or <a href="mailto:jeff@rocketpanda.net">via email</a> what you would like and I will be happy to make it!</p>
+
+
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=How to Make Marbling Artwork on the iPad (Free iPad Wallpapers)&p[summary]=After buying my iPad Pro I have been looking at the box and the wallpapers that shipped with iOS 12. The swirls and ripples of color alwa...&p[url]=http://localhost:4000/2019/04/24/how-to-make-marbling-artwork-on-the-ipad-free-ipad-wallpapers/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/04/24/how-to-make-marbling-artwork-on-the-ipad-free-ipad-wallpapers/&text=After buying my iPad Pro I have been looking at the box and the wallpapers that shipped with iOS 12. The swirls and ripples of color alwa...&hashtags=art," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/art">art</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-04-23T15:40:07-04:00" itemprop="datePublished">23 Apr, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/04/23/podcast-and-you-are-jeff-perry/">Podcast - And You Are?: Jeff Perry</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p>Greg had me on the podcast recently and I came to some realizations during our conversation about <a href="https://jeffperry.blog/2019/04/crossing-the-finish-line/">my inability to continue with projects</a>. I love this podcast and it was a pleasure to be a guest on it.</p>
+<p>Also, Greg managed to edit this is record time. We recorded the episode Sunday and he posted it the following Tuesday. Insane!</p>
+
+
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Podcast - And You Are?: Jeff Perry&p[summary]=Greg had me on the podcast recently and I came to some realizations during our conversation about my inability to continue with projects....&p[url]=http://localhost:4000/2019/04/23/podcast-and-you-are-jeff-perry/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/04/23/podcast-and-you-are-jeff-perry/&text=Greg had me on the podcast recently and I came to some realizations during our conversation about my inability to continue with projects....&hashtags=podcast," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/podcast">podcast</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-04-22T14:00:00-04:00" itemprop="datePublished">22 Apr, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/04/22/crossing-the-finish-line/">Crossing the Finish Line</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p>I realized after talking with <a href="http://gr36.com">Greg Morris</a> for his podcast <em>And You Are?</em> that I am someone that is <strong>really good</strong> at getting an idea ready to launch, but pitiful at longevity. I can create a decent website, a logo, and come up with branding ideas for a new project. That said, the moment I make this project public for all to see and get this proverbial plane off the ground I'm lost.</p>
+<p>It is why I've changed the look of my website so much or moved my domain over. Everything is because I have this plane up in the air, but now I have no clue what to do next. So instead of pushing myself to learn more and keep moving forward I decide to crash the plane into the ground and start over. I repeatedly lift off again and again because I know I am good at that, it's the unknown that scares me into taking the plane any further.</p>
+<p>The same goes for other things in my life, like video games. I have created 6 different players on NBA2K19 all of which I have played at most 4 hours on in total. I create a character, get it set up and play a few games with them but I eventually just want to go back and make new players and try new ways to improve the creation of them. My intention quickly deviates from playing with the character I just created to creating the "best" character I can.</p>
+<p>It's maddening to a lot of people who see that I haven't found one thing to focus on. I have lots of little things I work on simultaneously. It reminds me of something I saw recently from the book <a href="https://www.amazon.com/Essentialism-Disciplined-Pursuit-Greg-McKeown/dp/0804137382"><em>Essentialism</em></a> by Greg McKeown. What I saw was a diagram like this one, except instead of it being Focus it was energy. For me, focus makes more sense.</p>
+<p><img src="/assets/bbf8e-focus-chart.png" alt="" /></p>
+<p>To sum this up, on the left side of this diagram of my focus with a lot of different things I am working on simultaneously. The arrows indicate how far I get into each one of them. I only have so much focus to give and if I spend all of it on lots of different things I won't get very far in them. On the right side is a different story. I focused on <em>one thing</em> and got much further than I did compared to the image on the left. When I saw this diagram for the first time it was one of those things that just clicked in my brain and never let go.</p>
+<p>I have always been someone that does the left side of this image. I get an idea, then another idea, and then another. I decide that none of these great ideas are worth keeping in my pocket for later and I just start doing them all at once. Eventually, after some time has passed, I have gotten little done on all of these different projects. Whereas if I had decided to do one at a time I would have completed them all faster and I would have given each project the focus it deserves to be better.</p>
+<h2>My Solution</h2>
+<p>I am trying to be more mindful of this diagram and making it something that I consciously make a habit. Here are a few things I am doing to make that happen:</p>
+<ul>
+<li>I pick one thing to work on at a time as opposed to many. No new projects are started until I finish the one in progress</li>
+<li>I am keeping all of my ideas on a separate area in Drafts for later</li>
+<li>I am setting deadlines for myself to help keep pressure on the things I am working on, which in turn helps me finish things faster so I can work on something new before I get burned out</li>
+<li>I have made this diagram my new home screen</li>
+</ul>
+<p><img src="/assets/f15ca-focus-image-home-screen.png" alt="" /></p>
+<p>As someone that is a habitual offender of starting something but never finishing them I am excited to cross the metaphorical finish line more often. I am sure I will have more to say after a little while with this, but for now I am excited to make my work more intentional and less chaotic.</p>
+
+
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Crossing the Finish Line&p[summary]=I realized after talking with Greg Morris for his podcast And You Are? that I am someone that is really good at getting an idea ready to ...&p[url]=http://localhost:4000/2019/04/22/crossing-the-finish-line/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/04/22/crossing-the-finish-line/&text=I realized after talking with Greg Morris for his podcast And You Are? that I am someone that is really good at getting an idea ready to ...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+
+
+
+<div class="pagination" role="navigation" aria-label="pagination">
+    
+        <a href="/" class="previous">&larr; Previous</a>
+    
+
+    <span class="page_number">Page 2 of 12</span>
+
+    
+        <a href="/page3/" class="next">Next &rarr;</a>
+    
+</div>
+
+            </main>
+        </div>
+
+        <script src="http://localhost:4000/assets/js/jquery-1.12.2.min.js"></script>
+<script src="http://localhost:4000/assets/js/backtotop.js"></script>
+<script src="http://localhost:4000/assets/js/lunr.min.js"></script>
+<script src="http://localhost:4000/assets/js/lunr-feed.js"></script>
+<script src="http://localhost:4000/assets/js/jquery.fitvids.js"></script>
+<script src="http://localhost:4000/assets/js/svg4everybody.min.js"></script>
+<script src="http://localhost:4000/assets/js/scripts.js"></script>
+
+
+    </body>
+</html>

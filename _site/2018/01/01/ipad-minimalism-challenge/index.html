@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>iPad Minimalism Challenge | Jeff Perry &mdash; Blogger/Podcaster </title>
+    <meta property="og:title" content="iPad Minimalism Challenge | Jeff Perry &mdash; Blogger/Podcaster " />
+    <meta name="twitter:title" content="iPad Minimalism Challenge | Jeff Perry &mdash; Blogger/Podcaster " />
+
+    <meta name="description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.">
+    <meta name="description" property="og:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+    <meta name="twitter:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:site" content="@iamjeffperry" />
+    
+    <meta property="og:url" content="http://localhost:4000/2018/01/01/ipad-minimalism-challenge/" />
+
+    <meta property="og:image" content="" />
+    <meta name="twitter:image" content="" />
+
+    <meta name="author" content="Jeff Perry" />
+
+    <meta name="copyright" content="Copyright by Jeff Perry. All Rights Reserved." />
+
+    <style>
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/mnpfi9pxYH-Go5UiibESIltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 300;
+            src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v15/vPcynSL0qHq_6dX7lKVByfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(https://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 900;
+            src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url(https://fonts.gstatic.com/s/roboto/v15/bmC0pGMXrhphrZJmniIZpY4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+    </style>
+    
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+    <link rel="canonical" href="http://localhost:4000/2018/01/01/ipad-minimalism-challenge/">
+
+    <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+</head>
+
+    <body>
+        <div class="wrapper">
+            <aside class="user-profile fixed" role="complementary">
+    <div class="burger">
+        <input class="trigger hidden" id="toggleBurger" type="checkbox" />
+        <label for="toggleBurger">
+            <span>Navigation</span>
+        </label>
+    </div>
+
+    <div class="compact-header">
+        <a class="avatar" href="http://localhost:4000"><img alt="Avatar" src="/avatar.png" /></a>
+        <div class="my-info">
+            <strong class="my-name">Jeff Perry</strong>
+            <span class="my-job-title">Blogger/Podcaster</span>
+        </div>
+    </div>
+
+    
+        
+        <div class="mainmenu">
+            <a href="http://localhost:4000" >Home</a>
+            
+                
+            
+                
+            
+                
+            
+                
+                    <a href="http://localhost:4000/about/" >About</a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        </div>
+        
+    
+
+    <p class="about-me">I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.</p>
+
+    <ul class="socials">
+        <li><a href="http://twitter.com/iamjeffperry"><svg title="twitter" width="16" height="16" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+
+        
+
+        
+         <li><a href="http://localhost:4000/feed.xml"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#rss-icon"></use></svg></a></li>
+        
+    </ul>
+</aside>
+
+            <main class="the-content" role="main">
+                <div class="search" role="search">
+    <div>
+        <div class="show-results-count">0 Results</div>
+        <div class="search-holder">
+            <input type="text" id="search-input" placeholder="search for..." />
+        </div>
+    </div>
+    <ul id="results-container" class="results-container"></ul>
+</div>
+
+
+                <article class="post single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2018-01-01T13:30:00-05:00" itemprop="datePublished">1 Jan, 2018</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline">iPad Minimalism Challenge</h2>
+    </header>
+
+    <div class="post-content">
+        <p>Just after Christmas I always feel overwhelmed. Overwhelmed with packing my gifts away, overwhelmed with decompressing after being &ldquo;on&rdquo; throughout the holiday season, and overwhelmed with the amount of things I have to do to get the new year &ldquo;started right.&rdquo;</p>
+<p id="yui_3_17_2_1_1518970896312_110464">I always have the need to clean up my life towards the end of the year, both physically and mentally, so that I go into the new year with the right mindset and the best possible workstation I can make for myself.</p>
+<p id="yui_3_17_2_1_1518970896312_110467">The problem is I very quickly find that I am not able to keep track of everything I need to do and my desk seems more like a storage unit in an episode of <em>Hoarders</em>.</p>
+<p id="yui_3_17_2_1_1518970896312_110473">This month I want to change that, I want to stick to keeping my tasks and things I want to do in order. I want to have a space dedicated to my writing at my home. If you&rsquo;re asking yourself why I suddenly have a fire lit under me about doing this, the answer is simple.</p>
+<h2 id="yui_3_17_2_1_1518970896312_110476">Why I am Doing this</h2>
+<p id="yui_3_17_2_1_1518970896312_110479">The big reason I am doing this is because of a documentary called <a href="https://minimalismfilm.com/"><em>Minimalist: A Documentary About the Important Things</em></a> that opened my eyes about <a href="https://www.theminimalists.com/minimalism/">minimalism</a> and about compulsory shopping. The main message was that we simply don&rsquo;t need as much stuff as we think we do.</p>
+<p id="yui_3_17_2_1_1518970896312_110489">I don&rsquo;t think I will be as minimal as the two main subjects in the documentary but I do think a change is needed in my life because I simply feel overrun when I have too many things on my desk, in my closet, and in my living space.</p>
+<p id="yui_3_17_2_1_1518970896312_110492">So the documentary got me interested with minimalism but the message is what had me take action. And the action I&rsquo;ve taken so far has been very uplifting.</p>
+<p id="yui_3_17_2_1_1518970896312_110495">I decided the first thing I wanted to do with my life to minimize the things I needed was with my desk. Before I started this I had a desk drawer filled to the brim with things I habitually threw in there when I thought I would need it someday but not today. The three drawers I had contained things like 4 pairs of nail clippers, keyboards I no longer used, and a small office worth of disposable pens to name a few. Shocker: I didn&rsquo;t need any of them now.</p>
+<p id="yui_3_17_2_1_1518970896312_110498">So I decided to start emptying out the drawers and see with it was that I actually needed. The answer was <em>none of it</em>. I had a dedicated fountain pen on my Bullet Journal for journaling, I had a Smart Keyboard on my iPad for writing, and everything else I need was in my to-go bag I take with me everywhere. The drawers held items that did not need to stay with me. So I packed it away in storage and everything I <em>need</em> in my life day-to-day is either on my desk or in my bag at arms reach.</p>
+<p id="yui_3_17_2_1_1518970896312_110507">The feeling of serenity and the weight I felt lifting off my shoulders as I closed my storage closet was something I did not expect, and I wanted to continue this. Minimalism was working, and I began thinking about how I use my iPhone and iPad and the apps that cluttered them.</p>
+<p id="yui_3_17_2_1_1518970896312_110510">Which leads me to the challenge I am going to take in the month of January.</p>
+<h2 id="yui_3_17_2_1_1518970896312_110513">What I am doing</h2>
+<p id="yui_3_17_2_1_1518970896312_110516">The challenge for this is simple: start with the stock apps you get when getting a new device and only download the apps you <em>need</em> and leave the rest behind. Now, there are some rules to this challenge I am setting myself as well to keep me on track and preventing myself from clutter on my devices</p>
+<ol id="yui_3_17_2_1_1518970896312_110522">
+<li>Delete any app you don&rsquo;t use after 48 hours of downloading.</li>
+</ol>
+<ul id="yui_3_17_2_1_1518970896312_110526">
+<li>If I need that app again for whatever reason I can always re-download it, but the point of this challenge is to have only the essentials. Apps I don&rsquo;t use after 2 days its initial use are no longer considered essential for me.</li>
+</ul>
+<ol id="yui_3_17_2_1_1518970896312_110530">
+<li>Have everything on one screen</li>
+</ol>
+<ul id="yui_3_17_2_1_1518970896312_110534">
+<li>the main reason for this is because if I limit myself to one screen it leaves me having to really think about what is worth the space on my screen.</li>
+<li>There are a lot of stock apps I simply don&rsquo;t need and they can be pushed back in a folder to stay out of sight and refrain from taking up my precious screen real estate.</li>
+</ul>
+<ol id="yui_3_17_2_1_1518970896312_110540">
+<li>Document in a journal your feelings and changes every day for the next 3 weeks</li>
+</ol>
+<ul id="yui_3_17_2_1_1518970896312_110544">
+<li>Doing this challenge and not keeping track of the changes and my feelings on this is hardly a challenge at all. For every experiment there has to be documented analysis for this and daily journaling is something I think will provide that.</li>
+</ul>
+<p id="yui_3_17_2_1_1518970896312_110548">Now that these rules are set, all that is left is actually doing this.</p>
+<h2 id="yui_3_17_2_1_1518970896312_110551">What&rsquo;s Next</h2>
+<p id="yui_3_17_2_1_1518970896312_110554">With the challenge and the time frame set all that is left is action and analysis.</p>
+<p id="yui_3_17_2_1_1518970896312_110557">So for the next week I will be writing in my journal once a day about the feelings I have and the changes that happens with it. Once the week is over I will report back on January 8th to check in. I will do this every week and come back at the end of the month with my thoughts, information on how things went, and anything I would do differently if I did this again.</p>
+<p id="yui_3_17_2_1_1518970896312_110560">So for now I am left with an empty desk, an iPhone and iPad reset, and nothing but 21 days of essential apps to use.</p>
+
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=iPad Minimalism Challenge&p[summary]=Just after Christmas I always feel overwhelmed. Overwhelmed with packing my gifts away, overwhelmed with decompressing after being &ldquo...&p[url]=http://localhost:4000/2018/01/01/ipad-minimalism-challenge/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2018/01/01/ipad-minimalism-challenge/&text=Just after Christmas I always feel overwhelmed. Overwhelmed with packing my gifts away, overwhelmed with decompressing after being &ldquo...&hashtags=ipad,minimalism," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/ipad">ipad</a></li>
+                
+                <li><a href="http://localhost:4000/tag/minimalism">minimalism</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+
+            </main>
+        </div>
+
+        <script src="http://localhost:4000/assets/js/jquery-1.12.2.min.js"></script>
+<script src="http://localhost:4000/assets/js/backtotop.js"></script>
+<script src="http://localhost:4000/assets/js/lunr.min.js"></script>
+<script src="http://localhost:4000/assets/js/lunr-feed.js"></script>
+<script src="http://localhost:4000/assets/js/jquery.fitvids.js"></script>
+<script src="http://localhost:4000/assets/js/svg4everybody.min.js"></script>
+<script src="http://localhost:4000/assets/js/scripts.js"></script>
+
+
+    </body>
+</html>

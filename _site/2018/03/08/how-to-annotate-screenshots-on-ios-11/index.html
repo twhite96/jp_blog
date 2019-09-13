@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>How To Annotate Screenshots on iOS 11 | Jeff Perry &mdash; Blogger/Podcaster </title>
+    <meta property="og:title" content="How To Annotate Screenshots on iOS 11 | Jeff Perry &mdash; Blogger/Podcaster " />
+    <meta name="twitter:title" content="How To Annotate Screenshots on iOS 11 | Jeff Perry &mdash; Blogger/Podcaster " />
+
+    <meta name="description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.">
+    <meta name="description" property="og:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+    <meta name="twitter:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:site" content="@iamjeffperry" />
+    
+    <meta property="og:url" content="http://localhost:4000/2018/03/08/how-to-annotate-screenshots-on-ios-11/" />
+
+    <meta property="og:image" content="" />
+    <meta name="twitter:image" content="" />
+
+    <meta name="author" content="Jeff Perry" />
+
+    <meta name="copyright" content="Copyright by Jeff Perry. All Rights Reserved." />
+
+    <style>
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/mnpfi9pxYH-Go5UiibESIltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 300;
+            src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v15/vPcynSL0qHq_6dX7lKVByfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(https://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 900;
+            src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url(https://fonts.gstatic.com/s/roboto/v15/bmC0pGMXrhphrZJmniIZpY4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+    </style>
+    
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+    <link rel="canonical" href="http://localhost:4000/2018/03/08/how-to-annotate-screenshots-on-ios-11/">
+
+    <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+</head>
+
+    <body>
+        <div class="wrapper">
+            <aside class="user-profile fixed" role="complementary">
+    <div class="burger">
+        <input class="trigger hidden" id="toggleBurger" type="checkbox" />
+        <label for="toggleBurger">
+            <span>Navigation</span>
+        </label>
+    </div>
+
+    <div class="compact-header">
+        <a class="avatar" href="http://localhost:4000"><img alt="Avatar" src="/avatar.png" /></a>
+        <div class="my-info">
+            <strong class="my-name">Jeff Perry</strong>
+            <span class="my-job-title">Blogger/Podcaster</span>
+        </div>
+    </div>
+
+    
+        
+        <div class="mainmenu">
+            <a href="http://localhost:4000" >Home</a>
+            
+                
+            
+                
+            
+                
+            
+                
+                    <a href="http://localhost:4000/about/" >About</a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        </div>
+        
+    
+
+    <p class="about-me">I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.</p>
+
+    <ul class="socials">
+        <li><a href="http://twitter.com/iamjeffperry"><svg title="twitter" width="16" height="16" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+
+        
+
+        
+         <li><a href="http://localhost:4000/feed.xml"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#rss-icon"></use></svg></a></li>
+        
+    </ul>
+</aside>
+
+            <main class="the-content" role="main">
+                <div class="search" role="search">
+    <div>
+        <div class="show-results-count">0 Results</div>
+        <div class="search-holder">
+            <input type="text" id="search-input" placeholder="search for..." />
+        </div>
+    </div>
+    <ul id="results-container" class="results-container"></ul>
+</div>
+
+
+                <article class="post single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2018-03-08T10:00:21-05:00" itemprop="datePublished">8 Mar, 2018</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline">How To Annotate Screenshots on iOS 11</h2>
+    </header>
+
+    <div class="post-content">
+        <p id="yui_3_17_2_1_1525151795126_227353">When you want to share your screen on iOS it has become second nature to just take a screenshot and send it to the person you want to share it with, usually without any editing. This can be useful, but an even better solution is to add things like text, arrows, handwritten words, etc. to that screenshot. It can give whoever is getting that image that little extra reference to help then understand what you are sending.<br />
+A great example of this is when a family member needs help with a setting in iOS or has a technical support question. A simple screenshot that may help, but a screenshot with an arrow or an explanation on what to do can save you a ton of time (and headaches).</p>
+<p id="yui_3_17_2_1_1525151795126_227356">With iOS 11 this has never been more accessible and easy to use.</p>
+<h2 id="yui_3_17_2_1_1525151795126_227359">Annotate On iPad</h2>
+<p id="yui_3_17_2_1_1525151795126_227362">To start, you can take a screenshot by pressing the Home Button and the power button at the same time. The only outlier with this is the iPhone X as it does not have a Home Button. To do this you simple press the side button and the volume up button simultaneously.</p>
+<p id="yui_3_17_2_1_1525151795126_227365">There is also a way you can take a screenshot with a keyboard attached to your iOS device. If you are a Mac user you probably know the shortcut. You can use pres SHIFT+ ⌘ (cmd)+3 to take a screenshot. You can also take a screenshot and immediately get into the annotation with the keyboard shortcut SHIFT+⌘(cmd)+4. Both are staple keyboard shortcuts that works in any app you are using. So pick what ever method you want to get the screenshot(s) as you see fit. After that is where the real fun begins.</p>
+<p id="yui_3_17_2_1_1525151795126_227368">Once you get that screenshot, a small photo of the screenshot shows up on the bottom left corner of your screen. If you take multiple screenshots, they stack on top of each other to indicate that you have multiple screenshots.</p>
+<pre><code>  &lt;img src="https://tablethabit.com/wp-content/uploads/2018/07/screenshot-left-corner.jpeg" alt=""/&gt;
+</code></pre>
+<p id="yui_3_17_2_1_1525151795126_227374">From there you can either tap on the screenshot(s) and the built in iOS annotation will come up with a plethora of options at your disposal. You can crop the image, write on it to create arrows or hand write some stuff explaining things.</p>
+<p id="yui_3_17_2_1_1525151795126_227377">Alternatively, if you decide you don’t need to annotate or edit the image you can press and hold on the screenshot on the bottom left and the Share Sheet will pop up to send wherever you like.</p>
+<p id="yui_3_17_2_1_1525151795126_227380">One great example of what an annotate image can provide is a screenshot I recently got was from my co-host of <a href="http://aslabofglass.com/">A Slab of Glass</a>, Christopher Lawley, who shared his thoughts not the redesign of Tablet Habit.</p>
+<pre><code>  &lt;img src="https://tablethabit.com/wp-content/uploads/2018/07/chris-annotation.jpeg" alt=""/&gt;
+</code></pre>
+<p id="yui_3_17_2_1_1525151795126_227389">He pointed out the two things he thought needed changing on the site (he was totally right and I have since changed the menu and image like he recommended).</p>
+<p id="yui_3_17_2_1_1525151795126_227392">This is the power of screenshots and specifically annotating them.</p>
+<p id="yui_3_17_2_1_1525151795126_227395">Along with the crop tool, pen, pencil, and highlighter options you get in the built in iOS editor you also have this lasso tool, which is underrated if you ask me. With this you can select any and all added markings on the image and move them around as you see fit. Below is a quick video of what I am talking about.</p>
+<p id="yui_3_17_2_1_1525151795126_227398">[video width="1440" height="1080" mp4="[tablethabit.com/wp-conten...](https://tablethabit.com/wp-content/uploads/2018/03/DD3105D9-AD4E-4C94-A50F-68173B2E9181.mp4)"][/video]</p>
+<p id="yui_3_17_2_1_1525151795126_227401">So these are the tools you get with the built in annotation, but what if you want to do more advanced stuff with your screenshots? This is where 3rd party apps come in.</p>
+<h1 id="yui_3_17_2_1_1525151795126_227404">3rd Party Apps for Annotation</h1>
+<p id="yui_3_17_2_1_1525151795126_227407">One app I <em>love</em> to use for annotating images for Tablet Habit is <a href="https://itunes.apple.com/us/app/annotable-annotation-markup/id1099850421?mt=8&amp;at=1000lHAf">Annotable</a>. It is a 3rd party app that allows you to do some pretty amazing things. I personally love the spotlight feature where everything you select is at the foreground while the rest of the unselected areas of the screenshot are dimmed to showcase the selected areas. It is great to point people where to look in a way that is appeasing to the the eyes.</p>
+<pre><code>   [caption id="" align="alignnone" width="2224.0"]<img src="/assets/annotable-spotlight.jpeg" alt="Spotlight Feature with Annotable" /> Spotlight Feature with Annotable[/caption]
+</code></pre>
+<p id="yui_3_17_2_1_1525151795126_227419">If you want to learn more about Annotable and other apps that are great additions for annotation check out <a href="https://thesweetsetup.com/apps/best-ios-app-annotating-images/">The Sweet Setup’s article</a> and pick the right app for you.<br />
+So if you find yourself wanting to share your screen with someone, maybe a few seconds of editing a screenshot can help.</p>
+<p id="yui_3_17_2_1_1525151795126_227425">If you think I missed something about this or want to give any advice you have about annotating screenshots on iOS feel free to leave a comment below or get in contact with me.</p>
+
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=How To Annotate Screenshots on iOS 11&p[summary]=When you want to share your screen on iOS it has become second nature to just take a screenshot and send it to the person you want to sha...&p[url]=http://localhost:4000/2018/03/08/how-to-annotate-screenshots-on-ios-11/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2018/03/08/how-to-annotate-screenshots-on-ios-11/&text=When you want to share your screen on iOS it has become second nature to just take a screenshot and send it to the person you want to sha...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+
+            </main>
+        </div>
+
+        <script src="http://localhost:4000/assets/js/jquery-1.12.2.min.js"></script>
+<script src="http://localhost:4000/assets/js/backtotop.js"></script>
+<script src="http://localhost:4000/assets/js/lunr.min.js"></script>
+<script src="http://localhost:4000/assets/js/lunr-feed.js"></script>
+<script src="http://localhost:4000/assets/js/jquery.fitvids.js"></script>
+<script src="http://localhost:4000/assets/js/svg4everybody.min.js"></script>
+<script src="http://localhost:4000/assets/js/scripts.js"></script>
+
+
+    </body>
+</html>

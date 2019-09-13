@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Send To Things 3 - Drafts 5 Action | Jeff Perry &mdash; Blogger/Podcaster </title>
+    <meta property="og:title" content="Send To Things 3 - Drafts 5 Action | Jeff Perry &mdash; Blogger/Podcaster " />
+    <meta name="twitter:title" content="Send To Things 3 - Drafts 5 Action | Jeff Perry &mdash; Blogger/Podcaster " />
+
+    <meta name="description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.">
+    <meta name="description" property="og:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+    <meta name="twitter:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:site" content="@iamjeffperry" />
+    
+    <meta property="og:url" content="http://localhost:4000/2018/08/02/send-to-things-3-drafts-5-action/" />
+
+    <meta property="og:image" content="" />
+    <meta name="twitter:image" content="" />
+
+    <meta name="author" content="Jeff Perry" />
+
+    <meta name="copyright" content="Copyright by Jeff Perry. All Rights Reserved." />
+
+    <style>
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/mnpfi9pxYH-Go5UiibESIltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 300;
+            src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v15/vPcynSL0qHq_6dX7lKVByfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(https://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 900;
+            src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url(https://fonts.gstatic.com/s/roboto/v15/bmC0pGMXrhphrZJmniIZpY4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+    </style>
+    
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+    <link rel="canonical" href="http://localhost:4000/2018/08/02/send-to-things-3-drafts-5-action/">
+
+    <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+</head>
+
+    <body>
+        <div class="wrapper">
+            <aside class="user-profile fixed" role="complementary">
+    <div class="burger">
+        <input class="trigger hidden" id="toggleBurger" type="checkbox" />
+        <label for="toggleBurger">
+            <span>Navigation</span>
+        </label>
+    </div>
+
+    <div class="compact-header">
+        <a class="avatar" href="http://localhost:4000"><img alt="Avatar" src="/avatar.png" /></a>
+        <div class="my-info">
+            <strong class="my-name">Jeff Perry</strong>
+            <span class="my-job-title">Blogger/Podcaster</span>
+        </div>
+    </div>
+
+    
+        
+        <div class="mainmenu">
+            <a href="http://localhost:4000" >Home</a>
+            
+                
+            
+                
+            
+                
+            
+                
+                    <a href="http://localhost:4000/about/" >About</a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        </div>
+        
+    
+
+    <p class="about-me">I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.</p>
+
+    <ul class="socials">
+        <li><a href="http://twitter.com/iamjeffperry"><svg title="twitter" width="16" height="16" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+
+        
+
+        
+         <li><a href="http://localhost:4000/feed.xml"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#rss-icon"></use></svg></a></li>
+        
+    </ul>
+</aside>
+
+            <main class="the-content" role="main">
+                <div class="search" role="search">
+    <div>
+        <div class="show-results-count">0 Results</div>
+        <div class="search-holder">
+            <input type="text" id="search-input" placeholder="search for..." />
+        </div>
+    </div>
+    <ul id="results-container" class="results-container"></ul>
+</div>
+
+
+                <article class="post single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2018-08-02T10:00:17-04:00" itemprop="datePublished">2 Aug, 2018</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline">Send To Things 3 - Drafts 5 Action</h2>
+    </header>
+
+    <div class="post-content">
+        <p>
+				I have been using <a href="https://itunes.apple.com/us/app/things-3-for-ipad/id904244226?mt=8&amp;at=1000lHAf">Things 3</a> for a little while now as my main Task Manager, and I think this is sticking for me. I love being able to plan my days with their default sections, and the power it has in both organization and automation is something I cherish every time I use it.</p>
+<p>One thing that I missed when I switched over the Things from <a href="https://itunes.apple.com/us/app/omnifocus-3/id1346190318?mt=8&amp;at=1000lHAf">Omnifocus 3</a> is the availability of project templates for Omnifocus. I had a ton of Taskpaper templates for common projects I would create. Things like podcast episodes, blog posts, and other regular projects were easy to create in Omnifocus with the tap of a button.</p>
+<p>Things 3 didn&rsquo;t have anything like that until they updated to version 3.4 allowing for x-callback-url schemes. This feature has been around for a bit now but I never got around to using it as a means to solve my problems with project templates. That is, until I came across the Drafts 5 action <em>Send to Things</em>.</p>
+<h2 id="whatitis">What it is</h2>
+<p><a href="https://actions.getdrafts.com/a/1Cc">Send to Things</a> by user @eichtyler is something that solved my problems with project templates in Cultured Code&rsquo;s task manager. It made my life easy to just write out my lists and then make it the way I wanted.</p>
+<p>The way it works is by using a custom syntax to differentiate items in your list from to-do items to deadlines, headings, etc. so when you are finally ready to send it over to Things 3 it is formatted the way you want.</p>
+<p>One tool I loved in addition to this actions was the <em><a href="https://actions.getdrafts.com/a/1GR">Send to Things Syntax</a></em> action by <a href="http://twitter.com/nahumck">Tim Nahumck</a>. This allows you to tap on the action to prompt a pop-up showing you all the syntax built into the Send to Things action. It came in handy a number of times for me as I was getting acclimated to writing out my projects correctly. Here&rsquo;s what Nahumck&rsquo;s action shows when you open it:</p>
+<pre><code>Here is the syntax for Send to Things:
+
+# New Project
+@ Existing Project
+&gt; Note
+#tag
+## Heading
+:when date/time
+!deadline
+Todo
+- checklist item
+</code></pre>
+<p>There are a number of items in here that I&rsquo;d like to go over with this to help you to understand the power of what you can do with this action.</p>
+<h2 id="howitworks">How it Works</h2>
+<p>Learning new syntax can be difficult and time consuming, but a large amount of these items are using Markdown syntax in a way where the script in this Drafts Action will parse out things based on the characters before it.</p>
+<p>One impressive thing about this action is that depending on whether you want it in a project or just a list of items to your inbox you can differentiate that by whether or not you use a Project heading.</p>
+<p>I have broken it down into these two scenarios to help understand the differences.</p>
+<h3 id="newproject">New Project</h3>
+<p>When you are wanting to either make a template or realize when making a list of actions to send to things that it is better off as a project all you need to do is make a Project header. This is just like a Heading in Markdown with a single &ldquo;#&rdquo; character followed by a space. Anything after that space is what the project name will be called. In this case I copied the template from the Drafts Action Directory so the project is called &ldquo;Project 1.&rdquo;</p>
+<p>You may notice in the image that there is also a &ldquo;Project 2&rdquo; heading, which is exactly what you may think. If you use a new heading you are able to make another project and all the items below it will then be put in the second project as It is under the second heading.</p>
+<p>If you want to add a note to the project that is a simple quote syntax in markdown with a &ldquo;&gt;&rdquo; character followed by a space. As you can see in the template if you make a new line with the syntax that new line carries over to the notes in the Project.</p>
+<p>When you want to use either a start date or a deadline the syntax on these aren&rsquo;t just simple symbols. These are arguably the most deviant from traditional Markdown syntax, making it a little more difficult to understand.</p>
+<p>If you want to use a start date, meaning that until this date your project will be in the Upcoming area, you use the syntax &ldquo;:when&rdquo; followed by a space. From there you can use natural language input such as &ldquo;tomorrow&rdquo; in this template, making it much easier to differentiate when these items are taking place over the date picker. You can also use things like &ldquo;next Monday&rdquo; as well when writing your dates.</p>
+<p>The same goes for the deadline, only the syntax necessary to make that work is &ldquo;!deadline&rdquo; followed by a space. Just input what ever date you want after that and the deadline will carry over when you send it to Things 3.</p>
+<p>Finally, if you want to add a task item you just need to make a new line and enter in the name of the task. There are no special characters or syntax necessary for task items. Which is the smart move as you can add syntax in later if you so choose, but the main point of this action is to quickly lay out the items you want to send to Things, and if you needed a special character or something to mark it as a task item your efficiency would drop dramatically. In this template you can see the task items named &ldquo;Todo 1&rdquo; &ldquo;Todo 2&rdquo; and so on.</p>
+<p>Now that you have your projects all set and ready to go you can now send it to Things via the Drafts action. This is what you get when you use the default template on the Drafts Action for sending as a new project.</p>
+<h2 id="itemsintoinbox">Items into Inbox</h2>
+<p>If you aren&rsquo;t looking to make a new project, and instead just want to send something to Things Inbox to organize later it is even easier.</p>
+<p>As you can see the syntax used is the same, the only addition is comments for to-do items. As you can see in the template, they are solely for organizing your thoughts when writing them and will be ignored when you send it to Things. It is a great way to put everything in your mind on to the screen and figure it out once your head is emptied and you have everything laid out. It is also great if you plan to keep this note as a template for future items.</p>
+<p>You will also see the absence of Project headings, which brings a good point that you can actually combine these two templates and have the items above the first project heading go to the Inbox and the rest go to their respective Projects. Once you have everything in there that you want sent to Things you are ready to run the action. This is what you will see with the default template on the Drafts Action for inbox items.</p>
+<h2 id="problemswithit">Problems with it</h2>
+<p>One thing that I can not seem to get to work properly is the use of tags. I have tried existing tags and new tags in these templates but none of them seem to follow into Things. I am not sure if this is me doing something wrong or something that needs to change in the script. Either way, if you have a fix for this let me know either <a href="mailto:contact@tablethabit.com">via email</a> or <a href="http://twitter.com/iamjeffperry">on Twitter</a>.</p>
+<p>All in all this action has made things like projects, templates, and all around task management much easier for me. I love Things 3 and their addition to a <a href="https://culturedcode.com/things/blog/2018/05/desktop-class-productivity-for-ipad/">Desktop-Class Productivity for iPad</a> in version 3.6 has made inputting tasks easier than ever, but something about being able to input my task whilst writing in Drafts makes things really gel. I no longer have to switch modes, and instead just need to use this syntax in a new note and with a simple swipe and tap I can send it to Things 3 and continue with the work I was doing previous.</p>
+<p>There is something to be said about not having to open a task management app every time you want to add something to it. It allows for you to stay focused on the task at hand and avoid being distracted with anything that may pop out at you in your task list.</p>
+<p>This action allows for that and makes adding the important meta-data you want a cinch. Try this out today, and if you want something to help you remember the syntax get <a href="https://actions.getdrafts.com/a/1GR">Nahumck&rsquo;s supplementary action as well</a>. Additionally you can read <a href="https://www.macstories.net/reviews/drafts-5-the-macstories-review/">his review of Drafts 5 on MacStories</a> as well if you aren&rsquo;t sure what Drafts 5 is and what to learn more.</p>
+<p>Give these actions a shot and see if this can solve any of your problems with task management in Things 3, I know It did for me.		</p>
+
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Send To Things 3 - Drafts 5 Action&p[summary]=
+				I have been using Things 3 for a little while now as my main Task Manager, and I think this is sticking for me. I love being able to...&p[url]=http://localhost:4000/2018/08/02/send-to-things-3-drafts-5-action/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2018/08/02/send-to-things-3-drafts-5-action/&text=
+				I have been using Things 3 for a little while now as my main Task Manager, and I think this is sticking for me. I love being able to...&hashtags=Drafts,ios,shortcut,things,workflow," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/Drafts">Drafts</a></li>
+                
+                <li><a href="http://localhost:4000/tag/ios">ios</a></li>
+                
+                <li><a href="http://localhost:4000/tag/shortcut">shortcut</a></li>
+                
+                <li><a href="http://localhost:4000/tag/things">things</a></li>
+                
+                <li><a href="http://localhost:4000/tag/workflow">workflow</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+
+            </main>
+        </div>
+
+        <script src="http://localhost:4000/assets/js/jquery-1.12.2.min.js"></script>
+<script src="http://localhost:4000/assets/js/backtotop.js"></script>
+<script src="http://localhost:4000/assets/js/lunr.min.js"></script>
+<script src="http://localhost:4000/assets/js/lunr-feed.js"></script>
+<script src="http://localhost:4000/assets/js/jquery.fitvids.js"></script>
+<script src="http://localhost:4000/assets/js/svg4everybody.min.js"></script>
+<script src="http://localhost:4000/assets/js/scripts.js"></script>
+
+
+    </body>
+</html>

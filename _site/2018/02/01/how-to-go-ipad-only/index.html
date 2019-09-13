@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>How to Go iPad Only | Jeff Perry &mdash; Blogger/Podcaster </title>
+    <meta property="og:title" content="How to Go iPad Only | Jeff Perry &mdash; Blogger/Podcaster " />
+    <meta name="twitter:title" content="How to Go iPad Only | Jeff Perry &mdash; Blogger/Podcaster " />
+
+    <meta name="description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.">
+    <meta name="description" property="og:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+    <meta name="twitter:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:site" content="@iamjeffperry" />
+    
+    <meta property="og:url" content="http://localhost:4000/2018/02/01/how-to-go-ipad-only/" />
+
+    <meta property="og:image" content="" />
+    <meta name="twitter:image" content="" />
+
+    <meta name="author" content="Jeff Perry" />
+
+    <meta name="copyright" content="Copyright by Jeff Perry. All Rights Reserved." />
+
+    <style>
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/mnpfi9pxYH-Go5UiibESIltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 300;
+            src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v15/vPcynSL0qHq_6dX7lKVByfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(https://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 900;
+            src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url(https://fonts.gstatic.com/s/roboto/v15/bmC0pGMXrhphrZJmniIZpY4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+    </style>
+    
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+    <link rel="canonical" href="http://localhost:4000/2018/02/01/how-to-go-ipad-only/">
+
+    <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+</head>
+
+    <body>
+        <div class="wrapper">
+            <aside class="user-profile fixed" role="complementary">
+    <div class="burger">
+        <input class="trigger hidden" id="toggleBurger" type="checkbox" />
+        <label for="toggleBurger">
+            <span>Navigation</span>
+        </label>
+    </div>
+
+    <div class="compact-header">
+        <a class="avatar" href="http://localhost:4000"><img alt="Avatar" src="/avatar.png" /></a>
+        <div class="my-info">
+            <strong class="my-name">Jeff Perry</strong>
+            <span class="my-job-title">Blogger/Podcaster</span>
+        </div>
+    </div>
+
+    
+        
+        <div class="mainmenu">
+            <a href="http://localhost:4000" >Home</a>
+            
+                
+            
+                
+            
+                
+            
+                
+                    <a href="http://localhost:4000/about/" >About</a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        </div>
+        
+    
+
+    <p class="about-me">I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.</p>
+
+    <ul class="socials">
+        <li><a href="http://twitter.com/iamjeffperry"><svg title="twitter" width="16" height="16" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+
+        
+
+        
+         <li><a href="http://localhost:4000/feed.xml"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#rss-icon"></use></svg></a></li>
+        
+    </ul>
+</aside>
+
+            <main class="the-content" role="main">
+                <div class="search" role="search">
+    <div>
+        <div class="show-results-count">0 Results</div>
+        <div class="search-holder">
+            <input type="text" id="search-input" placeholder="search for..." />
+        </div>
+    </div>
+    <ul id="results-container" class="results-container"></ul>
+</div>
+
+
+                <article class="post single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2018-02-01T10:00:00-05:00" itemprop="datePublished">1 Feb, 2018</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline">How to Go iPad Only</h2>
+    </header>
+
+    <div class="post-content">
+        <p>If you are wanting to leave your laptop behind for the more portable, convenient, and just pleasant experience that is iOS there is one way to make this transition stick, and it isn&rsquo;t what you think. The best way is to <strong>remove all other options</strong> and only have an iPad available. It may sound simple, but when you limit yourself innovation takes over. This by no means is easy, but it is the best in my opinion. There is somewhat of a learning curve needed to acclimate yourself.</p>
+<p id="yui_3_17_2_1_1525151795126_368592">To help you decide if this is right for you, I have come up with 3 things you need to consider when making the conscious choice to leave Mac or PC behind and go iOS only.</p>
+<ol id="yui_3_17_2_1_1525151795126_368595">
+<li>Are You Willing to Change Workflows?</li>
+</ol>
+<p id="yui_3_17_2_1_1525151795126_368599">Making this change in your workflows will create some hurdles you may not have had to get over before. But know this, it <em>is</em> possible to use iOS exclusively. To do this you need to know what to do to combat issues that may come up. For that I have a few posts that will help when getting started.</p>
+<ul id="yui_3_17_2_1_1525151795126_368605">
+<li>iCab Mobile - The Best Browser for iPad</li>
+<li>Why iPad vs Mac</li>
+<li>Learn How to Use Workflow</li>
+</ul>
+<p id="yui_3_17_2_1_1525151795126_368616">I have been using my iPad as my main computer for almost a year and it has become more fluid and second-nature to do nearly everything I could on my Mac. Some things are a little less intuitive but other things I used to do on my Mac seem like they were actually meant for iOS in the first place.</p>
+<p id="yui_3_17_2_1_1525151795126_368619">All in all, for me, iOS has made my workflows more intentional and effective than they were on the Mac.</p>
+<ol id="yui_3_17_2_1_1525151795126_368622">
+<li>How Important is Automation to You?</li>
+</ol>
+<p id="yui_3_17_2_1_1525151795126_368626">Between Applescripts, applications like <a href="https://www.noodlesoft.com/">Hazel</a>, and other automation options you may be using, iOS is a much more sandboxed experience. This may sound like a bad thing to you, it was for me when I started. But here&rsquo;s how I think of it now: iOS makes you focus more on what is <em>important</em>.</p>
+<p id="yui_3_17_2_1_1525151795126_368635">Now, automation is available for iOS. There is an app called <a href="https://itunes.apple.com/us/app/workflow/id915249334?mt=8&amp;at=1000lHAf">Workflow</a> that Apple acquired last year. It provides the bridges to our apps that we needed, but doesn&rsquo;t run in the background like Hazel or other software can.</p>
+<p id="yui_3_17_2_1_1525151795126_368641">Automation for iOS isn&rsquo;t the same as Mac, not by a long shot, but it doesn&rsquo;t need to be. I have found the limitations brought to me with iOS automation has actually improved my abilities to work on the things that matter and let the rest fall to the wayside without much hesitation. This is one of <em>the biggest</em> reasons I moved to iOS more and more over the years and why I keep coming back in times of doubt.</p>
+<ol id="yui_3_17_2_1_1525151795126_368647">
+<li>Do You Enjoy Trying New Things?</li>
+</ol>
+<p id="yui_3_17_2_1_1525151795126_368651">When I made the switch to iOS, I made the decision to start right from the bottom and leave all my previous notions of computing at the virtual doorstep. I wanted a clear head and an open-mind when I took this plunge.</p>
+<p id="yui_3_17_2_1_1525151795126_368654">I am not going to lie, there were times when I went back to my Mac, but even when I caved a little I kept remembering all the things that were fun and delightful on my iPad over my Mac and I kept coming back because of it.</p>
+<p id="yui_3_17_2_1_1525151795126_368657">I have learned a ton about iOS and about myself through the last year when I started this journey. I feel like I know how I prefer my work done more than I did before, and I spend less time problem solving and more time actually doing. If I hadn&rsquo;t made that switch to my iPad Air 2 when I did I don&rsquo;t think I would be as confident in my work as I am now and definitely not as productive.</p>
+<p id="yui_3_17_2_1_1525151795126_368660">The iPad offered me what no other computer did: purpose.</p>
+<h2 id="yui_3_17_2_1_1525151795126_368663">So You Want to Use Your iPad More, What Now?</h2>
+<p id="yui_3_17_2_1_1525151795126_368666">If you have considered the pros and cons for you and want to go all-in on iOS, then I have good news! You can join others in a Facebook Group called <a href="http://ipadonly.club/"><em>The iPad Only Club</em></a>.</p>
+<p id="yui_3_17_2_1_1525151795126_368673">Here you will find me and other like-minded people in the iOS only community that will help you with your problems, encourage you when you are frustrated, and provide useful insight and value to help you make this switch as painless, and dare I say fun as possible.</p>
+<p id="yui_3_17_2_1_1525151795126_368676">If you want to join, head over to <a href="http://ipadonly.club/">iPadOnly.club</a> and join. It will redirect you to the Facebook group, from there request to join (the reason we require your request is to keep spammers out, don&rsquo;t worry we will accept your request).</p>
+<p id="yui_3_17_2_1_1525151795126_368682">There may not be many users on there yet (this is the launch announcement after all), but I will be there every day to help you and encourage you throughout this change as the group grows over time. And if you want more people to join, share this with them. They say the best way to do anything life-changing is with a friend.</p>
+<p id="yui_3_17_2_1_1525151795126_368685">So, if you are looking to make the switch it iOS as your main operating system join The iPad Only Club over at <a href="http://ipadonly.club/">iPadOnly.club</a>.</p>
+<p id="yui_3_17_2_1_1525151795126_368691">See you there.</p>
+
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=How to Go iPad Only&p[summary]=If you are wanting to leave your laptop behind for the more portable, convenient, and just pleasant experience that is iOS there is one w...&p[url]=http://localhost:4000/2018/02/01/how-to-go-ipad-only/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2018/02/01/how-to-go-ipad-only/&text=If you are wanting to leave your laptop behind for the more portable, convenient, and just pleasant experience that is iOS there is one w...&hashtags=ipad,minimalism," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/ipad">ipad</a></li>
+                
+                <li><a href="http://localhost:4000/tag/minimalism">minimalism</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+
+            </main>
+        </div>
+
+        <script src="http://localhost:4000/assets/js/jquery-1.12.2.min.js"></script>
+<script src="http://localhost:4000/assets/js/backtotop.js"></script>
+<script src="http://localhost:4000/assets/js/lunr.min.js"></script>
+<script src="http://localhost:4000/assets/js/lunr-feed.js"></script>
+<script src="http://localhost:4000/assets/js/jquery.fitvids.js"></script>
+<script src="http://localhost:4000/assets/js/svg4everybody.min.js"></script>
+<script src="http://localhost:4000/assets/js/scripts.js"></script>
+
+
+    </body>
+</html>

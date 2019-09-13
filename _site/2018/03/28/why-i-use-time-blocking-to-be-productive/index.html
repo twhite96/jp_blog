@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Why I Use Time Blocking to Be Productive | Jeff Perry &mdash; Blogger/Podcaster </title>
+    <meta property="og:title" content="Why I Use Time Blocking to Be Productive | Jeff Perry &mdash; Blogger/Podcaster " />
+    <meta name="twitter:title" content="Why I Use Time Blocking to Be Productive | Jeff Perry &mdash; Blogger/Podcaster " />
+
+    <meta name="description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.">
+    <meta name="description" property="og:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+    <meta name="twitter:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:site" content="@iamjeffperry" />
+    
+    <meta property="og:url" content="http://localhost:4000/2018/03/28/why-i-use-time-blocking-to-be-productive/" />
+
+    <meta property="og:image" content="" />
+    <meta name="twitter:image" content="" />
+
+    <meta name="author" content="Jeff Perry" />
+
+    <meta name="copyright" content="Copyright by Jeff Perry. All Rights Reserved." />
+
+    <style>
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/mnpfi9pxYH-Go5UiibESIltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 300;
+            src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v15/vPcynSL0qHq_6dX7lKVByfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(https://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 900;
+            src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url(https://fonts.gstatic.com/s/roboto/v15/bmC0pGMXrhphrZJmniIZpY4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+    </style>
+    
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+    <link rel="canonical" href="http://localhost:4000/2018/03/28/why-i-use-time-blocking-to-be-productive/">
+
+    <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+</head>
+
+    <body>
+        <div class="wrapper">
+            <aside class="user-profile fixed" role="complementary">
+    <div class="burger">
+        <input class="trigger hidden" id="toggleBurger" type="checkbox" />
+        <label for="toggleBurger">
+            <span>Navigation</span>
+        </label>
+    </div>
+
+    <div class="compact-header">
+        <a class="avatar" href="http://localhost:4000"><img alt="Avatar" src="/avatar.png" /></a>
+        <div class="my-info">
+            <strong class="my-name">Jeff Perry</strong>
+            <span class="my-job-title">Blogger/Podcaster</span>
+        </div>
+    </div>
+
+    
+        
+        <div class="mainmenu">
+            <a href="http://localhost:4000" >Home</a>
+            
+                
+            
+                
+            
+                
+            
+                
+                    <a href="http://localhost:4000/about/" >About</a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        </div>
+        
+    
+
+    <p class="about-me">I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.</p>
+
+    <ul class="socials">
+        <li><a href="http://twitter.com/iamjeffperry"><svg title="twitter" width="16" height="16" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+
+        
+
+        
+         <li><a href="http://localhost:4000/feed.xml"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#rss-icon"></use></svg></a></li>
+        
+    </ul>
+</aside>
+
+            <main class="the-content" role="main">
+                <div class="search" role="search">
+    <div>
+        <div class="show-results-count">0 Results</div>
+        <div class="search-holder">
+            <input type="text" id="search-input" placeholder="search for..." />
+        </div>
+    </div>
+    <ul id="results-container" class="results-container"></ul>
+</div>
+
+
+                <article class="post single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2018-03-28T13:00:00-04:00" itemprop="datePublished">28 Mar, 2018</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline">Why I Use Time Blocking to Be Productive</h2>
+    </header>
+
+    <div class="post-content">
+        <p id="yui_3_17_2_1_1525148325901_43128">If you are like me, you probably only think of a calendar app for appointments and time sensitive events happening in your life. You need to keep those events in a safe place so that they remind you of when, and where, you need to be. Which is all fine and good but what about that empty space? What do you do when you have nothing scheduled? For me, I decided to utilize my calendar more and fill up that white space. Some call it hyper-scheduling, other call it time boxing, but I call it time blocking.<br />
+Whatever you call it, it basically means that I plan everything in my day within my calendar app. If I have plans to write, it goes in the calendar. If I plan to edit a podcast, it goes in the calendar. If I want to work on more administrative work, it goes in the calendar.</p>
+<p id="yui_3_17_2_1_1525148325901_43131">But before I explain <em>how</em>, I think knowing <em>why</em> will help understand what brought this change.</p>
+<h3 id="yui_3_17_2_1_1525148325901_43140">Why Time Blocking?</h3>
+<p id="yui_3_17_2_1_1525148325901_43143">The reason I started to do this is because I was frustrated with task managers for iOS. I wanted to go about task management from a completely different angle than I had been. My issues with task managers has boiled down to having a lot of things in one place, and then not knowing what to do with it. I know about the weekly review process <a href="https://en.wikipedia.org/wiki/Getting_Things_Done">Getting Things Done</a> (GTD) has in place, and I have tried that. I just never seem to stick with it. I think my brain isn’t wired for a GTD-style task management system, which is a hard pill to swallow because I have been trying to use GTD for years with little to no success. It also doesn’t help when I have a lot on my plate in many aspects of my life.</p>
+<p id="yui_3_17_2_1_1525148325901_43149">I wear a lot of different hats. I write for Tablet Habit and do a weekly newsletter. I am a freelance podcast editor, I co-host two podcasts, and I also have a day job. Those are a lot of different things I handle on a regular basis, and I needed to figure out how to maintain and advance my goals for each. Enter <a href="https://toggl.com/time-blocking">Time Blocking</a>.</p>
+<h3 id="yui_3_17_2_1_1525148325901_43158">How I Got Started Time Blocking</h3>
+<p id="yui_3_17_2_1_1525148325901_43161">The first thing I needed to do with time blocking was to figure out what I need to get done each week in order to maintain the different areas of my life. So I got a pen and paper and started to write down everything I needed to get done each week and what area of my life that falls in to.</p>
+<p id="yui_3_17_2_1_1525148325901_43164">I had an idea of <em>what</em> I had to do it was now a matter of <em>when</em>. So I took the time sensitive stuff first and made all-day events for when I am doing things like posting podcast episodes and blog posts. They are things that need to be done that day, but not at a specific time. It also helps me keep track of these things because all day events are at the top no matter what. Which makes it super easy to find when I am skimming my upcoming week.</p>
+<p id="yui_3_17_2_1_1525148325901_43173">From there I worked backwards to determine when the drafts of my posts are “due” and when to have each episode of the podcast edited. <a href="http://twitter.com/chris_lawley">Christopher Lawley</a> edits <a href="http://aslabofglass.com/">A Slab of Glass</a> so thankfully I just need to plan for each episode and record them. <a href="http://gettingcaughtup.net/">Getting Caught Up</a>, however, requires me to edit each episode.</p>
+<p id="yui_3_17_2_1_1525148325901_43185">My plan is to have each episode editing 3 days prior to posting day. Since the show is a fortnightly show it isn’t too hard to manage that schedule. I gave myself 3 days before the release of each episode so I can work on things like show notes, chapters, and all the other things that goes into a podcast after it is cut. So far, it seems to be working.</p>
+<p id="yui_3_17_2_1_1525148325901_43188">Once I had an idea of where to put the time-sensitive stuff, I now had to put the rest in. My thought process for this was to theme each day of the week. For instance, I could have my Mondays be when my first draft of my big post a week is due. Or have Thursdays be when I outline the weekly small post. Then it isn’t a matter of me checking the calendar daily, instead I just need to know what day of the week it is and know what it is I need to get done.</p>
+<pre><code>  &lt;img src="https://tablethabit.com/wp-content/uploads/2018/07/444033B4-BBC8-46D1-8F70-8E580609AED9.jpeg" alt=""/&gt;
+</code></pre>
+<p>I shared this in my newsletter, and I plan to write more about it there, but after I started putting events in my calendar I realized that I could be doing this way more efficiently on my Mac. By that I mean that handling events in a calendar and making sure every detail in it is correct can be tedious. It is doubly so when you then want to input custom repeating structures in it. So I decided to put the iPad down and crack open my MacBook Air to get this done.</p>
+<p>I didn’t like the idea of needing to use a Mac to get this done. It’s something I hate to admit, but sometimes the iPad falls short, and this is one of those times.</p>
+<p>Once I gathered my themes for each day it was a simple process of making events to match the theme, and then having them repeat where necessary. From there it is a set-it-and-forget-it kind of thing.</p>
+<p>I will say that I add things in my calendar from time to time and move my events for the day around if need be. This is done on iOS with Readle’s <a href="https://itunes.apple.com/us/app/calendars-5-by-readdle/id697927927?mt=8&amp;at=1000lHAf">Calendars 5</a> app. I recently switched to this app from <a href="https://itunes.apple.com/us/app/fantastical-2-for-ipad/id830708155?mt=8&amp;at=1000lHAf">Fantastical 2</a> because it offered a much nicer weekly view.</p>
+<p>This app, unlike Fantastical, doesn’t emphasize on the agenda style of planning as much. In fact, it resembled more of a calendar app you would find on Apple’s stock calendar app, but it offered natural language input which is one of the reasons I loved Fantastical. I am not sure how long I will stick with this, but I will say that I feel that Calendars 5 handles the fluidity of my system very easily once it is in place.</p>
+<h3>Conclusion</h3>
+<p>With this system in place there are a few things about this system that makes me nervous.</p>
+<p>The first thing being that if I don’t stick with this and I miss something due to some unforeseen reason that I will just assume that my entire day will be shot now. A <a href="http://www.gocomics.com/pearlsbeforeswine/2018/3/25">cartoon I recently discovered</a> sums this up beautifully.</p>
+<p>My second concern is that I will not know what to do when a new idea or task has to be done will go. For now I think the answer to this is going to be using either my current task manager OmniFocus 2 or use Apple’s Reminders app as it integrates within Calendars 5 natively.</p>
+<p>There is going to be some testing and experimentation with this until I find a solution I am happy with. Until then though, you can follow along on my weekly newsletter. So if you are interested to keep up with this you can do so there. I also plan to answer any questions you may have about this or anything iPad/iOS related in the newsletter as well. To ask a question just fill out the form here.		</p>
+
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Why I Use Time Blocking to Be Productive&p[summary]=If you are like me, you probably only think of a calendar app for appointments and time sensitive events happening in your life. You need...&p[url]=http://localhost:4000/2018/03/28/why-i-use-time-blocking-to-be-productive/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2018/03/28/why-i-use-time-blocking-to-be-productive/&text=If you are like me, you probably only think of a calendar app for appointments and time sensitive events happening in your life. You need...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+
+            </main>
+        </div>
+
+        <script src="http://localhost:4000/assets/js/jquery-1.12.2.min.js"></script>
+<script src="http://localhost:4000/assets/js/backtotop.js"></script>
+<script src="http://localhost:4000/assets/js/lunr.min.js"></script>
+<script src="http://localhost:4000/assets/js/lunr-feed.js"></script>
+<script src="http://localhost:4000/assets/js/jquery.fitvids.js"></script>
+<script src="http://localhost:4000/assets/js/svg4everybody.min.js"></script>
+<script src="http://localhost:4000/assets/js/scripts.js"></script>
+
+
+    </body>
+</html>

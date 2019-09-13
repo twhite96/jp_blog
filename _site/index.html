@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Jeff Perry &mdash; Blogger/Podcaster </title>
+    <meta property="og:title" content=" Jeff Perry &mdash; Blogger/Podcaster " />
+    <meta name="twitter:title" content=" Jeff Perry &mdash; Blogger/Podcaster " />
+
+    <meta name="description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.">
+    <meta name="description" property="og:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+    <meta name="twitter:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:site" content="@iamjeffperry" />
+    
+    <meta property="og:url" content="http://localhost:4000/" />
+
+    <meta property="og:image" content="" />
+    <meta name="twitter:image" content="" />
+
+    <meta name="author" content="Jeff Perry" />
+
+    <meta name="copyright" content="Copyright by Jeff Perry. All Rights Reserved." />
+
+    <style>
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/mnpfi9pxYH-Go5UiibESIltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 300;
+            src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v15/vPcynSL0qHq_6dX7lKVByfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(https://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 900;
+            src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url(https://fonts.gstatic.com/s/roboto/v15/bmC0pGMXrhphrZJmniIZpY4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+    </style>
+    
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+    <link rel="canonical" href="http://localhost:4000/">
+
+    <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+</head>
+
+    <body>
+        <div class="wrapper">
+            <aside class="user-profile fixed" role="complementary">
+    <div class="burger">
+        <input class="trigger hidden" id="toggleBurger" type="checkbox" />
+        <label for="toggleBurger">
+            <span>Navigation</span>
+        </label>
+    </div>
+
+    <div class="compact-header">
+        <a class="avatar" href="http://localhost:4000"><img alt="Avatar" src="/avatar.png" /></a>
+        <div class="my-info">
+            <strong class="my-name">Jeff Perry</strong>
+            <span class="my-job-title">Blogger/Podcaster</span>
+        </div>
+    </div>
+
+    
+        
+        <div class="mainmenu">
+            <a href="http://localhost:4000" class="active">Home</a>
+            
+                
+            
+                
+            
+                
+            
+                
+                    <a href="http://localhost:4000/about/" >About</a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        </div>
+        
+    
+
+    <p class="about-me">I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.</p>
+
+    <ul class="socials">
+        <li><a href="http://twitter.com/iamjeffperry"><svg title="twitter" width="16" height="16" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+
+        
+
+        
+         <li><a href="http://localhost:4000/feed.xml"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#rss-icon"></use></svg></a></li>
+        
+    </ul>
+</aside>
+
+            <main class="the-content" role="main">
+                <div class="search" role="search">
+    <div>
+        <div class="show-results-count">0 Results</div>
+        <div class="search-holder">
+            <input type="text" id="search-input" placeholder="search for..." />
+        </div>
+    </div>
+    <ul id="results-container" class="results-container"></ul>
+</div>
+
+
+                
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-08-28T00:34:25-04:00" itemprop="datePublished">28 Aug, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/08/28/marsedit-custom-formatting-macros/">MarsEdit Custom Formatting Macros</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p>I have been only using my Mac for a little while now, and one thing that I <em>love</em> about the Mac is <a href="https://www.red-sweater.com/marsedit/">MarsEdit</a>. This is by far my favorite app when it comes to blogging. It is dead easy to setup, and you have full control on your posts and pages without needing to use the WordPress web app. You can make pages, local drafts, and of course blog posts for your site all within MarsEdit.</p>
+<p>One thing I didn’t realize about MarsEdit until I saw it in a <a href="https://red-sweater.com/blog/3502/marsedit-4-3-4-quick-fix-for-formatting-macro-crash">recent release notes page</a> is <a href="https://red-sweater.com/blog/2421/marsedit-3-5-formatting-macros-full-screen-mode-tumblr-tweaks">custom macros for formatting</a>.</p>
+<p>Basically this allows you to edit the key bindings on MarsEdit for a number of built in formatting shortcuts. For example, MarsEdit ships with the Paste Link shortcut being Shift+⌘+A. As someone who is used to Ulysses and the WordPress web app I changed that shortcut to be ⌘+K instead. It is second nature for me to make that my link shortcut, and I love being able to change in MarsEdit.</p>
+<p>Not only can you change baked in formatting macros, you can also make custom formatting shortcuts. To explain, let me show you how I manage my link posts introduction.</p>
+<p>My link posts contain a very specific format that has come to be a standard among us Apple and Tech link bloggers which is:</p>
+<p><strong>AUTHOR </strong>writing for <strong>PUBLICATION</strong>:</p>
+<p>All of the above is then linked to the specific URL of the post in question.</p>
+<p>To do this you first need to right click within the draft and select “Format” and then go all the way down to the bottom of the sub-list and select “Customize..."</p>
+<p><img src="/assets/format-1.png" title="Format-1.png" alt="Format 1" /></p>
+<p>Once there you will see all of the formatting options that are setup, including the "Link…” and “Paste Link” options I changed the shortcuts to. But for this example we want to make a new shortcut and we are going to do so by clicking the “+” button on the bottom left.</p>
+<p><img src="/assets/format-list-2.png" title="Format-List-2.png" alt="Format List 2" /></p>
+<p>From there you will see something like the image below, asking you for a title, shortcut, Opening Markup (what the format starts with) and a Closing Markup (what it ends with). What you see below might seem daunting, but I assure you it isn’t as hard as it looks. For one thing, there is a very cool tool in the where you can insert placeholders (see below).</p>
+<p>So if you want to be prompted for text you can select “Ask for text” or if you want the URL you have in your clipboard to automatically be added, you can select “Paste URL.” In the case of this shortcut, I ask for the Author and the Publication, and with the formatting of HTML inserted within it, it takes those two inputs and the URL I have copied in my clipboard and spits out an HTML version of my link post introduction.</p>
+<p><img src="/assets/format-example-3.png" title="Format Example-3.png" alt="Custom Macro Setup Screen" /></p>
+<p><img src="/assets/screen-shot-2019-08-26-at-11.53.18-am.png" class="aligncenter" title="Screen Shot 2019-08-26 at 11.53.18 AM.png" alt="The placeholders you can use for custom macros" /></p>
+<p><img src="/assets/format-author-4.png" title="Format Author-4.png" alt="Entering Author's Name" /></p>
+<p><img src="/assets/format-publication-5.png" title="Format Publication-5.png" alt="Entering Publication" /></p>
+<p><img src="/assets/format-result-6.png" title="Format Result-6.png" alt="Final Result" /></p>
+<p>The best part? If you are like me and write with the WYSIWYG editor instead of the HTML editor it is automatically formatted properly. It is smart enough to know that you are writing in rich text and so it pastes it as such.</p>
+<p>If you would like the specific code I used for my opening and closing you can copy it below.</p>
+<p><strong>Opening Markup</strong>:</p>
+<p><code>&lt;a href="#pasteurl#"&gt;#asktext author: Jeff Perry# writing for #asktext Publication#</code></p>
+<p><strong>Closing Markup</strong>:</p>
+<p><code>&lt;/a&gt;:</code></p>
+<p><strong>Opening Markup from Video</strong>:</p>
+<p><code>#asktext author: Jeff Perry# writing for &lt;a href="#pasteurl#"&gt;#asktext Publication#</code></p>
+<p>Finally, I created a quick tutorial on how to use this custom shortcut. In it I mention a very cool tool call <a href="https://pqrs.org/osx/karabiner/">Karabiner</a>, which allows you to really dive into custom keyboard shortcuts. The most common one is a “hyper key” which transforms the Caps Lock key from making text all caps into a tool that effectively presses Shift+Command+Option+Control all in one go. It is great for when you want to use a custom keyboard shortcut but don’t want to worry about stepping on another keyboard shortcut’s toes. To do that, just download Karabiner and add the following rule under the "Complex Modifications" tab:</p>
+<p><img src="/assets/karabiner-rule.png?w=300" class="aligncenter size-medium wp-image-1305" width="300" height="185" alt="" /></p>
+<p>Anyway, here’s the video:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5dvdUB7L3lQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=MarsEdit Custom Formatting Macros&p[summary]=I have been only using my Mac for a little while now, and one thing that I love about the Mac is MarsEdit. This is by far my favorite app...&p[url]=http://localhost:4000/2019/08/28/marsedit-custom-formatting-macros/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/08/28/marsedit-custom-formatting-macros/&text=I have been only using my Mac for a little while now, and one thing that I love about the Mac is MarsEdit. This is by far my favorite app...&hashtags=blogging,marsedit,tutorial," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/blogging">blogging</a></li>
+                
+                <li><a href="http://localhost:4000/tag/marsedit">marsedit</a></li>
+                
+                <li><a href="http://localhost:4000/tag/tutorial">tutorial</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-08-23T13:45:34-04:00" itemprop="datePublished">23 Aug, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/08/23/moving-to-wordpress-com/">Moving to WordPress.com</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p>I have long said that the open web is something I feel strongly about, and that in order for you to truly&nbsp;<em>own</em> something on the internet it has to be on your personal website. You can’t expect companies like Twitter, Facebook, Medium, or other big name social media platforms to care about that stuff. They should, but we all know that it is in their best nature to keep that stuff in&nbsp;<em>their</em> home turf and make it as difficult as possible to get it elsewhere.&nbsp;</p>
+<p>To save time, my argument for the open web boils down to this: <strong>Would you rather have all of your work in the hands of someone else, or in your own hands?</strong></p>
+<p>I bring this up because Automattic, the company that owns WordPress.com, recently bought Tumblr for <a href="https://www.axios.com/verizon-tumblr-wordpress-automattic-e6645edd-bc73-45c2-9380-9fe8ca34291f.html">a reportedly $3 million steal</a> (don’t forget&nbsp;<a href="https://www.washingtonpost.com/technology/2019/08/13/tumblr-once-sold-billion-owner-wordpress-just-bought-site-fraction-that/?noredirect=on">Tumblr sold just a few years ago for $1.1 billion</a>). If you want to know <em>why</em> I am excited about this, and why it caused me to think about the open web, I think Aja Romano said it best in <a href="https://www.vox.com/2019/8/13/20802751/wordpress-tumblr-sale-porn-ban-future">their Vox article</a>:</p>
+<blockquote><p>WordPress has succeeded thus far by not rocking the boat, catering to its community, and essentially doing one thing — blogging — extremely well. This would seem to make it an ideal parent for Tumblr’s more unruly, unwieldy blog format, which gave the world the “reblog” and made use of universalized tagging systems to connect its noisy user base. WordPress, with no reblogs, has a much less streamlined tagging system, and its “blogroll” approach to connecting users feels hopelessly outdated. In essence, each company has things to teach the other about blogging.</p>
+<p>“I don’t think there’s any organic connection between the two platforms,” Dash told me, “though I do hope Automattic updates WordPress’s feature for reading blogs to be as good as Tumblr’s timeline.”</p>
+<p>Where WordPress excels over Tumblr, however, is in respecting and following its community’s lead on things like site design. One of the foundations of its success is <a href="https://wordpress.org/about/">its commitment</a> to open source web design, meaning anyone can make and customize their own WordPress website theme. We might say Tumblr is something of an open source community too, with the ecosystem flourishing and growing most when it’s able to be artistically inventive and essentially bend Tumblr’s format in new and interesting directions. (For instance, the site was initially intended to be a “microblog,” closer in spirit to Twitter’s original 180-character limit; instead, Tumblr users made the platform well-known for long, image-heavy posts, subcultural artistic movements, and animated GIF storytelling.) Tumblr’s corporate overlords have had significant trouble with this notion in the past, but supporting a more hands-off community is not something that should give Automattic much trouble.</p>
+</blockquote>
+<p>For further information on the deal, there's&nbsp;<a href="https://www.theverge.com/2019/8/14/20804894/tumblr-acquisition-matt-mullenweg-ceo-automattic-wordpress-verizon-changes-vergecast">a recent Vergecast where they interviewed</a> Automattic’s CEO, Matt Mullenweg, I left that podcast wanting to directly support WordPress; so I did. I moved my website from <a href="https://www.easywp.com">EasyWP</a> on NameCheap to WordPress hosting through WordPress.com. To be honest I thought about checking out Tumblr, but as someone who has never tried it, I thought diving in now for my personal site would be overkill.</p>
+<p>The cost to move to WordPress.com was a bit more than what I was paying previous (almost double), and the functionality isn’t as flexible as the self-hosted websites are, but with the bad comes a lot of good. For one, I no longer have to worry about my website being optimized properly, and if I have any issues I can contact one of WordPress’ Happiness Engineers (which is a great job title if you ask me) for assistance. So far the response time has been much less than it would have taken services like Squarespace or NameCheap to help me with technical support. The move was simple, thanks to already having a WordPress website, and when I needed clarification it was handled in hours, not days.</p>
+<p>I personally feel like this move is better for me in the long run. I get to worry less about making my website “perfect” every 6 weeks and instead start working on what should matter the most: writing; which I hope to do more of going forward.</p>
+
+
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Moving to WordPress.com&p[summary]=I have long said that the open web is something I feel strongly about, and that in order for you to truly&nbsp;own something on the inter...&p[url]=http://localhost:4000/2019/08/23/moving-to-wordpress-com/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/08/23/moving-to-wordpress-com/&text=I have long said that the open web is something I feel strongly about, and that in order for you to truly&nbsp;own something on the inter...&hashtags=blogging," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/blogging">blogging</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-08-08T14:19:16-04:00" itemprop="datePublished">8 Aug, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/08/08/whats-in-a-name/">What’s in a name?</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p>Andy Nicolaides writing for <a href="https://www.thedent.net/2019/08/07/whats-in-a.html">The Dent</a>:</p>
+<blockquote><p>One of the big questions I asked myself before moving my blog from Wordpress to Micro.Blog recently was ‘what would I call it?’ The name <strong>The Dent</strong> was kindly offered up to me by <a href="https://twitter.com/zcichy">Zac Cichy</a> after I tweeted about wanting to find some kind of identity to my tech blogging. The fact I didn’t come up with it myself frees me to say that I, personally, think it’s a pretty great name. While the name could mean many things, the six colour header and quote mark it as clearly Apple / Tech related.</p>
+<p>The other alternative was to use <a href="http://andynicolaides.com">AndyNicolaides.com</a>, which I still own, but am not currently using. The unfortunate thing about this is my name is a bit of a mess and it would never stick in people’s minds for long, and if it did they’d soon forget how to spell it. It goes without saying that if you can’t spell a domain name, you certainly wont be going there very much.</p>
+</blockquote>
+<p>[…]</p>
+<blockquote><p>My issue, which is completely on me, don’t get me wrong, is that I feel I’ve painted myself into a bit of a corner with the name <strong>The Dent</strong>. While I have a love for technology, I don’t always want to talk or think about it. I feel that the name of this blog gives off a certain expectation, however. This feeling has held me back from posting more often, and of varying topics.</p>
+</blockquote>
+<p>As someone who <em>did</em> make the decision to move from Rocket Panda to my own name, I think that if you feel like the name is blocking you from expressing yourself completely then change it to something else. I will say that you shouldn’t do this unless you truly are convinced the name isn’t “you” anymore. Rocket Panda was a one off name I came up with in the shower and liked it because it meant nothing, but over time I felt it to be a very weird website to explain to people and what the name had to do with it.</p>
+<p>I changed my domain and not a single person seemed to notice or care. Maybe that is because not many people read this, but it was nice to not get so much flack for changing the name of my site.</p>
+
+
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=What’s in a name?&p[summary]=Andy Nicolaides writing for The Dent:
+One of the big questions I asked myself before moving my blog from Wordpress to Micro.Blog recently...&p[url]=http://localhost:4000/2019/08/08/whats-in-a-name/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/08/08/whats-in-a-name/&text=Andy Nicolaides writing for The Dent:
+One of the big questions I asked myself before moving my blog from Wordpress to Micro.Blog recently...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-08-07T12:15:22-04:00" itemprop="datePublished">7 Aug, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/08/07/bye-bye-ipad/">Bye-Bye iPad</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p><strong>Update</strong>: A couple of people have asked if me not having an iPad means the end of <a href="http://aslabofglass.com">A Slab of Glass</a>, it is not. Christopher and I both have talked about the podcast being more than just about the iPad, and we have been making strides to do that over the past few months. So no, A Slab of Glass isn't going anywhere.</p>
+<hr />
+<p>After about 2 months of it collecting dust, I decided it was time to say goodbye to my iPad Pro and consequently the iPad Lifestyle. There are a couple of reasons for this, but I will stick with the one that is worth talking about: I simply don't use an iPad anymore for my work.</p>
+<p>No, this isn't a "you can't get real work done on an iPad" article. I <em>have</em> gotten real work done on an iPad for years and loved it, but due to some changes in my life the iPad isn't the best tool for the job anymore.</p>
+<p>The big one for me is editing and processing audio. I use <a href="https://www.izotope.com/en/products/repair-and-edit/rx.html">iZotope RX 7</a> for cleaning up both of my own podcasts and the podcasts I edit in my freelance work. There isn't a great alternative on iOS that compares to iZotope RX 7, which leaves me to crack open my laptop whenever I need to edit podcasts. Because of this I have moved all of my podcast editing to my MacBook Pro. A lot of my time is spent editing podcasts nowadays it makes little sense to me to move from a MacBook to an iPad for the minority of the work I have left.</p>
+<p>If I am being totally honest, it isn't just the editing that makes me want to use my Mac over the iPad. I'm not sure if it is me not always happy with certain limitations on iOS or if I am just used to the Mac, but something about the Mac allows me to work with less friction. I am almost positive this is a mental thing with me and not the limitation of the iPad that is causing this, the MacBook just seems much more appealing to me when I want to get to work on something involving a computer. Whether it's writing, editing podcasts, editing photos, managing email, or simply browsing online, the Mac just fits to me more than the iPad.</p>
+<p>I loved my iPad and it wasn't easy for me to come to terms that I simply am not using it, but I needed the extra cash and I would rather sell it than have it collect dust on my desk.</p>
+<p>It will be a significant transition to only have an iPhone and MacBook Pro but I think it was still the right choice for me in my life today. Maybe one day I will decide that is no longer the case and move back to the iPad more, but for now it is just me and my MacBook Pro, and I am happy with that.</p>
+
+
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Bye-Bye iPad&p[summary]=Update: A couple of people have asked if me not having an iPad means the end of A Slab of Glass, it is not. Christopher and I both have t...&p[url]=http://localhost:4000/2019/08/07/bye-bye-ipad/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/08/07/bye-bye-ipad/&text=Update: A couple of people have asked if me not having an iPad means the end of A Slab of Glass, it is not. Christopher and I both have t...&hashtags=ipad,mac," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/ipad">ipad</a></li>
+                
+                <li><a href="http://localhost:4000/tag/mac">mac</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-06-26T14:21:33-04:00" itemprop="datePublished">26 Jun, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/06/26/impostor-syndrome/">Impostor Syndrome</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p><a href="https://inessential.com/2019/06/25/impostor_syndrome">Brent Simmons writing for inessential</a>:</p>
+<blockquote><p>
+  There’s no developer bit in anyone’s DNA. I don’t have that bit — nobody does. There’s no such thing, and there’s no collection of genes that make you a real developer, either.</p>
+<p>  You don’t have to have a CS degree. (I didn’t even own a computer when I was in college. And I didn’t graduate.)</p>
+<p>  If you’re working on an app, you’re a developer. Period. Even if it’s not a stand-alone app; even if it’s some scripts. You’re solving a problem on a computer with logic and code — that makes you a developer. That’s all it takes!</p>
+<p>  Impostor syndrome goes away eventually. You just forget about it. The fastest way to get past it is probably to help other people.</p>
+<p>  It’s okay to admit that you have it. It’s been many years, but I had it too. :)
+</p></blockquote>
+<p>If you were to replace this for blogging this is what it would look like:</p>
+<blockquote><p>
+  There’s no writer bit in anyone’s DNA. I don’t have that bit — nobody does. There’s no such thing, and there’s no collection of genes that make you a real writer, either.</p>
+<p>  You don’t have to have an English degree.</p>
+<p>  If you’re working on a blog, you’re a blogger. Period. Even if it’s not on your own domain (though, you should really <em>own</em> your site if you do anything online). You’re sharing your thoughts online for others to read — that makes you a blogger. That’s all it takes!</p>
+<p>  Impostor syndrome goes away eventually. You just forget about it. The fastest way to get past it is probably to help other people.</p>
+<p>  It’s okay to admit that you have it. It’s been many years, but I had it too. :)
+</p></blockquote>
+<p>This is me, and I am sure others reading this also agree.</p>
+<p>I have been dealing with a lot of things offline lately--which is why I haven't been posting at all--that's partly due to imposter syndrome. I get married in a few days, to my beautiful fiancé. The person that has helped me with all of my mental health issue the better part of a decade now. Afterwords, I hope to keep the imposter syndrome part of what's holding me back at bay.</p>
+<p>Until then, if anyone wants to get in touch with me you can do so here on micro.blog or via email at Jeff[at]rocketpanda[dot]net.</p>
+
+
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Impostor Syndrome&p[summary]=Brent Simmons writing for inessential:
+
+  There’s no developer bit in anyone’s DNA. I don’t have that bit — nobody does. There’s no such ...&p[url]=http://localhost:4000/2019/06/26/impostor-syndrome/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/06/26/impostor-syndrome/&text=Brent Simmons writing for inessential:
+
+  There’s no developer bit in anyone’s DNA. I don’t have that bit — nobody does. There’s no such ...&hashtags=Personal," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/Personal">Personal</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-06-14T02:16:45-04:00" itemprop="datePublished">14 Jun, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/06/14/getting-caught-up-25-task-managers-and-podcasting/">Getting Caught Up 25: Task Managers and Podcasting</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p>In <a href="https://gettingcaughtup.net/episodes/25">episode 25 of Getting Caught Up</a> Mike and I talk a lot about task managers and getting things right when it comes to keeping tasks together. Jeff explains his checkered past with nearly every task manager out there, and he lets fate decide what app he uses next. Also, Spotify is talked about briefly at the end of the episode.</p>
+<p><audio controls="controls" src="https://dts.podtrac.com/redirect.mp3/cdn.simplecast.com/audio/c81a0b/c81a0b9e-d387-4cdc-b3b7-dd050d1b6592/c5a0fbd4-00c2-4bb9-b906-8e680bf555fc/GCU_25_tc.mp3" preload="none" /></p>
+
+
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Getting Caught Up 25: Task Managers and Podcasting&p[summary]=In episode 25 of Getting Caught Up Mike and I talk a lot about task managers and getting things right when it comes to keeping tasks toge...&p[url]=http://localhost:4000/2019/06/14/getting-caught-up-25-task-managers-and-podcasting/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/06/14/getting-caught-up-25-task-managers-and-podcasting/&text=In episode 25 of Getting Caught Up Mike and I talk a lot about task managers and getting things right when it comes to keeping tasks toge...&hashtags=getting caught up,podcast," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/getting caught up">getting caught up</a></li>
+                
+                <li><a href="http://localhost:4000/tag/podcast">podcast</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-06-10T02:18:14-04:00" itemprop="datePublished">10 Jun, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/06/10/being-honest-with-myself/">Being Honest With Myself</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p>It's no secret that I write a lot about blogging on Rocket Panda. I have a thing with going meta, I even used to host a podcast about podcasting before Rocket Panda even existed. That said, sometimes it can be fun to go down memory lane.</p>
+<p>Yesterday I was migrating my website over to micro.blog<sup id="fnref-972-1"><a href="#fn-972-1" class="jetpack-footnote">1</a></sup> and I noticed something about my writing style over the last two years. There's been a stark contrast in my older posts and the ones I write now, and I wanted to talk about it.</p>
+<p>My older posts were me trying to imitate and mimic tech journalists like that of 9to5Mac and TechCrunch. I was trying to be more journalistic and matter-of-fact without adding anything personal to them. I even tried to make myself sound like and Apple expert, but if I am being honest with myself I know little about the history of Apple and the impact they made before 2008, which was when I jumped into the Apple ecosystem.</p>
+<p>Once I realized that wasn't working out for me, I moved to doing things like listicles and have my <a href="https://jeffperry.blog/2018/02/05/ipad-life-hacks.html">Top 10 iPad Life Hacks</a> and <a href="https://jeffperry.blog/2018/04/10/the-things-i.html">The 9 Things I Learned Going iPad Only</a>. I look back at both of these kinds of writing and cringe, because desperation has a foul and pungent scent and I reeked of it. After I got over how much of a try-hard I must have looked like I realized that had I not done those things and looked in the mirror afterwards I wouldn't have come to the conclusion I have today about what it is I want to write about the things that I'm passionate about.</p>
+<p>If you look at my more recent pieces, I am writing more personal pieces about the things that I can add personal input on. I have written things like <a href="https://www.jeffperry.blog/2019/06/06/why-ios-made.html">Why iOS 13 Made the iPad Home Screen Fun Again</a> and my <a href="https://www.jeffperry.blog/2019/05/08/touchtype-pro-review.html">TouchType Pro Review</a><sup id="fnref-972-2"><a href="#fn-972-2" class="jetpack-footnote">2</a></sup>. These things are comments on the news from Apple and the companies that cater to those users, but I center it on myself and my feelings on it instead of trying to make this an article for TechCrunch or something similar.</p>
+<p>It is much more satisfying for me to comment on the smaller things that I'm comfortable speaking on instead of trying to get my share of the pie with what the rest of the big Apple blogs are commenting on. There are times where I may add my feelings and opinions on something but only when it is something that I am comfortable with. Gone are the days where I try and do some quick research and reading up on something that I know <em>nothing</em> about just so that I can be with the rest of the Apple News cycle. It is great if you enjoy that but I found it to be extraordinarily draining both mentally and emotionally. Chasing that forever-spinning wheel of tech news is not something for me.</p>
+<p>If I am still staying honest, it's hard to make a blog about the Apple news as a single independent writer. That faucet is broken and it is just a firehose of information shooting out at you with an unlimited supply of water. I have tried being a part of the firehose and it's simply not for me. I would rather be a trickle of water by myself for a small amount of people to drink from. Which brings me to why I have moved my site to <a href="http://micro.blog">micro.blog</a>.</p>
+<h2>Why I Moved to Micro.blog <sup id="fnref-972-4"><a href="#fn-972-4" class="jetpack-footnote">3</a></sup></h2>
+<p>The reason for this is two-fold:</p>
+<ol>
+<li>I am not a Pro Blogger, and I need to stop acting like one</li>
+<li>The atmosphere at micro.blog isn't as formal as something like WordPress for me, and I like that</li>
+</ol>
+<p>When I say I am not a Pro Blogger I mean that I don't have hundreds of thousands of readers, and I don't think I necessarily want that. It isn't a goal in my life to make Rocket Panda anything other than a way for me to express myself creatively. I don't look at stats, I don't see what posts are getting the most clicks, and I definitely don't want to make my site a digital billboard with ads everywhere and videos playing automatically. That wasn't the case when I first started though, I wanted to make Rocket Panda my full time job so badly. So much so I was willing to throw a piece together I thought would get lots of clicks and subscribers instead of writing something that I was happy with.</p>
+<p>What I want when it comes to this blog is that I own every pixel top to bottom and that I can say what I want, when I want without worrying about upsetting anyone that has control over my livelihood.</p>
+<p>As for the second point, micro.blog is a place for me I consider a much friendlier atmosphere than that of Twitter or Instagram. There's nothing about this service that makes me upset or feel inadequate about myself. It is just writers and bloggers sharing their lives, thoughts, ideas, and photos with others. As someone that doesn't have a staff of writers it can be lonely at times writing, and having the ability to be a part of a community that isn't culturally toxic and genuinely delightful helps fill that void for me.</p>
+<p>I could have kept my blog on WordPress and linked it to micro.blog, but for me it made more sense to just put all of my chips in this service and embrace the limitations it comes with. I am happy with my setup and I hope to see it stick, and I think that this time it will.</p>
+<p>After some tinkering and playing around I finally figure out how to fix my biggest gripe with the service, which was differentiating the micro posts (the things I would post on Twitter) to the articles (like this one). Because of the addition to categories and the support for Hugo I managed to figure out how to add parameters to my site to hide my micro posts from the website but still have them post to micro.blog for those who follow me there. For those interested, I found the answer to that from <a href="https://discourse.gohugo.io/t/only-show-posts-not-in-a-given-category/17655/3">the Hugo Discourse</a> which is a group of helpful individuals<sup id="fnref-972-3"><a href="#fn-972-3" class="jetpack-footnote">4</a></sup>.</p>
+<p>This isn't me saying that you should move to micro.blog, that is for you to decide. That said, I do think that more bloggers should look I the mirror and answer the tough questions about what they are writing about and what they want to share, because it took me <em>way</em> longer than it should have to listen to the people who told me to write more personal posts over the bland lists and news articles I was writing.</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-972-1">
+More on that in a bit&#160;<a href="#fnref-972-1">&#8617;</a>
+</li>
+<li id="fn-972-2">
+Sorry Salman if you're reading this, I still haven't sent the review unit back to him.&#160;<a href="#fnref-972-2">&#8617;</a>
+</li>
+<li id="fn-972-4">
+I have since moved back to WordPress because of wanting to have link posts work the way I want, as well as having more granular abilities with the way my site looks. That said, the sentiment of being more informal is sticking with me.&#160;<a href="#fnref-972-4">&#8617;</a>
+</li>
+<li id="fn-972-3">
+I have bookmarked this site for future browsing as well if I ever decide to tinker with my website again&#160;<a href="#fnref-972-3">&#8617;</a>
+</li>
+</ol>
+</div>
+
+
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Being Honest With Myself&p[summary]=It's no secret that I write a lot about blogging on Rocket Panda. I have a thing with going meta, I even used to host a podcast about pod...&p[url]=http://localhost:4000/2019/06/10/being-honest-with-myself/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/06/10/being-honest-with-myself/&text=It's no secret that I write a lot about blogging on Rocket Panda. I have a thing with going meta, I even used to host a podcast about pod...&hashtags=update," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/update">update</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-06-07T14:26:56-04:00" itemprop="datePublished">7 Jun, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/06/07/a-meditation-on-the-open-web/">A Meditation on the Open Web</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p>Something about this video makes me realize the <em>real</em> reason I am blogging on Rocket Panda instead of something like SquareSpace or Tumblr. It isn't because I think WordPress is a better platform, that is debatable on many different levels. The reason is because it’s <em>my</em> platform. I own every pixel of this website and I can control what goes on here and what doesn't.</p>
+<p>This isn't about WordPress though, it is about the open web. If you are unsure what the open web is, I will let Mark Surman, Executive Director of the <a href="https://foundation.mozilla.org/en/">Mozilla Foundation</a>, explain.</p>
+<p><a href="https://www.yearofopen.org/november-open-perspective-what-is-open-web/what-is-the-open-web-and-why-is-it-important-submitted-by-mark-surman-executive-director-of-the-mozilla-foundation/">Mark Surman writing on Year of Open</a>:</p>
+<blockquote><p>
+  <strong>What is Open Web?</strong></p>
+<p>  “Open web” is a sweeping term — it encompasses technical concepts like open-source code and open standards. It also encompasses democratic concepts like free expression and digital inclusion.</p>
+<p>  But there’s a single underlying principle connecting all these ideas: An open web is a web by and for all its users, not select gatekeepers or governments.</p>
+<p>  At Mozilla, we compare the open web to a global public resource, like clean water or the environment. The open web is something we all depend on: to communicate and create, to work and play, to buy and sell. And like any other natural resource, it’s fragile. It needs care, because it can be polluted: by harassment and abuse, by misinformation, by bad public policy.</p>
+<p>  <strong>Why is it important?</strong></p>
+<p>  The web doesn’t exist in a vacuum, or apart from society. The two are deeply entwined. The web is where we engage with journalism, form opinions and share knowledge. It’s an arena for politics, education, culture and science.</p>
+<p>  An open web means positive progress for all these things. A more informed public; more civic participation; more opportunities to learn and connect with each other.</p>
+<p>  An unhealthy web has an opposite effect. When misinformation, harassment or surveillance proliferate online, we lose trust in our institutions and in each other. Fewer people engage. And when closed, proprietary technology proliferates, innovation and competition are stifled. The web is no longer a level playing field — it’s a platform controlled by a select few.
+</p></blockquote>
+<p>While the main issue is governments seeking control of the internet, another entity is at work to wall up our content and lives: social media. I read somewhere a long time ago that you can't be playing in someone else's yard and then get upset when they kick you off it.</p>
+<p>If Facebook one day decides that they want to close up shop all of the photos, posts, videos, status updates, and events you have put there are susceptible of going away forever. While losing a large part of your digital life can be catastrophic the thing that I think is much more dangerous is the freedoms you are giving up as a cost of entry into Facebook and Twitter and Instagram.</p>
+<p>These social media giants aren't making these social networks just so you can stay in touch with friends and family, it is to get data and demographic information for marketing and advertisers. You are the product, and the more information these companies can get on you the better.</p>
+<p>That said, <a href="https://developer.apple.com/sign-in-with-apple/">Apple is planning to launch Sign In with Apple</a> soon and that is a game changer in my opinion. You no longer have to use your personal information to log in to a service. You can now use great services online and in the App Store <em>without</em> having to worry about privacy concerns. This is the digital version of having your cake and eating it too.</p>
+<p>I plan to remove every piece of my Facebook the moment I get married this summer. I no longer want to be a part of a company I deem to be evil, and I don’t want to keep feeding them my personal data for a myriad of reasons.</p>
+<p>I guess what I am trying to say is when I want to share something on the internet I am going to do it on Rocket Panda, and I hope that you consider doing the same for your stuff.</p>
+
+
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=A Meditation on the Open Web&p[summary]=Something about this video makes me realize the real reason I am blogging on Rocket Panda instead of something like SquareSpace or Tumblr...&p[url]=http://localhost:4000/2019/06/07/a-meditation-on-the-open-web/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/06/07/a-meditation-on-the-open-web/&text=Something about this video makes me realize the real reason I am blogging on Rocket Panda instead of something like SquareSpace or Tumblr...&hashtags=blogging," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/blogging">blogging</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-06-06T14:28:30-04:00" itemprop="datePublished">6 Jun, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/06/06/why-ios-13-made-the-ipad-home-screen-fun-again/">Why iOS 13 Made the iPad Home Screen Fun Again</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p>The newly announced <a href="https://www.apple.com/ipados/ipados-preview/">iPadOS</a> is Apple making the iPad operating system different to that of the iPhone. Now, gone are the days of mobile browsing on an iPad, and gone are the days where changes for iPhone are less-then-optimized for the iPad<sup id="fnref-957-1"><a class="jetpack-footnote" href="#fn-957-1">1</a></sup>. One of the things iPadOS offers in iOS 13 is the Today View widgets being pinned to the home screen of the iPad.</p>
+<p><img style="display:block;margin-left:auto;margin-right:auto;" title="Apple_iPadOS_Today-View_060319.jpg" src="/assets/03219-apple_ipados_today-view_060319.jpg" alt="Apple iPadOS Today View 060319" width="599" height="484" border="0" /></p>
+<p>Now, if you so choose, you can slide the widgets over from the left onto the home screen and always have them on the home screen of your iPad. This bodes well for anyone who wants to utilize the widget screen more, as well as those who want more whimsy on their iPad; because who doesn't want a little variety on their home screen?</p>
+<p>For me, I think this is going to make apps with crappy widgets, or no widgets at all, push to make them more usable and feature rich. I haven't been one to use widgets because it's always been an "out of sight out of mind" thing for me. Now that it's on the home screen I think that this is going to make me rethink my entire iPad workflow. Apps like <a href="http://timeryapp.com">Timery</a>, <a href="https://eventail.app">Eventail</a>, and <a href="https://support.apple.com/en-us/HT209055">Shortcuts</a> offer <em>great</em> widgets that I can tap to run actions or use to check on something without the need of opening an entire app. For example I can run a saved timer in Timery from the home screen instead of having to open the app and tap on it or running a specified shortcut. It all lives in the widget now and makes for things to be much more fluid and smooth.</p>
+<p>I think that the home screen for the iPad just got a whole lot more useful as well, because when the addition of the Dock on the iPad I rarely kept apps on the home screen. The Dock added a lot of utility to the iPad but with that came the question of whether to keep everything on you iPad in a folder or two within the Dock or still use the home screen even though it isn't as optimized for multitasking as the Dock was.</p>
+<p>As of right now I am no on the beta but I plan to as soon as there is a build that is reliable. Once that happens, I think my new setup will be to have more things on the home screen <em>because</em> I will be going to it more and more thanks to this new addition.</p>
+<p>I'm looking forward to seeing what both developers and other users make of this once iOS 13 becomes available as a public beta, but until then I will be keeping an eye out for any apps that make significant improvements to their widgets and share them here on Rocket Panda.</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-957-1">I'm looking at you Shake-to-Undo&nbsp;<a href="#fnref-957-1">↩</a></li>
+</ol>
+</div>
+
+
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Why iOS 13 Made the iPad Home Screen Fun Again&p[summary]=The newly announced iPadOS is Apple making the iPad operating system different to that of the iPhone. Now, gone are the days of mobile br...&p[url]=http://localhost:4000/2019/06/06/why-ios-13-made-the-ipad-home-screen-fun-again/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/06/06/why-ios-13-made-the-ipad-home-screen-fun-again/&text=The newly announced iPadOS is Apple making the iPad operating system different to that of the iPhone. Now, gone are the days of mobile br...&hashtags=home screen,ios,ios 13,ipados," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/home screen">home screen</a></li>
+                
+                <li><a href="http://localhost:4000/tag/ios">ios</a></li>
+                
+                <li><a href="http://localhost:4000/tag/ios 13">ios 13</a></li>
+                
+                <li><a href="http://localhost:4000/tag/ipados">ipados</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+<article class="post" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-05-17T09:00:00-04:00" itemprop="datePublished">17 May, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline"><a href="http://localhost:4000/2019/05/17/3-stooges-syndrome/">3 Stooges Syndrome</a></h2>
+    </header>
+
+    <div class="post-content">
+        <p>I have been thinking a lot about habits lately and I think that one of my biggest flaws, as many others also have, is that we suffer from 3 Stooges Syndrome.</p>
+<p>One thing, I constantly deal with is new interests and goals I set for myself when I want to make a positive change in my life. The issue is when I have so many things that it all seems to be too much.</p>
+<p>I can’t lose weight, eat healthier, plan my mornings, read more, learn something new everyday, save more money, <em>and</em> do one nice thing a day all the time.</p>
+<p>One thing I have learned over the years about myself is that I plan and set all of these things I want to accomplish and hit the ground running with every single one of them simultaneously.</p>
+<p>Doing this seems plausible and honestly really exciting when I get started. But by day 5 I’m questioning whether I <em>really</em> need to go to the gym again, or I tell myself I am “too busy” writing a blog post to make a healthy lunch so I get McDonald’s <em>again</em>. “It’s fine,” I say to myself shoveling fries in my face, “I can afford <em>one</em> bad meal this week.” I am sure I am not the only one. You have probably done something similar, right?</p>
+<p>I’d like to take a page out of The Simpsons when I talk about these kinds of things, and call it the 3 Stooges Syndrome.</p>
+<p>https://youtu.be/aI0euMFAWF8</p>
+<p>As you can see in the video, Mr. Burns is in for a doctors exam. Turns out he has <em>so many</em> illnesses his immune system won’t let any of them through the door because they are all prevent the other from getting in (cue noises from Curly).</p>
+<p>If we dissect this a bit and spin it to make these illnesses into goals and resolutions you make foryourself, it’s obvious that having all of these grand plans you set means nothing was going to get through that door.</p>
+<p>I’m not saying goals and resolutions are illnesses, but I am saying that if you have too many you won’t be able to accomplish any of them. So what do you do?</p>
+<p>For me, I had close to 10 different things I wanted to accomplish this year and I have slogged through them making zero progress on them. I wrote out all of these things on a piece of paper and really took a hard look at them. I asked myself why I want to accomplish this, what the outcome I wanted was, and what it will take to make this happen. I took an honest look at all of these things and then took an honest look at myself. What could I truly make happen this year? How many of these could I <em>really</em> get done? The answers for these questions made me look at these goals, resolutions, and plans and consider which are worth doing now and which are worth doing later. I decided I am going to do just one of these at a time, and move on to the next one after completing the first.</p>
+<p>If I can get just one of these goals accomplished that’s still more than the 10 that were stuck in the proverbial door. One success is better that ten failures.</p>
+<p>So if you are like me, and you can’t seem to make much progress on any of the myriad of goals you set yourself, take a long hard look at what you actually want to accomplish and keep the rest in your pocket until you get that first thing done.</p>
+
+
+        
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=3 Stooges Syndrome&p[summary]=I have been thinking a lot about habits lately and I think that one of my biggest flaws, as many others also have, is that we suffer from...&p[url]=http://localhost:4000/2019/05/17/3-stooges-syndrome/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/05/17/3-stooges-syndrome/&text=I have been thinking a lot about habits lately and I think that one of my biggest flaws, as many others also have, is that we suffer from...&hashtags=goals," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/goals">goals</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+
+
+
+<div class="pagination next" role="navigation" aria-label="pagination">
+    
+
+    <span class="page_number">Page 1 of 12</span>
+
+    
+        <a href="/page2/" class="next">Next &rarr;</a>
+    
+</div>
+
+            </main>
+        </div>
+
+        <script src="http://localhost:4000/assets/js/jquery-1.12.2.min.js"></script>
+<script src="http://localhost:4000/assets/js/backtotop.js"></script>
+<script src="http://localhost:4000/assets/js/lunr.min.js"></script>
+<script src="http://localhost:4000/assets/js/lunr-feed.js"></script>
+<script src="http://localhost:4000/assets/js/jquery.fitvids.js"></script>
+<script src="http://localhost:4000/assets/js/svg4everybody.min.js"></script>
+<script src="http://localhost:4000/assets/js/scripts.js"></script>
+
+
+    </body>
+</html>

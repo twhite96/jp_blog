@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Capture - Learning GTD | Jeff Perry &mdash; Blogger/Podcaster </title>
+    <meta property="og:title" content="Capture - Learning GTD | Jeff Perry &mdash; Blogger/Podcaster " />
+    <meta name="twitter:title" content="Capture - Learning GTD | Jeff Perry &mdash; Blogger/Podcaster " />
+
+    <meta name="description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.">
+    <meta name="description" property="og:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+    <meta name="twitter:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:site" content="@iamjeffperry" />
+    
+    <meta property="og:url" content="http://localhost:4000/2018/11/29/capture-learning-gtd/" />
+
+    <meta property="og:image" content="" />
+    <meta name="twitter:image" content="" />
+
+    <meta name="author" content="Jeff Perry" />
+
+    <meta name="copyright" content="Copyright by Jeff Perry. All Rights Reserved." />
+
+    <style>
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/mnpfi9pxYH-Go5UiibESIltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 300;
+            src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v15/vPcynSL0qHq_6dX7lKVByfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(https://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 900;
+            src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url(https://fonts.gstatic.com/s/roboto/v15/bmC0pGMXrhphrZJmniIZpY4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+    </style>
+    
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+    <link rel="canonical" href="http://localhost:4000/2018/11/29/capture-learning-gtd/">
+
+    <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+</head>
+
+    <body>
+        <div class="wrapper">
+            <aside class="user-profile fixed" role="complementary">
+    <div class="burger">
+        <input class="trigger hidden" id="toggleBurger" type="checkbox" />
+        <label for="toggleBurger">
+            <span>Navigation</span>
+        </label>
+    </div>
+
+    <div class="compact-header">
+        <a class="avatar" href="http://localhost:4000"><img alt="Avatar" src="/avatar.png" /></a>
+        <div class="my-info">
+            <strong class="my-name">Jeff Perry</strong>
+            <span class="my-job-title">Blogger/Podcaster</span>
+        </div>
+    </div>
+
+    
+        
+        <div class="mainmenu">
+            <a href="http://localhost:4000" >Home</a>
+            
+                
+            
+                
+            
+                
+            
+                
+                    <a href="http://localhost:4000/about/" >About</a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        </div>
+        
+    
+
+    <p class="about-me">I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.</p>
+
+    <ul class="socials">
+        <li><a href="http://twitter.com/iamjeffperry"><svg title="twitter" width="16" height="16" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+
+        
+
+        
+         <li><a href="http://localhost:4000/feed.xml"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#rss-icon"></use></svg></a></li>
+        
+    </ul>
+</aside>
+
+            <main class="the-content" role="main">
+                <div class="search" role="search">
+    <div>
+        <div class="show-results-count">0 Results</div>
+        <div class="search-holder">
+            <input type="text" id="search-input" placeholder="search for..." />
+        </div>
+    </div>
+    <ul id="results-container" class="results-container"></ul>
+</div>
+
+
+                <article class="post single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2018-11-29T10:42:21-05:00" itemprop="datePublished">29 Nov, 2018</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline">Capture - Learning GTD</h2>
+    </header>
+
+    <div class="post-content">
+        <p>
+				When it comes to GTD, the first thing you are introduced to is the idea of &ldquo;Capture.&rdquo; For the most part it&rsquo;s straightforward. You can&rsquo;t store your ideas without getting them out of your head, so you need to have a system in place to make it seamless and second-nature to go from idea to capture.</p>
+<p>Without capture you have nothing but a bunch of things swimming in your mind taking up a bunch of space. With this in mind I knew I needed to work on the things that I was going to be using to capture my ideas and tasks. Which starts with what was coming into my life. So I started writing everything out and organizing the different things that come into my life that may require, action.</p>
+<p><img class="size-full wp-image-2114" src="/assets/33ea9017f9.jpg" width="1000" height="100%" />As you can see, there are a number of different things I use to capture my ideas, and many different types of things I need to capture. Which basically boils down to three categories: <strong>digital</strong> and <strong>analog</strong>.</p>
+<h2>Digital Inputs</h2>
+<p>For the digital, I wanted to decide on apps to use to capture those things into my task manager of choice. What I needed was a way to send things from each of these sources to my task manager.</p>
+<p>Email was the first thing and was simple to configure. A simple Share Sheet option made sending the emails I received to Things 3 a breeze. I also could set up an email account to forward to Things 3, but I preferred a share sheet option as it didn&rsquo;t require me to have to send an email to myself and clog up my messages.</p>
+<p>From there things like Twitter, RSS, text messages, and Overcast, I had to put these ideas and tasks into my system manually. As I use Things 3, I can either use Siri Shortcuts to input something or I could also have a Drafts 5 action in place to send anything I make on a new line to Things. Which isn&rsquo;t perfect, but it gets the job done without issue.</p>
+<p>Finally came my digital notes. This was ultimately the hardest thing to handle as I have been using a combination of Drafts 5 and Bear to handle my notes over the years. When starting from scratch I wanted to take a long hard look at what each of these apps are for, and I eventually decided that Drafts is where everything would start. I decided this because it made things easier for me to decide what I wanted to say and then think about where they go second. Instead of trying to think of whether what I have on my mind is better off in Bear or as an item in Things, I decided to forgo that line of questioning and make Drafts 5 my go-to input app. From there, I can send it to the respective app once I am done capturing my thoughts.</p>
+<p><a href="https://nahumck.me">Tim Nahumck</a> made a great point in <a href="https://www.macstories.net/reviews/drafts-5-the-macstories-review/#what-is-drafts">his Drafts 5 review</a> about this saying:</p>
+<blockquote><p>At its core, Drafts remains the app it has always been: a place where text starts. It is the quintessential app for trusted capture of text. There are other writing/note-taking apps out there that are great in their own right. Some are more suited for long writing and research, while others are good for simple note-taking. But none of them replicate the functionality that Drafts carries on iOS, where integrations built into the app provide powerful, customized actions. This is where the strength of Drafts really shines: it can be the central hub from which everything flows.</p></blockquote>
+<p>Drafts 5 was always an app I loved. Now that I have real guidelines on how I am capturing anything in my digital life it makes Drafts 5 my go-to application for all of my text input.</p>
+<h2>Analog</h2>
+<p>Now comes the more difficult area of my life, the analog stuff. There are times where I want to capture things in my <a href="http://fieldnotesbrand.com">Field Notes</a> notebook over Drafts 5. The reasoning could be as simple as I don&rsquo;t have access to my phone or iPad at that time, or that I want to sketch something out and using my hands is faster than using a keyboard or iPad. In both scenarios I write in my notebook and now have to capture it digitally into my task manager or note-taking app.</p>
+<p>Originally I thought scanning my notes and saving them in Bear would be sufficient, but after a few tries with that it made searching a pain. So now I make it a point at the end of each day to go through my notebook and decide what stuff I want to digitize in Drafts what things I don&rsquo;t. This is technically part of the processing section of GTD but as I see it moving things to one cohesive system is so important I have to make it a habit I never break. For me, i consider it more a capturing process over actual processing as I am just throwing these items in my &ldquo;Inbox&rdquo; of Things 3 and deciding what to do with it later.</p>
+<p>While my notebook and my digital input covers 95% of my life, there are still instances where snail mail and other paper documents appear and I need to find a way to handle them in my GTD system. Which leads me to one of the most important things I have learned in GTD: having an &ldquo;In&rdquo; box at your desk.</p>
+<p>I take these paper documents and keep them in my &ldquo;In&rdquo; basket by my desk and make it a point at the end of my day to, along with looking over my Field Notes, go through and add these documents to either my reference material (Bear) or my task manager (Things 3). Again, this is technically processing but I think it is still worthy of mention here before I really dive deep into the processing section of GTD.</p>
+<h2>Conclusion</h2>
+<p>In short, I think doing this project allowed me to not only get a handle on what things I have coming at me at a regular basis that requires my attention, but I also now have formed a better understanding of how to manage them all in one trusted system. Which, if you ask me, is the hardest part of this whole GTD process.</p>
+<p>So now that I know what I need to do for every kind of input in my life and what apps and workflows I need to accomplish them, the next thing I want to cover is processing, which will come next in this series.</p>
+<p>Until then, feel free to share with me how <em>you</em> capture your tasks and ideas <a href="http://twitter.com/iamjeffperry">on twitter</a>. I would love to hear your workflows!		</p>
+
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=Capture - Learning GTD&p[summary]=
+				When it comes to GTD, the first thing you are introduced to is the idea of &ldquo;Capture.&rdquo; For the most part it&rsquo;s strai...&p[url]=http://localhost:4000/2018/11/29/capture-learning-gtd/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2018/11/29/capture-learning-gtd/&text=
+				When it comes to GTD, the first thing you are introduced to is the idea of &ldquo;Capture.&rdquo; For the most part it&rsquo;s strai...&hashtags=learning gtd,task manager," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/learning gtd">learning gtd</a></li>
+                
+                <li><a href="http://localhost:4000/tag/task manager">task manager</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+
+            </main>
+        </div>
+
+        <script src="http://localhost:4000/assets/js/jquery-1.12.2.min.js"></script>
+<script src="http://localhost:4000/assets/js/backtotop.js"></script>
+<script src="http://localhost:4000/assets/js/lunr.min.js"></script>
+<script src="http://localhost:4000/assets/js/lunr-feed.js"></script>
+<script src="http://localhost:4000/assets/js/jquery.fitvids.js"></script>
+<script src="http://localhost:4000/assets/js/svg4everybody.min.js"></script>
+<script src="http://localhost:4000/assets/js/scripts.js"></script>
+
+
+    </body>
+</html>

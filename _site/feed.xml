@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description>I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 13 Sep 2019 13:00:13 -0400</pubDate>
+    <lastBuildDate>Fri, 13 Sep 2019 13:00:13 -0400</lastBuildDate>
+    <generator>Jekyll v3.8.4</generator>
+    
+      <item>
+        <title>MarsEdit Custom Formatting Macros</title>
+        <description>&lt;p&gt;I have been only using my Mac for a little while now, and one thing that I &lt;em&gt;love&lt;/em&gt; about the Mac is &lt;a href=&quot;https://www.red-sweater.com/marsedit/&quot;&gt;MarsEdit&lt;/a&gt;. This is by far my favorite app when it comes to blogging. It is dead easy to setup, and you have full control on your posts and pages without needing to use the WordPress web app. You can make pages, local drafts, and of course blog posts for your site all within MarsEdit.&lt;/p&gt;
+&lt;p&gt;One thing I didn’t realize about MarsEdit until I saw it in a &lt;a href=&quot;https://red-sweater.com/blog/3502/marsedit-4-3-4-quick-fix-for-formatting-macro-crash&quot;&gt;recent release notes page&lt;/a&gt; is &lt;a href=&quot;https://red-sweater.com/blog/2421/marsedit-3-5-formatting-macros-full-screen-mode-tumblr-tweaks&quot;&gt;custom macros for formatting&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Basically this allows you to edit the key bindings on MarsEdit for a number of built in formatting shortcuts. For example, MarsEdit ships with the Paste Link shortcut being Shift+⌘+A. As someone who is used to Ulysses and the WordPress web app I changed that shortcut to be ⌘+K instead. It is second nature for me to make that my link shortcut, and I love being able to change in MarsEdit.&lt;/p&gt;
+&lt;p&gt;Not only can you change baked in formatting macros, you can also make custom formatting shortcuts. To explain, let me show you how I manage my link posts introduction.&lt;/p&gt;
+&lt;p&gt;My link posts contain a very specific format that has come to be a standard among us Apple and Tech link bloggers which is:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;AUTHOR &lt;/strong&gt;writing for &lt;strong&gt;PUBLICATION&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;All of the above is then linked to the specific URL of the post in question.&lt;/p&gt;
+&lt;p&gt;To do this you first need to right click within the draft and select “Format” and then go all the way down to the bottom of the sub-list and select “Customize...&quot;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/format-1.png&quot; title=&quot;Format-1.png&quot; alt=&quot;Format 1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Once there you will see all of the formatting options that are setup, including the &quot;Link…” and “Paste Link” options I changed the shortcuts to. But for this example we want to make a new shortcut and we are going to do so by clicking the “+” button on the bottom left.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/format-list-2.png&quot; title=&quot;Format-List-2.png&quot; alt=&quot;Format List 2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;From there you will see something like the image below, asking you for a title, shortcut, Opening Markup (what the format starts with) and a Closing Markup (what it ends with). What you see below might seem daunting, but I assure you it isn’t as hard as it looks. For one thing, there is a very cool tool in the where you can insert placeholders (see below).&lt;/p&gt;
+&lt;p&gt;So if you want to be prompted for text you can select “Ask for text” or if you want the URL you have in your clipboard to automatically be added, you can select “Paste URL.” In the case of this shortcut, I ask for the Author and the Publication, and with the formatting of HTML inserted within it, it takes those two inputs and the URL I have copied in my clipboard and spits out an HTML version of my link post introduction.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/format-example-3.png&quot; title=&quot;Format Example-3.png&quot; alt=&quot;Custom Macro Setup Screen&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/screen-shot-2019-08-26-at-11.53.18-am.png&quot; class=&quot;aligncenter&quot; title=&quot;Screen Shot 2019-08-26 at 11.53.18 AM.png&quot; alt=&quot;The placeholders you can use for custom macros&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/format-author-4.png&quot; title=&quot;Format Author-4.png&quot; alt=&quot;Entering Author's Name&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/format-publication-5.png&quot; title=&quot;Format Publication-5.png&quot; alt=&quot;Entering Publication&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/format-result-6.png&quot; title=&quot;Format Result-6.png&quot; alt=&quot;Final Result&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The best part? If you are like me and write with the WYSIWYG editor instead of the HTML editor it is automatically formatted properly. It is smart enough to know that you are writing in rich text and so it pastes it as such.&lt;/p&gt;
+&lt;p&gt;If you would like the specific code I used for my opening and closing you can copy it below.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Opening Markup&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;a href=&quot;#pasteurl#&quot;&amp;gt;#asktext author: Jeff Perry# writing for #asktext Publication#&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Closing Markup&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;/a&amp;gt;:&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Opening Markup from Video&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;#asktext author: Jeff Perry# writing for &amp;lt;a href=&quot;#pasteurl#&quot;&amp;gt;#asktext Publication#&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Finally, I created a quick tutorial on how to use this custom shortcut. In it I mention a very cool tool call &lt;a href=&quot;https://pqrs.org/osx/karabiner/&quot;&gt;Karabiner&lt;/a&gt;, which allows you to really dive into custom keyboard shortcuts. The most common one is a “hyper key” which transforms the Caps Lock key from making text all caps into a tool that effectively presses Shift+Command+Option+Control all in one go. It is great for when you want to use a custom keyboard shortcut but don’t want to worry about stepping on another keyboard shortcut’s toes. To do that, just download Karabiner and add the following rule under the &quot;Complex Modifications&quot; tab:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/karabiner-rule.png?w=300&quot; class=&quot;aligncenter size-medium wp-image-1305&quot; width=&quot;300&quot; height=&quot;185&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Anyway, here’s the video:&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/5dvdUB7L3lQ&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+        <pubDate>Wed, 28 Aug 2019 00:34:25 -0400</pubDate>
+        <link>http://localhost:4000/2019/08/28/marsedit-custom-formatting-macros/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/28/marsedit-custom-formatting-macros/</guid>
+        
+        <category>blogging</category>
+        
+        <category>marsedit</category>
+        
+        <category>tutorial</category>
+        
+        
+        <category>Productivity</category>
+        
+        <category>Workflow Wednesday</category>
+        
+      </item>
+    
+      <item>
+        <title>Moving to WordPress.com</title>
+        <description>&lt;p&gt;I have long said that the open web is something I feel strongly about, and that in order for you to truly&amp;nbsp;&lt;em&gt;own&lt;/em&gt; something on the internet it has to be on your personal website. You can’t expect companies like Twitter, Facebook, Medium, or other big name social media platforms to care about that stuff. They should, but we all know that it is in their best nature to keep that stuff in&amp;nbsp;&lt;em&gt;their&lt;/em&gt; home turf and make it as difficult as possible to get it elsewhere.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;To save time, my argument for the open web boils down to this: &lt;strong&gt;Would you rather have all of your work in the hands of someone else, or in your own hands?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I bring this up because Automattic, the company that owns WordPress.com, recently bought Tumblr for &lt;a href=&quot;https://www.axios.com/verizon-tumblr-wordpress-automattic-e6645edd-bc73-45c2-9380-9fe8ca34291f.html&quot;&gt;a reportedly $3 million steal&lt;/a&gt; (don’t forget&amp;nbsp;&lt;a href=&quot;https://www.washingtonpost.com/technology/2019/08/13/tumblr-once-sold-billion-owner-wordpress-just-bought-site-fraction-that/?noredirect=on&quot;&gt;Tumblr sold just a few years ago for $1.1 billion&lt;/a&gt;). If you want to know &lt;em&gt;why&lt;/em&gt; I am excited about this, and why it caused me to think about the open web, I think Aja Romano said it best in &lt;a href=&quot;https://www.vox.com/2019/8/13/20802751/wordpress-tumblr-sale-porn-ban-future&quot;&gt;their Vox article&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;WordPress has succeeded thus far by not rocking the boat, catering to its community, and essentially doing one thing — blogging — extremely well. This would seem to make it an ideal parent for Tumblr’s more unruly, unwieldy blog format, which gave the world the “reblog” and made use of universalized tagging systems to connect its noisy user base. WordPress, with no reblogs, has a much less streamlined tagging system, and its “blogroll” approach to connecting users feels hopelessly outdated. In essence, each company has things to teach the other about blogging.&lt;/p&gt;
+&lt;p&gt;“I don’t think there’s any organic connection between the two platforms,” Dash told me, “though I do hope Automattic updates WordPress’s feature for reading blogs to be as good as Tumblr’s timeline.”&lt;/p&gt;
+&lt;p&gt;Where WordPress excels over Tumblr, however, is in respecting and following its community’s lead on things like site design. One of the foundations of its success is &lt;a href=&quot;https://wordpress.org/about/&quot;&gt;its commitment&lt;/a&gt; to open source web design, meaning anyone can make and customize their own WordPress website theme. We might say Tumblr is something of an open source community too, with the ecosystem flourishing and growing most when it’s able to be artistically inventive and essentially bend Tumblr’s format in new and interesting directions. (For instance, the site was initially intended to be a “microblog,” closer in spirit to Twitter’s original 180-character limit; instead, Tumblr users made the platform well-known for long, image-heavy posts, subcultural artistic movements, and animated GIF storytelling.) Tumblr’s corporate overlords have had significant trouble with this notion in the past, but supporting a more hands-off community is not something that should give Automattic much trouble.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;For further information on the deal, there's&amp;nbsp;&lt;a href=&quot;https://www.theverge.com/2019/8/14/20804894/tumblr-acquisition-matt-mullenweg-ceo-automattic-wordpress-verizon-changes-vergecast&quot;&gt;a recent Vergecast where they interviewed&lt;/a&gt; Automattic’s CEO, Matt Mullenweg, I left that podcast wanting to directly support WordPress; so I did. I moved my website from &lt;a href=&quot;https://www.easywp.com&quot;&gt;EasyWP&lt;/a&gt; on NameCheap to WordPress hosting through WordPress.com. To be honest I thought about checking out Tumblr, but as someone who has never tried it, I thought diving in now for my personal site would be overkill.&lt;/p&gt;
+&lt;p&gt;The cost to move to WordPress.com was a bit more than what I was paying previous (almost double), and the functionality isn’t as flexible as the self-hosted websites are, but with the bad comes a lot of good. For one, I no longer have to worry about my website being optimized properly, and if I have any issues I can contact one of WordPress’ Happiness Engineers (which is a great job title if you ask me) for assistance. So far the response time has been much less than it would have taken services like Squarespace or NameCheap to help me with technical support. The move was simple, thanks to already having a WordPress website, and when I needed clarification it was handled in hours, not days.&lt;/p&gt;
+&lt;p&gt;I personally feel like this move is better for me in the long run. I get to worry less about making my website “perfect” every 6 weeks and instead start working on what should matter the most: writing; which I hope to do more of going forward.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 23 Aug 2019 13:45:34 -0400</pubDate>
+        <link>http://localhost:4000/2019/08/23/moving-to-wordpress-com/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/23/moving-to-wordpress-com/</guid>
+        
+        <category>blogging</category>
+        
+        
+        <category>Personal</category>
+        
+      </item>
+    
+      <item>
+        <title>What’s in a name?</title>
+        <description>&lt;p&gt;Andy Nicolaides writing for &lt;a href=&quot;https://www.thedent.net/2019/08/07/whats-in-a.html&quot;&gt;The Dent&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;One of the big questions I asked myself before moving my blog from Wordpress to Micro.Blog recently was ‘what would I call it?’ The name &lt;strong&gt;The Dent&lt;/strong&gt; was kindly offered up to me by &lt;a href=&quot;https://twitter.com/zcichy&quot;&gt;Zac Cichy&lt;/a&gt; after I tweeted about wanting to find some kind of identity to my tech blogging. The fact I didn’t come up with it myself frees me to say that I, personally, think it’s a pretty great name. While the name could mean many things, the six colour header and quote mark it as clearly Apple / Tech related.&lt;/p&gt;
+&lt;p&gt;The other alternative was to use &lt;a href=&quot;http://andynicolaides.com&quot;&gt;AndyNicolaides.com&lt;/a&gt;, which I still own, but am not currently using. The unfortunate thing about this is my name is a bit of a mess and it would never stick in people’s minds for long, and if it did they’d soon forget how to spell it. It goes without saying that if you can’t spell a domain name, you certainly wont be going there very much.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;[…]&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;My issue, which is completely on me, don’t get me wrong, is that I feel I’ve painted myself into a bit of a corner with the name &lt;strong&gt;The Dent&lt;/strong&gt;. While I have a love for technology, I don’t always want to talk or think about it. I feel that the name of this blog gives off a certain expectation, however. This feeling has held me back from posting more often, and of varying topics.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;As someone who &lt;em&gt;did&lt;/em&gt; make the decision to move from Rocket Panda to my own name, I think that if you feel like the name is blocking you from expressing yourself completely then change it to something else. I will say that you shouldn’t do this unless you truly are convinced the name isn’t “you” anymore. Rocket Panda was a one off name I came up with in the shower and liked it because it meant nothing, but over time I felt it to be a very weird website to explain to people and what the name had to do with it.&lt;/p&gt;
+&lt;p&gt;I changed my domain and not a single person seemed to notice or care. Maybe that is because not many people read this, but it was nice to not get so much flack for changing the name of my site.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 08 Aug 2019 14:19:16 -0400</pubDate>
+        <link>http://localhost:4000/2019/08/08/whats-in-a-name/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/08/whats-in-a-name/</guid>
+        
+        
+        <category>Linked</category>
+        
+      </item>
+    
+      <item>
+        <title>Bye-Bye iPad</title>
+        <description>&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: A couple of people have asked if me not having an iPad means the end of &lt;a href=&quot;http://aslabofglass.com&quot;&gt;A Slab of Glass&lt;/a&gt;, it is not. Christopher and I both have talked about the podcast being more than just about the iPad, and we have been making strides to do that over the past few months. So no, A Slab of Glass isn't going anywhere.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;After about 2 months of it collecting dust, I decided it was time to say goodbye to my iPad Pro and consequently the iPad Lifestyle. There are a couple of reasons for this, but I will stick with the one that is worth talking about: I simply don't use an iPad anymore for my work.&lt;/p&gt;
+&lt;p&gt;No, this isn't a &quot;you can't get real work done on an iPad&quot; article. I &lt;em&gt;have&lt;/em&gt; gotten real work done on an iPad for years and loved it, but due to some changes in my life the iPad isn't the best tool for the job anymore.&lt;/p&gt;
+&lt;p&gt;The big one for me is editing and processing audio. I use &lt;a href=&quot;https://www.izotope.com/en/products/repair-and-edit/rx.html&quot;&gt;iZotope RX 7&lt;/a&gt; for cleaning up both of my own podcasts and the podcasts I edit in my freelance work. There isn't a great alternative on iOS that compares to iZotope RX 7, which leaves me to crack open my laptop whenever I need to edit podcasts. Because of this I have moved all of my podcast editing to my MacBook Pro. A lot of my time is spent editing podcasts nowadays it makes little sense to me to move from a MacBook to an iPad for the minority of the work I have left.&lt;/p&gt;
+&lt;p&gt;If I am being totally honest, it isn't just the editing that makes me want to use my Mac over the iPad. I'm not sure if it is me not always happy with certain limitations on iOS or if I am just used to the Mac, but something about the Mac allows me to work with less friction. I am almost positive this is a mental thing with me and not the limitation of the iPad that is causing this, the MacBook just seems much more appealing to me when I want to get to work on something involving a computer. Whether it's writing, editing podcasts, editing photos, managing email, or simply browsing online, the Mac just fits to me more than the iPad.&lt;/p&gt;
+&lt;p&gt;I loved my iPad and it wasn't easy for me to come to terms that I simply am not using it, but I needed the extra cash and I would rather sell it than have it collect dust on my desk.&lt;/p&gt;
+&lt;p&gt;It will be a significant transition to only have an iPhone and MacBook Pro but I think it was still the right choice for me in my life today. Maybe one day I will decide that is no longer the case and move back to the iPad more, but for now it is just me and my MacBook Pro, and I am happy with that.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 07 Aug 2019 12:15:22 -0400</pubDate>
+        <link>http://localhost:4000/2019/08/07/bye-bye-ipad/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/08/07/bye-bye-ipad/</guid>
+        
+        <category>ipad</category>
+        
+        <category>mac</category>
+        
+        
+        <category>Personal</category>
+        
+      </item>
+    
+      <item>
+        <title>Impostor Syndrome</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://inessential.com/2019/06/25/impostor_syndrome&quot;&gt;Brent Simmons writing for inessential&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;
+  There’s no developer bit in anyone’s DNA. I don’t have that bit — nobody does. There’s no such thing, and there’s no collection of genes that make you a real developer, either.&lt;/p&gt;
+&lt;p&gt;  You don’t have to have a CS degree. (I didn’t even own a computer when I was in college. And I didn’t graduate.)&lt;/p&gt;
+&lt;p&gt;  If you’re working on an app, you’re a developer. Period. Even if it’s not a stand-alone app; even if it’s some scripts. You’re solving a problem on a computer with logic and code — that makes you a developer. That’s all it takes!&lt;/p&gt;
+&lt;p&gt;  Impostor syndrome goes away eventually. You just forget about it. The fastest way to get past it is probably to help other people.&lt;/p&gt;
+&lt;p&gt;  It’s okay to admit that you have it. It’s been many years, but I had it too. :)
+&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;If you were to replace this for blogging this is what it would look like:&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;
+  There’s no writer bit in anyone’s DNA. I don’t have that bit — nobody does. There’s no such thing, and there’s no collection of genes that make you a real writer, either.&lt;/p&gt;
+&lt;p&gt;  You don’t have to have an English degree.&lt;/p&gt;
+&lt;p&gt;  If you’re working on a blog, you’re a blogger. Period. Even if it’s not on your own domain (though, you should really &lt;em&gt;own&lt;/em&gt; your site if you do anything online). You’re sharing your thoughts online for others to read — that makes you a blogger. That’s all it takes!&lt;/p&gt;
+&lt;p&gt;  Impostor syndrome goes away eventually. You just forget about it. The fastest way to get past it is probably to help other people.&lt;/p&gt;
+&lt;p&gt;  It’s okay to admit that you have it. It’s been many years, but I had it too. :)
+&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;This is me, and I am sure others reading this also agree.&lt;/p&gt;
+&lt;p&gt;I have been dealing with a lot of things offline lately--which is why I haven't been posting at all--that's partly due to imposter syndrome. I get married in a few days, to my beautiful fiancé. The person that has helped me with all of my mental health issue the better part of a decade now. Afterwords, I hope to keep the imposter syndrome part of what's holding me back at bay.&lt;/p&gt;
+&lt;p&gt;Until then, if anyone wants to get in touch with me you can do so here on micro.blog or via email at Jeff[at]rocketpanda[dot]net.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 26 Jun 2019 14:21:33 -0400</pubDate>
+        <link>http://localhost:4000/2019/06/26/impostor-syndrome/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/06/26/impostor-syndrome/</guid>
+        
+        <category>Personal</category>
+        
+        
+        <category>Linked</category>
+        
+      </item>
+    
+      <item>
+        <title>Getting Caught Up 25: Task Managers and Podcasting</title>
+        <description>&lt;p&gt;In &lt;a href=&quot;https://gettingcaughtup.net/episodes/25&quot;&gt;episode 25 of Getting Caught Up&lt;/a&gt; Mike and I talk a lot about task managers and getting things right when it comes to keeping tasks together. Jeff explains his checkered past with nearly every task manager out there, and he lets fate decide what app he uses next. Also, Spotify is talked about briefly at the end of the episode.&lt;/p&gt;
+&lt;p&gt;&lt;audio controls=&quot;controls&quot; src=&quot;https://dts.podtrac.com/redirect.mp3/cdn.simplecast.com/audio/c81a0b/c81a0b9e-d387-4cdc-b3b7-dd050d1b6592/c5a0fbd4-00c2-4bb9-b906-8e680bf555fc/GCU_25_tc.mp3&quot; preload=&quot;none&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 14 Jun 2019 02:16:45 -0400</pubDate>
+        <link>http://localhost:4000/2019/06/14/getting-caught-up-25-task-managers-and-podcasting/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/06/14/getting-caught-up-25-task-managers-and-podcasting/</guid>
+        
+        <category>getting caught up</category>
+        
+        <category>podcast</category>
+        
+        
+        <category>Linked</category>
+        
+      </item>
+    
+      <item>
+        <title>Being Honest With Myself</title>
+        <description>&lt;p&gt;It's no secret that I write a lot about blogging on Rocket Panda. I have a thing with going meta, I even used to host a podcast about podcasting before Rocket Panda even existed. That said, sometimes it can be fun to go down memory lane.&lt;/p&gt;
+&lt;p&gt;Yesterday I was migrating my website over to micro.blog&lt;sup id=&quot;fnref-972-1&quot;&gt;&lt;a href=&quot;#fn-972-1&quot; class=&quot;jetpack-footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; and I noticed something about my writing style over the last two years. There's been a stark contrast in my older posts and the ones I write now, and I wanted to talk about it.&lt;/p&gt;
+&lt;p&gt;My older posts were me trying to imitate and mimic tech journalists like that of 9to5Mac and TechCrunch. I was trying to be more journalistic and matter-of-fact without adding anything personal to them. I even tried to make myself sound like and Apple expert, but if I am being honest with myself I know little about the history of Apple and the impact they made before 2008, which was when I jumped into the Apple ecosystem.&lt;/p&gt;
+&lt;p&gt;Once I realized that wasn't working out for me, I moved to doing things like listicles and have my &lt;a href=&quot;https://jeffperry.blog/2018/02/05/ipad-life-hacks.html&quot;&gt;Top 10 iPad Life Hacks&lt;/a&gt; and &lt;a href=&quot;https://jeffperry.blog/2018/04/10/the-things-i.html&quot;&gt;The 9 Things I Learned Going iPad Only&lt;/a&gt;. I look back at both of these kinds of writing and cringe, because desperation has a foul and pungent scent and I reeked of it. After I got over how much of a try-hard I must have looked like I realized that had I not done those things and looked in the mirror afterwards I wouldn't have come to the conclusion I have today about what it is I want to write about the things that I'm passionate about.&lt;/p&gt;
+&lt;p&gt;If you look at my more recent pieces, I am writing more personal pieces about the things that I can add personal input on. I have written things like &lt;a href=&quot;https://www.jeffperry.blog/2019/06/06/why-ios-made.html&quot;&gt;Why iOS 13 Made the iPad Home Screen Fun Again&lt;/a&gt; and my &lt;a href=&quot;https://www.jeffperry.blog/2019/05/08/touchtype-pro-review.html&quot;&gt;TouchType Pro Review&lt;/a&gt;&lt;sup id=&quot;fnref-972-2&quot;&gt;&lt;a href=&quot;#fn-972-2&quot; class=&quot;jetpack-footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. These things are comments on the news from Apple and the companies that cater to those users, but I center it on myself and my feelings on it instead of trying to make this an article for TechCrunch or something similar.&lt;/p&gt;
+&lt;p&gt;It is much more satisfying for me to comment on the smaller things that I'm comfortable speaking on instead of trying to get my share of the pie with what the rest of the big Apple blogs are commenting on. There are times where I may add my feelings and opinions on something but only when it is something that I am comfortable with. Gone are the days where I try and do some quick research and reading up on something that I know &lt;em&gt;nothing&lt;/em&gt; about just so that I can be with the rest of the Apple News cycle. It is great if you enjoy that but I found it to be extraordinarily draining both mentally and emotionally. Chasing that forever-spinning wheel of tech news is not something for me.&lt;/p&gt;
+&lt;p&gt;If I am still staying honest, it's hard to make a blog about the Apple news as a single independent writer. That faucet is broken and it is just a firehose of information shooting out at you with an unlimited supply of water. I have tried being a part of the firehose and it's simply not for me. I would rather be a trickle of water by myself for a small amount of people to drink from. Which brings me to why I have moved my site to &lt;a href=&quot;http://micro.blog&quot;&gt;micro.blog&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Why I Moved to Micro.blog &lt;sup id=&quot;fnref-972-4&quot;&gt;&lt;a href=&quot;#fn-972-4&quot; class=&quot;jetpack-footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/h2&gt;
+&lt;p&gt;The reason for this is two-fold:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;I am not a Pro Blogger, and I need to stop acting like one&lt;/li&gt;
+&lt;li&gt;The atmosphere at micro.blog isn't as formal as something like WordPress for me, and I like that&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When I say I am not a Pro Blogger I mean that I don't have hundreds of thousands of readers, and I don't think I necessarily want that. It isn't a goal in my life to make Rocket Panda anything other than a way for me to express myself creatively. I don't look at stats, I don't see what posts are getting the most clicks, and I definitely don't want to make my site a digital billboard with ads everywhere and videos playing automatically. That wasn't the case when I first started though, I wanted to make Rocket Panda my full time job so badly. So much so I was willing to throw a piece together I thought would get lots of clicks and subscribers instead of writing something that I was happy with.&lt;/p&gt;
+&lt;p&gt;What I want when it comes to this blog is that I own every pixel top to bottom and that I can say what I want, when I want without worrying about upsetting anyone that has control over my livelihood.&lt;/p&gt;
+&lt;p&gt;As for the second point, micro.blog is a place for me I consider a much friendlier atmosphere than that of Twitter or Instagram. There's nothing about this service that makes me upset or feel inadequate about myself. It is just writers and bloggers sharing their lives, thoughts, ideas, and photos with others. As someone that doesn't have a staff of writers it can be lonely at times writing, and having the ability to be a part of a community that isn't culturally toxic and genuinely delightful helps fill that void for me.&lt;/p&gt;
+&lt;p&gt;I could have kept my blog on WordPress and linked it to micro.blog, but for me it made more sense to just put all of my chips in this service and embrace the limitations it comes with. I am happy with my setup and I hope to see it stick, and I think that this time it will.&lt;/p&gt;
+&lt;p&gt;After some tinkering and playing around I finally figure out how to fix my biggest gripe with the service, which was differentiating the micro posts (the things I would post on Twitter) to the articles (like this one). Because of the addition to categories and the support for Hugo I managed to figure out how to add parameters to my site to hide my micro posts from the website but still have them post to micro.blog for those who follow me there. For those interested, I found the answer to that from &lt;a href=&quot;https://discourse.gohugo.io/t/only-show-posts-not-in-a-given-category/17655/3&quot;&gt;the Hugo Discourse&lt;/a&gt; which is a group of helpful individuals&lt;sup id=&quot;fnref-972-3&quot;&gt;&lt;a href=&quot;#fn-972-3&quot; class=&quot;jetpack-footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;This isn't me saying that you should move to micro.blog, that is for you to decide. That said, I do think that more bloggers should look I the mirror and answer the tough questions about what they are writing about and what they want to share, because it took me &lt;em&gt;way&lt;/em&gt; longer than it should have to listen to the people who told me to write more personal posts over the bland lists and news articles I was writing.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn-972-1&quot;&gt;
+More on that in a bit&amp;#160;&lt;a href=&quot;#fnref-972-1&quot;&gt;&amp;#8617;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn-972-2&quot;&gt;
+Sorry Salman if you're reading this, I still haven't sent the review unit back to him.&amp;#160;&lt;a href=&quot;#fnref-972-2&quot;&gt;&amp;#8617;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn-972-4&quot;&gt;
+I have since moved back to WordPress because of wanting to have link posts work the way I want, as well as having more granular abilities with the way my site looks. That said, the sentiment of being more informal is sticking with me.&amp;#160;&lt;a href=&quot;#fnref-972-4&quot;&gt;&amp;#8617;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn-972-3&quot;&gt;
+I have bookmarked this site for future browsing as well if I ever decide to tinker with my website again&amp;#160;&lt;a href=&quot;#fnref-972-3&quot;&gt;&amp;#8617;&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 10 Jun 2019 02:18:14 -0400</pubDate>
+        <link>http://localhost:4000/2019/06/10/being-honest-with-myself/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/06/10/being-honest-with-myself/</guid>
+        
+        <category>update</category>
+        
+        
+        <category>Personal</category>
+        
+      </item>
+    
+      <item>
+        <title>A Meditation on the Open Web</title>
+        <description>&lt;p&gt;Something about this video makes me realize the &lt;em&gt;real&lt;/em&gt; reason I am blogging on Rocket Panda instead of something like SquareSpace or Tumblr. It isn't because I think WordPress is a better platform, that is debatable on many different levels. The reason is because it’s &lt;em&gt;my&lt;/em&gt; platform. I own every pixel of this website and I can control what goes on here and what doesn't.&lt;/p&gt;
+&lt;p&gt;This isn't about WordPress though, it is about the open web. If you are unsure what the open web is, I will let Mark Surman, Executive Director of the &lt;a href=&quot;https://foundation.mozilla.org/en/&quot;&gt;Mozilla Foundation&lt;/a&gt;, explain.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.yearofopen.org/november-open-perspective-what-is-open-web/what-is-the-open-web-and-why-is-it-important-submitted-by-mark-surman-executive-director-of-the-mozilla-foundation/&quot;&gt;Mark Surman writing on Year of Open&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;
+  &lt;strong&gt;What is Open Web?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;  “Open web” is a sweeping term — it encompasses technical concepts like open-source code and open standards. It also encompasses democratic concepts like free expression and digital inclusion.&lt;/p&gt;
+&lt;p&gt;  But there’s a single underlying principle connecting all these ideas: An open web is a web by and for all its users, not select gatekeepers or governments.&lt;/p&gt;
+&lt;p&gt;  At Mozilla, we compare the open web to a global public resource, like clean water or the environment. The open web is something we all depend on: to communicate and create, to work and play, to buy and sell. And like any other natural resource, it’s fragile. It needs care, because it can be polluted: by harassment and abuse, by misinformation, by bad public policy.&lt;/p&gt;
+&lt;p&gt;  &lt;strong&gt;Why is it important?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;  The web doesn’t exist in a vacuum, or apart from society. The two are deeply entwined. The web is where we engage with journalism, form opinions and share knowledge. It’s an arena for politics, education, culture and science.&lt;/p&gt;
+&lt;p&gt;  An open web means positive progress for all these things. A more informed public; more civic participation; more opportunities to learn and connect with each other.&lt;/p&gt;
+&lt;p&gt;  An unhealthy web has an opposite effect. When misinformation, harassment or surveillance proliferate online, we lose trust in our institutions and in each other. Fewer people engage. And when closed, proprietary technology proliferates, innovation and competition are stifled. The web is no longer a level playing field — it’s a platform controlled by a select few.
+&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;While the main issue is governments seeking control of the internet, another entity is at work to wall up our content and lives: social media. I read somewhere a long time ago that you can't be playing in someone else's yard and then get upset when they kick you off it.&lt;/p&gt;
+&lt;p&gt;If Facebook one day decides that they want to close up shop all of the photos, posts, videos, status updates, and events you have put there are susceptible of going away forever. While losing a large part of your digital life can be catastrophic the thing that I think is much more dangerous is the freedoms you are giving up as a cost of entry into Facebook and Twitter and Instagram.&lt;/p&gt;
+&lt;p&gt;These social media giants aren't making these social networks just so you can stay in touch with friends and family, it is to get data and demographic information for marketing and advertisers. You are the product, and the more information these companies can get on you the better.&lt;/p&gt;
+&lt;p&gt;That said, &lt;a href=&quot;https://developer.apple.com/sign-in-with-apple/&quot;&gt;Apple is planning to launch Sign In with Apple&lt;/a&gt; soon and that is a game changer in my opinion. You no longer have to use your personal information to log in to a service. You can now use great services online and in the App Store &lt;em&gt;without&lt;/em&gt; having to worry about privacy concerns. This is the digital version of having your cake and eating it too.&lt;/p&gt;
+&lt;p&gt;I plan to remove every piece of my Facebook the moment I get married this summer. I no longer want to be a part of a company I deem to be evil, and I don’t want to keep feeding them my personal data for a myriad of reasons.&lt;/p&gt;
+&lt;p&gt;I guess what I am trying to say is when I want to share something on the internet I am going to do it on Rocket Panda, and I hope that you consider doing the same for your stuff.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 07 Jun 2019 14:26:56 -0400</pubDate>
+        <link>http://localhost:4000/2019/06/07/a-meditation-on-the-open-web/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/06/07/a-meditation-on-the-open-web/</guid>
+        
+        <category>blogging</category>
+        
+        
+        <category>Personal</category>
+        
+      </item>
+    
+      <item>
+        <title>Why iOS 13 Made the iPad Home Screen Fun Again</title>
+        <description>&lt;p&gt;The newly announced &lt;a href=&quot;https://www.apple.com/ipados/ipados-preview/&quot;&gt;iPadOS&lt;/a&gt; is Apple making the iPad operating system different to that of the iPhone. Now, gone are the days of mobile browsing on an iPad, and gone are the days where changes for iPhone are less-then-optimized for the iPad&lt;sup id=&quot;fnref-957-1&quot;&gt;&lt;a class=&quot;jetpack-footnote&quot; href=&quot;#fn-957-1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. One of the things iPadOS offers in iOS 13 is the Today View widgets being pinned to the home screen of the iPad.&lt;/p&gt;
+&lt;p&gt;&lt;img style=&quot;display:block;margin-left:auto;margin-right:auto;&quot; title=&quot;Apple_iPadOS_Today-View_060319.jpg&quot; src=&quot;/assets/03219-apple_ipados_today-view_060319.jpg&quot; alt=&quot;Apple iPadOS Today View 060319&quot; width=&quot;599&quot; height=&quot;484&quot; border=&quot;0&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Now, if you so choose, you can slide the widgets over from the left onto the home screen and always have them on the home screen of your iPad. This bodes well for anyone who wants to utilize the widget screen more, as well as those who want more whimsy on their iPad; because who doesn't want a little variety on their home screen?&lt;/p&gt;
+&lt;p&gt;For me, I think this is going to make apps with crappy widgets, or no widgets at all, push to make them more usable and feature rich. I haven't been one to use widgets because it's always been an &quot;out of sight out of mind&quot; thing for me. Now that it's on the home screen I think that this is going to make me rethink my entire iPad workflow. Apps like &lt;a href=&quot;http://timeryapp.com&quot;&gt;Timery&lt;/a&gt;, &lt;a href=&quot;https://eventail.app&quot;&gt;Eventail&lt;/a&gt;, and &lt;a href=&quot;https://support.apple.com/en-us/HT209055&quot;&gt;Shortcuts&lt;/a&gt; offer &lt;em&gt;great&lt;/em&gt; widgets that I can tap to run actions or use to check on something without the need of opening an entire app. For example I can run a saved timer in Timery from the home screen instead of having to open the app and tap on it or running a specified shortcut. It all lives in the widget now and makes for things to be much more fluid and smooth.&lt;/p&gt;
+&lt;p&gt;I think that the home screen for the iPad just got a whole lot more useful as well, because when the addition of the Dock on the iPad I rarely kept apps on the home screen. The Dock added a lot of utility to the iPad but with that came the question of whether to keep everything on you iPad in a folder or two within the Dock or still use the home screen even though it isn't as optimized for multitasking as the Dock was.&lt;/p&gt;
+&lt;p&gt;As of right now I am no on the beta but I plan to as soon as there is a build that is reliable. Once that happens, I think my new setup will be to have more things on the home screen &lt;em&gt;because&lt;/em&gt; I will be going to it more and more thanks to this new addition.&lt;/p&gt;
+&lt;p&gt;I'm looking forward to seeing what both developers and other users make of this once iOS 13 becomes available as a public beta, but until then I will be keeping an eye out for any apps that make significant improvements to their widgets and share them here on Rocket Panda.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn-957-1&quot;&gt;I'm looking at you Shake-to-Undo&amp;nbsp;&lt;a href=&quot;#fnref-957-1&quot;&gt;↩&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Thu, 06 Jun 2019 14:28:30 -0400</pubDate>
+        <link>http://localhost:4000/2019/06/06/why-ios-13-made-the-ipad-home-screen-fun-again/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/06/06/why-ios-13-made-the-ipad-home-screen-fun-again/</guid>
+        
+        <category>home screen</category>
+        
+        <category>ios</category>
+        
+        <category>ios 13</category>
+        
+        <category>ipados</category>
+        
+        
+        <category>Productivity</category>
+        
+      </item>
+    
+      <item>
+        <title>3 Stooges Syndrome</title>
+        <description>&lt;p&gt;I have been thinking a lot about habits lately and I think that one of my biggest flaws, as many others also have, is that we suffer from 3 Stooges Syndrome.&lt;/p&gt;
+&lt;p&gt;One thing, I constantly deal with is new interests and goals I set for myself when I want to make a positive change in my life. The issue is when I have so many things that it all seems to be too much.&lt;/p&gt;
+&lt;p&gt;I can’t lose weight, eat healthier, plan my mornings, read more, learn something new everyday, save more money, &lt;em&gt;and&lt;/em&gt; do one nice thing a day all the time.&lt;/p&gt;
+&lt;p&gt;One thing I have learned over the years about myself is that I plan and set all of these things I want to accomplish and hit the ground running with every single one of them simultaneously.&lt;/p&gt;
+&lt;p&gt;Doing this seems plausible and honestly really exciting when I get started. But by day 5 I’m questioning whether I &lt;em&gt;really&lt;/em&gt; need to go to the gym again, or I tell myself I am “too busy” writing a blog post to make a healthy lunch so I get McDonald’s &lt;em&gt;again&lt;/em&gt;. “It’s fine,” I say to myself shoveling fries in my face, “I can afford &lt;em&gt;one&lt;/em&gt; bad meal this week.” I am sure I am not the only one. You have probably done something similar, right?&lt;/p&gt;
+&lt;p&gt;I’d like to take a page out of The Simpsons when I talk about these kinds of things, and call it the 3 Stooges Syndrome.&lt;/p&gt;
+&lt;p&gt;https://youtu.be/aI0euMFAWF8&lt;/p&gt;
+&lt;p&gt;As you can see in the video, Mr. Burns is in for a doctors exam. Turns out he has &lt;em&gt;so many&lt;/em&gt; illnesses his immune system won’t let any of them through the door because they are all prevent the other from getting in (cue noises from Curly).&lt;/p&gt;
+&lt;p&gt;If we dissect this a bit and spin it to make these illnesses into goals and resolutions you make foryourself, it’s obvious that having all of these grand plans you set means nothing was going to get through that door.&lt;/p&gt;
+&lt;p&gt;I’m not saying goals and resolutions are illnesses, but I am saying that if you have too many you won’t be able to accomplish any of them. So what do you do?&lt;/p&gt;
+&lt;p&gt;For me, I had close to 10 different things I wanted to accomplish this year and I have slogged through them making zero progress on them. I wrote out all of these things on a piece of paper and really took a hard look at them. I asked myself why I want to accomplish this, what the outcome I wanted was, and what it will take to make this happen. I took an honest look at all of these things and then took an honest look at myself. What could I truly make happen this year? How many of these could I &lt;em&gt;really&lt;/em&gt; get done? The answers for these questions made me look at these goals, resolutions, and plans and consider which are worth doing now and which are worth doing later. I decided I am going to do just one of these at a time, and move on to the next one after completing the first.&lt;/p&gt;
+&lt;p&gt;If I can get just one of these goals accomplished that’s still more than the 10 that were stuck in the proverbial door. One success is better that ten failures.&lt;/p&gt;
+&lt;p&gt;So if you are like me, and you can’t seem to make much progress on any of the myriad of goals you set yourself, take a long hard look at what you actually want to accomplish and keep the rest in your pocket until you get that first thing done.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 17 May 2019 09:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2019/05/17/3-stooges-syndrome/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/05/17/3-stooges-syndrome/</guid>
+        
+        <category>goals</category>
+        
+        
+        <category>Personal</category>
+        
+      </item>
+    
+  </channel>
+</rss>

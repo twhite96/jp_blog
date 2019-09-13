@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>The Future of Tablet Habit (Part 1) | Jeff Perry &mdash; Blogger/Podcaster </title>
+    <meta property="og:title" content="The Future of Tablet Habit (Part 1) | Jeff Perry &mdash; Blogger/Podcaster " />
+    <meta name="twitter:title" content="The Future of Tablet Habit (Part 1) | Jeff Perry &mdash; Blogger/Podcaster " />
+
+    <meta name="description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.">
+    <meta name="description" property="og:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+    <meta name="twitter:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:site" content="@iamjeffperry" />
+    
+    <meta property="og:url" content="http://localhost:4000/2018/07/03/the-future-of-tablet-habit-part-1/" />
+
+    <meta property="og:image" content="" />
+    <meta name="twitter:image" content="" />
+
+    <meta name="author" content="Jeff Perry" />
+
+    <meta name="copyright" content="Copyright by Jeff Perry. All Rights Reserved." />
+
+    <style>
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/mnpfi9pxYH-Go5UiibESIltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 300;
+            src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v15/vPcynSL0qHq_6dX7lKVByfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(https://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 900;
+            src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url(https://fonts.gstatic.com/s/roboto/v15/bmC0pGMXrhphrZJmniIZpY4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+    </style>
+    
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+    <link rel="canonical" href="http://localhost:4000/2018/07/03/the-future-of-tablet-habit-part-1/">
+
+    <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+</head>
+
+    <body>
+        <div class="wrapper">
+            <aside class="user-profile fixed" role="complementary">
+    <div class="burger">
+        <input class="trigger hidden" id="toggleBurger" type="checkbox" />
+        <label for="toggleBurger">
+            <span>Navigation</span>
+        </label>
+    </div>
+
+    <div class="compact-header">
+        <a class="avatar" href="http://localhost:4000"><img alt="Avatar" src="/avatar.png" /></a>
+        <div class="my-info">
+            <strong class="my-name">Jeff Perry</strong>
+            <span class="my-job-title">Blogger/Podcaster</span>
+        </div>
+    </div>
+
+    
+        
+        <div class="mainmenu">
+            <a href="http://localhost:4000" >Home</a>
+            
+                
+            
+                
+            
+                
+            
+                
+                    <a href="http://localhost:4000/about/" >About</a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        </div>
+        
+    
+
+    <p class="about-me">I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.</p>
+
+    <ul class="socials">
+        <li><a href="http://twitter.com/iamjeffperry"><svg title="twitter" width="16" height="16" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+
+        
+
+        
+         <li><a href="http://localhost:4000/feed.xml"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#rss-icon"></use></svg></a></li>
+        
+    </ul>
+</aside>
+
+            <main class="the-content" role="main">
+                <div class="search" role="search">
+    <div>
+        <div class="show-results-count">0 Results</div>
+        <div class="search-holder">
+            <input type="text" id="search-input" placeholder="search for..." />
+        </div>
+    </div>
+    <ul id="results-container" class="results-container"></ul>
+</div>
+
+
+                <article class="post single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2018-07-03T16:13:16-04:00" itemprop="datePublished">3 Jul, 2018</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline">The Future of Tablet Habit (Part 1)</h2>
+    </header>
+
+    <div class="post-content">
+        <p>
+				I have been going through a bit of a crisis with Tablet Habit lately.</p>
+<p>This all started with me wondering what the Mac would be like for me a few months ago. I did an experiment using the Mac exclusively for a week, and I didn’t hate it. In fact I found that a lot of the things I was doing on the iPad could be done in either less time or less hassle than on an Mac. It was a surprising twist, but I decided to stick with the iPad to stay “on brand.”</p>
+<p>This was a mistake.</p>
+<p>I put the device first and the work second. I wanted to be an iPad only person <em>so bad</em> that I sacrificed some productivity and efficiency to stay “on brand.” I felt like this was only an iPad blog and if I went away from that I would be doing everyone a disservice. Except now that I knew the Mac was something that I could use to get work done there was this voice in my head telling me to go back to it for some things.</p>
+<p>I began to feel like a fraud, a trickster, and a liar to the people who decided to read my blog regularly as an iPad user. But I knew that the Mac was something that I wanted to have in my life. It made me happy when working on the things that mattered to me.</p>
+<p>So I made a purchase.</p>
+<p>&nbsp;</p>
+<blockquote class="twitter-tweet">
+<p dir="ltr" lang="en">Yeah…big day. <a href="https://t.co/9jAmUiPgZK">pic.twitter.com/9jAmUiPgZK</a></p>
+<p>— Jeff Perry (@iamjeffperry) <a href="https://twitter.com/iamjeffperry/status/1012790481556787201?ref_src=twsrc%5Etfw">June 29, 2018</a></p></blockquote>
+<p>So, I bought a new MacBook Pro. I know that some people may think that I made a bad decision not waiting until September to see if new Macs come out, but I am happy with my purchase and I feel that this Mac will get me by the next several years without issue.</p>
+<p>I loved this computer the minute I took it out of the plastic and cracked it open. The keyboard is actually really enjoyable, the Space Gray color is beautiful, and the power this computer has is incredible. I love my Mac, and I know that I made the right decision getting one.</p>
+<blockquote class="twitter-tweet">
+<p dir="ltr" lang="en">I….. I think I’m a Mac person now.</p>
+<p>— Jeff Perry (@iamjeffperry) <a href="https://twitter.com/iamjeffperry/status/1012817444736569344?ref_src=twsrc%5Etfw">June 29, 2018</a></p></blockquote>
+<blockquote class="twitter-tweet">
+<p dir="ltr" lang="en">jeff</p>
+<p>— plus ultra mike (@mikerapin) <a href="https://twitter.com/mikerapin/status/1012823235841454080?ref_src=twsrc%5Etfw">June 29, 2018</a></p></blockquote>
+<p>My co-host to <a href="http://gettingcaughtup.net">Getting Caught Up</a>, <a href="http://twitter.com/mikerapin">Mike Rapin</a>, chimed in on my purchase. To you give you some background, I am notorious for starting new projects or jumping the gun on things and this was something I mentioned to Mike earlier in that week. I knew I was going to be getting this computer I just didn’t tell him.</p>
+<p><a href="http://twitter.com/chris_lawley">Christopher Lawley</a>, my co-host for <a href="http://aslabofglass.com">A Slab of Glass</a>, also knows of my woes with the iPad and me wanting to do more on my Mac. In the conversations we had I also expressed my interest in changing the name of the blog to something other than Tablet Habit, but clearly they felt that that was a bad idea.</p>
+<p>The two of them, who I call my friends, wanted to make sure that I didn’t do anything stupid like changing the name of my website again. They knew that I felt like an imposter using a Mac and writing on a website called Tablet Habit. It was like having a Star Trek blog and writing about how Star Wars is a great series as well. But it wasn’t just those two who felt that I shouldn’t change the name.</p>
+<blockquote class="twitter-tweet">
+<p dir="ltr" lang="en">Having a blog about the iPad written by someone using a Mac more and more doesn’t make sense. It’s like having a blog about the iPhone while using an android.</p>
+<p>— Jeff Perry (@iamjeffperry) <a href="https://twitter.com/iamjeffperry/status/1012840753893117953?ref_src=twsrc%5Etfw">June 29, 2018</a></p></blockquote>
+<blockquote class="twitter-tweet">
+<p dir="ltr" lang="en">There’s some precedent here - MacStories is mostly iOS these days.</p>
+<p>— Evan Kline (@40tech) <a href="https://twitter.com/40tech/status/1012898941078265856?ref_src=twsrc%5Etfw">June 30, 2018</a></p></blockquote>
+<p>But when your friends are persistent on making sure you don’t do something silly they make it known.</p>
+<blockquote class="twitter-tweet">
+<p dir="ltr" lang="en">I think we need to have a crossover episode/intervention.</p>
+<p>No Jeff you don’t need to move your website. 😂😜😂</p>
+<p>— Christopher Lawley (@chris_lawley) <a href="https://twitter.com/chris_lawley/status/1012837814180851712?ref_src=twsrc%5Etfw">June 29, 2018</a></p></blockquote>
+<p>&nbsp;</p>
+<blockquote class="twitter-tweet">
+<p dir="ltr" lang="en">OH BOY. CAN WE???</p>
+<p>— plus ultra mike (@mikerapin) <a href="https://twitter.com/mikerapin/status/1012852074026078208?ref_src=twsrc%5Etfw">June 30, 2018</a></p></blockquote>
+<blockquote class="twitter-tweet">
+<p dir="ltr" lang="en">I’m so in! Name the time and Skype call!</p>
+<p>— Christopher Lawley (@chris_lawley) <a href="https://twitter.com/chris_lawley/status/1012852213935271936?ref_src=twsrc%5Etfw">June 30, 2018</a></p></blockquote>
+<p>So we sat down and spent almost an hour recording a special episode together where both Christopher and Mike tell me why they feel so strongly on me maintaining the name of Tablet Habit and what I should do next.</p>
+<p>So, to avoid spoiling it for you, I will refrain from posting the second part of this journey until <em>after</em> it is posted on Thursday.</p>
+<p>I will say Tablet Habit isn’t about the tools I use. It used to be, but it isn't anymore. It is about something much bigger than what tools I use to get my work done. It is about the work itself.</p>
+<p>You see, blogging has always been a narrative format to me, and this is just part of my narrative. Tablet Habit was originally meant to be about the iPad, how I use it and how others can use it as their main device, but that changed over time. It became less about the devices and more about what you can do on those devices. It was less about tools, and more about results.</p>
+<p>Until then, I can’t wait to show you what we have in store for you all. I am so excited to share this podcast with you all in a couple of days!		</p>
+
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=The Future of Tablet Habit (Part 1)&p[summary]=
+				I have been going through a bit of a crisis with Tablet Habit lately.
+This all started with me wondering what the Mac would be like ...&p[url]=http://localhost:4000/2018/07/03/the-future-of-tablet-habit-part-1/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2018/07/03/the-future-of-tablet-habit-part-1/&text=
+				I have been going through a bit of a crisis with Tablet Habit lately.
+This all started with me wondering what the Mac would be like ...&hashtags=" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+
+            </main>
+        </div>
+
+        <script src="http://localhost:4000/assets/js/jquery-1.12.2.min.js"></script>
+<script src="http://localhost:4000/assets/js/backtotop.js"></script>
+<script src="http://localhost:4000/assets/js/lunr.min.js"></script>
+<script src="http://localhost:4000/assets/js/lunr-feed.js"></script>
+<script src="http://localhost:4000/assets/js/jquery.fitvids.js"></script>
+<script src="http://localhost:4000/assets/js/svg4everybody.min.js"></script>
+<script src="http://localhost:4000/assets/js/scripts.js"></script>
+
+
+    </body>
+</html>

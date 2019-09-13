@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MarsEdit Custom Formatting Macros | Jeff Perry &mdash; Blogger/Podcaster </title>
+    <meta property="og:title" content="MarsEdit Custom Formatting Macros | Jeff Perry &mdash; Blogger/Podcaster " />
+    <meta name="twitter:title" content="MarsEdit Custom Formatting Macros | Jeff Perry &mdash; Blogger/Podcaster " />
+
+    <meta name="description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.">
+    <meta name="description" property="og:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+    <meta name="twitter:description" content="I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:site" content="@iamjeffperry" />
+    
+    <meta property="og:url" content="http://localhost:4000/2019/08/28/marsedit-custom-formatting-macros/" />
+
+    <meta property="og:image" content="" />
+    <meta name="twitter:image" content="" />
+
+    <meta name="author" content="Jeff Perry" />
+
+    <meta name="copyright" content="Copyright by Jeff Perry. All Rights Reserved." />
+
+    <style>
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/mnpfi9pxYH-Go5UiibESIltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 300;
+            src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v15/vPcynSL0qHq_6dX7lKVByfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(https://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 900;
+            src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url(https://fonts.gstatic.com/s/roboto/v15/bmC0pGMXrhphrZJmniIZpY4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+    </style>
+    
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+    <link rel="canonical" href="http://localhost:4000/2019/08/28/marsedit-custom-formatting-macros/">
+
+    <link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+</head>
+
+    <body>
+        <div class="wrapper">
+            <aside class="user-profile fixed" role="complementary">
+    <div class="burger">
+        <input class="trigger hidden" id="toggleBurger" type="checkbox" />
+        <label for="toggleBurger">
+            <span>Navigation</span>
+        </label>
+    </div>
+
+    <div class="compact-header">
+        <a class="avatar" href="http://localhost:4000"><img alt="Avatar" src="/avatar.png" /></a>
+        <div class="my-info">
+            <strong class="my-name">Jeff Perry</strong>
+            <span class="my-job-title">Blogger/Podcaster</span>
+        </div>
+    </div>
+
+    
+        
+        <div class="mainmenu">
+            <a href="http://localhost:4000" >Home</a>
+            
+                
+            
+                
+            
+                
+            
+                
+                    <a href="http://localhost:4000/about/" >About</a>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        </div>
+        
+    
+
+    <p class="about-me">I build great products at Google, currently Google Maps. I also enjoy capturing moments with my camera and discovering new music. Follow me Twitter or drop me a line.</p>
+
+    <ul class="socials">
+        <li><a href="http://twitter.com/iamjeffperry"><svg title="twitter" width="16" height="16" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+
+        
+
+        
+         <li><a href="http://localhost:4000/feed.xml"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#rss-icon"></use></svg></a></li>
+        
+    </ul>
+</aside>
+
+            <main class="the-content" role="main">
+                <div class="search" role="search">
+    <div>
+        <div class="show-results-count">0 Results</div>
+        <div class="search-holder">
+            <input type="text" id="search-input" placeholder="search for..." />
+        </div>
+    </div>
+    <ul id="results-container" class="results-container"></ul>
+</div>
+
+
+                <article class="post single" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul>
+            <li><time datetime="2019-08-28T00:34:25-04:00" itemprop="datePublished">28 Aug, 2019</time></li>
+            
+        </ul>
+        <h2 itemprop="name headline">MarsEdit Custom Formatting Macros</h2>
+    </header>
+
+    <div class="post-content">
+        <p>I have been only using my Mac for a little while now, and one thing that I <em>love</em> about the Mac is <a href="https://www.red-sweater.com/marsedit/">MarsEdit</a>. This is by far my favorite app when it comes to blogging. It is dead easy to setup, and you have full control on your posts and pages without needing to use the WordPress web app. You can make pages, local drafts, and of course blog posts for your site all within MarsEdit.</p>
+<p>One thing I didn’t realize about MarsEdit until I saw it in a <a href="https://red-sweater.com/blog/3502/marsedit-4-3-4-quick-fix-for-formatting-macro-crash">recent release notes page</a> is <a href="https://red-sweater.com/blog/2421/marsedit-3-5-formatting-macros-full-screen-mode-tumblr-tweaks">custom macros for formatting</a>.</p>
+<p>Basically this allows you to edit the key bindings on MarsEdit for a number of built in formatting shortcuts. For example, MarsEdit ships with the Paste Link shortcut being Shift+⌘+A. As someone who is used to Ulysses and the WordPress web app I changed that shortcut to be ⌘+K instead. It is second nature for me to make that my link shortcut, and I love being able to change in MarsEdit.</p>
+<p>Not only can you change baked in formatting macros, you can also make custom formatting shortcuts. To explain, let me show you how I manage my link posts introduction.</p>
+<p>My link posts contain a very specific format that has come to be a standard among us Apple and Tech link bloggers which is:</p>
+<p><strong>AUTHOR </strong>writing for <strong>PUBLICATION</strong>:</p>
+<p>All of the above is then linked to the specific URL of the post in question.</p>
+<p>To do this you first need to right click within the draft and select “Format” and then go all the way down to the bottom of the sub-list and select “Customize..."</p>
+<p><img src="/assets/format-1.png" title="Format-1.png" alt="Format 1" /></p>
+<p>Once there you will see all of the formatting options that are setup, including the "Link…” and “Paste Link” options I changed the shortcuts to. But for this example we want to make a new shortcut and we are going to do so by clicking the “+” button on the bottom left.</p>
+<p><img src="/assets/format-list-2.png" title="Format-List-2.png" alt="Format List 2" /></p>
+<p>From there you will see something like the image below, asking you for a title, shortcut, Opening Markup (what the format starts with) and a Closing Markup (what it ends with). What you see below might seem daunting, but I assure you it isn’t as hard as it looks. For one thing, there is a very cool tool in the where you can insert placeholders (see below).</p>
+<p>So if you want to be prompted for text you can select “Ask for text” or if you want the URL you have in your clipboard to automatically be added, you can select “Paste URL.” In the case of this shortcut, I ask for the Author and the Publication, and with the formatting of HTML inserted within it, it takes those two inputs and the URL I have copied in my clipboard and spits out an HTML version of my link post introduction.</p>
+<p><img src="/assets/format-example-3.png" title="Format Example-3.png" alt="Custom Macro Setup Screen" /></p>
+<p><img src="/assets/screen-shot-2019-08-26-at-11.53.18-am.png" class="aligncenter" title="Screen Shot 2019-08-26 at 11.53.18 AM.png" alt="The placeholders you can use for custom macros" /></p>
+<p><img src="/assets/format-author-4.png" title="Format Author-4.png" alt="Entering Author's Name" /></p>
+<p><img src="/assets/format-publication-5.png" title="Format Publication-5.png" alt="Entering Publication" /></p>
+<p><img src="/assets/format-result-6.png" title="Format Result-6.png" alt="Final Result" /></p>
+<p>The best part? If you are like me and write with the WYSIWYG editor instead of the HTML editor it is automatically formatted properly. It is smart enough to know that you are writing in rich text and so it pastes it as such.</p>
+<p>If you would like the specific code I used for my opening and closing you can copy it below.</p>
+<p><strong>Opening Markup</strong>:</p>
+<p><code>&lt;a href="#pasteurl#"&gt;#asktext author: Jeff Perry# writing for #asktext Publication#</code></p>
+<p><strong>Closing Markup</strong>:</p>
+<p><code>&lt;/a&gt;:</code></p>
+<p><strong>Opening Markup from Video</strong>:</p>
+<p><code>#asktext author: Jeff Perry# writing for &lt;a href="#pasteurl#"&gt;#asktext Publication#</code></p>
+<p>Finally, I created a quick tutorial on how to use this custom shortcut. In it I mention a very cool tool call <a href="https://pqrs.org/osx/karabiner/">Karabiner</a>, which allows you to really dive into custom keyboard shortcuts. The most common one is a “hyper key” which transforms the Caps Lock key from making text all caps into a tool that effectively presses Shift+Command+Option+Control all in one go. It is great for when you want to use a custom keyboard shortcut but don’t want to worry about stepping on another keyboard shortcut’s toes. To do that, just download Karabiner and add the following rule under the "Complex Modifications" tab:</p>
+<p><img src="/assets/karabiner-rule.png?w=300" class="aligncenter size-medium wp-image-1305" width="300" height="185" alt="" /></p>
+<p>Anyway, here’s the video:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5dvdUB7L3lQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+
+    <footer class="post-footer">
+        <div class="share">Share
+            <ul class="social-networks">
+                <li class="share-facebook"><a href="https://www.facebook.com/sharer.php?s=100&p[title]=MarsEdit Custom Formatting Macros&p[summary]=I have been only using my Mac for a little while now, and one thing that I love about the Mac is MarsEdit. This is by far my favorite app...&p[url]=http://localhost:4000/2019/08/28/marsedit-custom-formatting-macros/" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#facebook-icon"></use></svg></a></li>
+                <li class="share-twitter"><a href="http://twitter.com/share?url=http://localhost:4000/2019/08/28/marsedit-custom-formatting-macros/&text=I have been only using my Mac for a little while now, and one thing that I love about the Mac is MarsEdit. This is by far my favorite app...&hashtags=blogging,marsedit,tutorial," rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;"><svg title="" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost:4000/assets/svg/social-icons.svg#twitter-icon"></use></svg></a></li>
+            </ul>
+        </div>
+        
+        <div class="tags">
+            <ul>
+                
+                <li><a href="http://localhost:4000/tag/blogging">blogging</a></li>
+                
+                <li><a href="http://localhost:4000/tag/marsedit">marsedit</a></li>
+                
+                <li><a href="http://localhost:4000/tag/tutorial">tutorial</a></li>
+                
+            </ul>
+        </div>
+        
+    </footer>
+</article>
+
+
+            </main>
+        </div>
+
+        <script src="http://localhost:4000/assets/js/jquery-1.12.2.min.js"></script>
+<script src="http://localhost:4000/assets/js/backtotop.js"></script>
+<script src="http://localhost:4000/assets/js/lunr.min.js"></script>
+<script src="http://localhost:4000/assets/js/lunr-feed.js"></script>
+<script src="http://localhost:4000/assets/js/jquery.fitvids.js"></script>
+<script src="http://localhost:4000/assets/js/svg4everybody.min.js"></script>
+<script src="http://localhost:4000/assets/js/scripts.js"></script>
+
+
+    </body>
+</html>
