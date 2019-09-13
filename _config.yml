@@ -55,7 +55,7 @@ defaults:
       comments: "true"
 
 # Serving
-url: ""
+url: "https://jefferydperry.github.io/jp_blog/"
 baseurl: "jp_blog"
 
 # Includes
